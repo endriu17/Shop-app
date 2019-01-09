@@ -10,10 +10,7 @@ import ShoppingBag from "./components/ShoppingBag/ShoppingBag";
 import "./App.css";
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-  }
-
+  
   render() {
     return (
       <BrowserRouter>
@@ -32,22 +29,11 @@ class App extends Component {
             {/* <Route path='/faq' component={FAQ} /> */}
             {/* <Route path='/regulations' component={Regulations} /> */}
             {/* <Route path='/contact' component={Contact} /> */}
+            {/* <Route path='/product:id' component={Product} /> */}
           </div>
           <Footer className="Footer nav-home"/>
         </div>
       </BrowserRouter>
-      // <div>
-      //   <Navbar>
-      //     {/* <NavbarBrand>Shop app</NavbarBrand> */}
-      //     <Navi />
-      //     <ShoppingBag />
-      //   </Navbar>
-      //   <SortingBox />
-      //   <Container>
-      //     <ProductsList />
-      //     <Product />
-      //   </Container>
-      // </div>
     );
   }
 }

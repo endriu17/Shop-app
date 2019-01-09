@@ -9,16 +9,23 @@
 
 .navigation {
   display: flex;
-  width: 50%;
+  width: 100%;
   list-style-type: none;
   justify-content: flex-end;
-  font-size: 32px;
+  font-size: 28px;
   align-items: center;
   margin: 0;
   padding: 0;
-  border: 1px solid red;
+  border: 1px solid #ff0000;
 }
 
 .link-nav {
   padding: 0 20px;
+  color: #494848;
+  text-decoration: none;
+}
+
+.link-nav:hover {
+  text-decoration: none;
+  color: #973a69;
 }

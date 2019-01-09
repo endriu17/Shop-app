@@ -1,16 +1,18 @@
-import React, { Component } from "react";
+import React from "react";
 import "./ProductsList.css";
 import Product from "../Product/Product";
+import data from "../Product/data.json";
 
-class ProductsList extends React.Component {
-  render() {
-    return (
-      <div className="ProductsList">
-        <Product />
-        <Product />
-      </div>
-    );
-  }
-}
+const ProductsList = (props) => (
+  <div className="ProductsList">
+    {data.map((detail, i) => (
+        <Product
+        key={i}
+        {...detail}
+        />
+      )
+    )}
+  </div>
+);
 
 export default ProductsList;

@@ -3,8 +3,28 @@
     border: 1px solid gray;
     height: 500px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #ebeef1;
     margin: 40px;
-    
+    padding: 40px 40px 0;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+.product-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70px;
+    margin-bottom: 0;
+}
+
+.product-name {
+    font-size: 20px;
+    font-weight: bold;
 }

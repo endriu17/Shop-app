@@ -2,12 +2,18 @@ import React, { Component } from "react";
 import Navi from "../Navi/Navigation";
 import "./Footer.css";
 
-class Footer extends React.Component {
+class Footer extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      color: "red !important",
+    };
+  }
   render() {
     return (
       <div className="Footer">
         <span className="footer-copyrights">All rights reserved</span>
-        <Navi />
+        <Navi styles={this.state}/>
       </div>
     );
   }

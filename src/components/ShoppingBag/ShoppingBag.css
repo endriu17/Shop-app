@@ -1,9 +1,14 @@
 .ShoppingBag {
-    font-size: 32px;
+    font-size: 28px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding: 0;
     margin: 0 10px;
     width: 100px;
+}
+
+.ShoppingBag:hover {
+    color: #973a69;
+    cursor: pointer;
 }
