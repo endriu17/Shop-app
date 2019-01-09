@@ -1,0 +1,8 @@
+.ProductsList {
+    padding: 20px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    overflow: hidden;
+}

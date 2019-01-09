@@ -1,74 +1,55 @@
-import React, { Component } from 'react';
-import {
-    Collapse,
-    Navbar,
-    NavbarToggler,
-    NavbarBrand,
-    Nav,
-    NavItem,
-    NavLink,
-    Container,
-    Row,
-    Col,
-    Jumbotron,
-    Button
-} from 'reactstrap';
+import React, { Component } from "react";
+import { Route, BrowserRouter, Link } from "react-router-dom";
+import Navi from "./components/Navi/Navigation";
+import Footer from "./components/Footer/Footer";
+import Home from "./components/Home";
+// import Product from "./components/Product/Product";
+// import ProductsList from "./components/ProductsList/ProductsList";
+// import SortingBox from "./components/SortingBox/SortingBox";
+import ShoppingBag from "./components/ShoppingBag/ShoppingBag";
+import "./App.css";
 
 class App extends Component {
-    constructor(props) {
-        super(props);
+  constructor(props) {
+    super(props);
+  }
 
-        this.toggle = this.toggle.bind(this);
-        this.state = {
-            isOpen: false
-        };
-    }
-    toggle() {
-        this.setState({
-            isOpen: !this.state.isOpen
-        });
-    }
-    render() {
-        return (
-            <div>
-                <Navbar color="inverse" light expand="md">
-                    <NavbarBrand href="/">Shop app</NavbarBrand>
-                    <NavbarToggler onClick={this.toggle} />
-                    <Collapse isOpen={this.state.isOpen} navbar>
-                        <Nav className="ml-auto" navbar>
-                            <NavItem>
-                                <NavLink href="/components/">Components</NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink href="https://github.com/endriu17?tab=repositories" target="_blank">Github</NavLink>
-                            </NavItem>
-                        </Nav>
-                    </Collapse>
-                </Navbar>
-                <Jumbotron>
-                    <Container>
-                        <Row>
-                            <Col>
-                                <h1>Welcome to Shop App</h1>
-                                <p>Site in development...</p>
-                                <p>
-                                    <Button
-                                        tag="a"
-                                        color="primary"
-                                        size="large"
-                                        href="https://github.com/endriu17?tab=repositories"
-                                        target="_blank"
-                                    >
-                                        View Github endriu17
-                                    </Button>
-                                </p>
-                            </Col>
-                        </Row>
-                    </Container>
-                </Jumbotron>
+  render() {
+    return (
+      <BrowserRouter>
+        <div className="App">
+          <div className="header-wrapper">
+            <Link className="navi-logo" to="/">
+              <span>Shop app</span>
+            </Link>
+            <div className="nav-home">
+              <Navi />
+              <ShoppingBag />
             </div>
-        );
-    }
+          </div>
+          <div className="main-layout">
+            <Route exact path="/" component={Home} />
+            {/* <Route path='/faq' component={FAQ} /> */}
+            {/* <Route path='/regulations' component={Regulations} /> */}
+            {/* <Route path='/contact' component={Contact} /> */}
+          </div>
+          <Footer className="Footer nav-home"/>
+        </div>
+      </BrowserRouter>
+      // <div>
+      //   <Navbar>
+      //     {/* <NavbarBrand>Shop app</NavbarBrand> */}
+      //     <Navi />
+      //     <ShoppingBag />
+      //   </Navbar>
+      //   <SortingBox />
+      //   <Container>
+      //     <ProductsList />
+      //     <Product />
+      //   </Container>
+      // </div>
+    );
+  }
 }
 
 export default App;

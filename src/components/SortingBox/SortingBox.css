@@ -1,0 +1,14 @@
+.SortingBox {
+    width: 30%;
+    border: 1px solid cyan;
+    text-align: center;
+    padding: 50px;
+    font-size: 30px;
+}
+
+.sort-list {
+    width: 100%;
+    margin: 10px auto;
+    display: inline-block;
+    flex-wrap: wrap;
+}

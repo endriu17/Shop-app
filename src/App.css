@@ -1,1 +1,54 @@
+.App {
+  padding: 0 5%;
+  height: 100vh;
+}
+
+.header-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  height: 10vh;
+  text-transform: uppercase;
+}
+
+.navi-logo {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  width: 30%;
+  margin: 0;
+  border: 1px solid green;
+}
+
+.nav-home {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid blue;
+  width: 70%;
+}
+
+.main-layout {
+  height: 80vh;
+}
+
+.Footer {
+  display: flex;
+  width: 100%;
+  border: 1px solid yellow;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0;
+  height: 10vh;
+  font-size: 1.5em;
+  /* padding-right: 100px; */
+}
+
+.footer-copyrights {
+  width: 40%;
+}
+
 
