@@ -10,3 +10,34 @@
     width: 80%;
     height: 100%;
 }
+
+.pagination-wrapper {
+    margin: 0;
+    height: 50px;
+    width: 100%;
+}
+
+ul.pagination {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+li {
+    margin: 0 2px;
+}
+
+.page-link {
+    text-decoration: none;
+    font-size: 22px;
+    color: #838282;
+    font-weight: bold
+}
+
+.active .page-link{
+    font-weight: 400;
+    color: #353434;
+    text-decoration: underline;
+}
