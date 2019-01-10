@@ -1,7 +1,7 @@
 [
   {
     "id": "1",
-    "name": "Product 1",
+    "name": "Product_1",
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],
@@ -10,7 +10,7 @@
   },
   {
     "id": "2",
-    "name": "Product 2",
+    "name": "Product_2",
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],
@@ -19,7 +19,7 @@
   },
   {
     "id": "3",
-    "name": "Product 4",
+    "name": "Product_3",
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],
@@ -27,8 +27,8 @@
     "photo": "/photos/logo.png"
   },
   {
-    "id": "34",
-    "name": "Product 4",
+    "id": "4",
+    "name": "Product_4",
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],
@@ -37,7 +37,7 @@
   },
   {
     "id": "5",
-    "name": "Product 5",
+    "name": "Product_5",
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],
@@ -46,7 +46,7 @@
   },
   {
     "id": "6",
-    "name": "Product 6",
+    "name": "Product_6",
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],

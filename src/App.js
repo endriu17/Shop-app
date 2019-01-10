@@ -2,10 +2,13 @@ import React, { Component } from "react";
 import { Route, BrowserRouter, Link } from "react-router-dom";
 import Navi from "./components/Navi/Navigation";
 import Footer from "./components/Footer/Footer";
-import Home from "./components/Home";
-// import Product from "./components/Product/Product";
-// import ProductsList from "./components/ProductsList/ProductsList";
-// import SortingBox from "./components/SortingBox/SortingBox";
+import Home from "./components/sites/Home";
+import Bag from "./components/sites/Bag";
+// import NotFound from './components/sites/NotFound';
+import ProductItem from "./components/Product/ProductItem/ProductItem";
+import Contact from "./components/sites/Contact";
+import Faq from "./components/sites/Faq";
+import Regulations from "./components/sites/Regulations";
 import ShoppingBag from "./components/ShoppingBag/ShoppingBag";
 import "./App.css";
 
@@ -26,10 +29,12 @@ class App extends Component {
           </div>
           <div className="main-layout">
             <Route exact path="/" component={Home} />
-            {/* <Route path='/faq' component={FAQ} /> */}
-            {/* <Route path='/regulations' component={Regulations} /> */}
-            {/* <Route path='/contact' component={Contact} /> */}
-            {/* <Route path='/product:id' component={Product} /> */}
+            <Route path='/faq' component={Faq} />
+            <Route path='/regulations' component={Regulations} />
+            <Route path='/contact' component={Contact} />
+            <Route path='/product:id' component={ProductItem} />
+            <Route path='/bag' component={Bag} />
+            {/* <Route path='*' component={NotFound}/> */}
           </div>
           <Footer className="Footer nav-home"/>
         </div>

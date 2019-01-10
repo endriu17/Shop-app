@@ -9,6 +9,7 @@ class SortingBox extends Component {
           <span className="sort-list">Tu będzie sortowanie 1</span>
           <span className="sort-list">Tu będzie sortowanie 2</span>
           <span className="sort-list">Tu będzie sortowanie 3</span>
+          <span className="sort-list sort-line">________________________</span>
         </div>
       );
     }

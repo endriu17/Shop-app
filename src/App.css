@@ -1,6 +1,10 @@
 .App {
   padding: 0 5%;
-  height: 100vh;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
 }
 
 .header-wrapper {
@@ -10,7 +14,7 @@
   border: 1px solid #000;
   margin: 0;
   padding: 0;
-  height: 10vh;
+  height: 6%;
   text-transform: uppercase;
 }
 
@@ -35,14 +39,16 @@
 
 .nav-home {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   border: 1px solid blue;
-  /* width: 70%; */
 }
 
 .main-layout {
-  height: 80vh;
+  height: 86%;
   width: 100%;
+  display: flex;
+  justify-content: space-beetwen;
+  /* overflow: hidden; */
 }
 
 .Footer {
@@ -52,7 +58,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 0;
-  height: 10vh;
+  height: 7%;
   font-size: 1.5em;
   /* padding-right: 100px; */
 }

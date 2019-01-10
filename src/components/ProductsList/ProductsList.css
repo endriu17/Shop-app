@@ -1,11 +1,12 @@
 .ProductsList {
-    padding: 20px 50px;
+    padding: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: 0 auto;
     font: 20px;
     color: black;
-    overflow: auto;
-    width: 66%;
+    /* overflow-y: scroll; */
+    width: 80%;
+    height: 100%;
 }

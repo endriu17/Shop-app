@@ -1,6 +1,19 @@
 import React from "react";
-import './ShoppingBag.css';
+import { NavLink } from "react-router-dom";
+import "./ShoppingBag.css";
 
-const ShoppingBag = () =>  <span className="ShoppingBag">Bag</span>
+class ShoppingBag extends React.Component {
+  render() {
+    return (
+      <NavLink
+        className="link-nav ShoppingBag"
+        to="/bag"
+        // activeStyle={this.state}
+      >
+        <span>Bag</span>
+      </NavLink>
+    );
+  }
+}
 
 export default ShoppingBag;

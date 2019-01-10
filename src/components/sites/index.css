@@ -1,0 +1,30 @@
+.home-wrapper {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-beetwen;
+  height: 100%;
+  padding-top: 50px;
+  /* height: 100%; */
+}
+
+.bag {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    padding: 50px;
+    border: 2px solid blue;
+    margin: 50px auto;
+}
+
+.contact-site, .faq-site, .regulations-site, .error-site {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  padding: 50px;
+  border: 2px solid blue;
+  margin: 50px auto;
+}
