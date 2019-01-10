@@ -1,5 +1,7 @@
 .Product {
     width: 230px;
+    text-decoration: none;
+    color: #000;
     border: 1px solid gray;
     height: 300px;
     display: flex;
@@ -8,6 +10,11 @@
     background-color: #ebeef1;
     margin: 15px;
     padding: 40px 40px 0;
+}
+
+.Product:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
 }
 
 img {
@@ -27,6 +34,10 @@ img {
 .product-name {
     font-size: 20px;
     font-weight: bold;
+}
+
+.product-name:hover {
+    opacity: 0.8;
 }
 
 .product-item {

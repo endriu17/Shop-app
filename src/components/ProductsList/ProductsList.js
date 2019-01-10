@@ -29,19 +29,7 @@ class ProductsList extends React.Component {
   render() {
     const { currentPage } = this.state;
     return (
-      // <div className="ProductsList">
-      //   {data.map((detail, i) => (
-      //     <Product key={i} {...detail} />
-      //   ))}
-      //   <Pager
-      //     length={Math.round(data.length/6)}
-      //     current={this.state.current}
-      //     expansion={3}
-      //     onChange={current => this.setState({ current })}
-      //     showFirstButton={true}
-      //     showLastButton={true}
-      //   />
-      // </div>
+
       <React.Fragment>
         <div className="ProductsList">
           {this.dataSet
@@ -60,8 +48,8 @@ class ProductsList extends React.Component {
                 <PaginationLink
                   onClick={e => this.handleClick(e, currentPage - 1)}
                   previous
-                  href="#"
-                />
+                  href="#">
+                </PaginationLink>
               </PaginationItem>
 
               {[...Array(this.pagesCount)].map((page, i) => (
