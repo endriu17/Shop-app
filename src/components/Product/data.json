@@ -1,8 +1,8 @@
 [
   {
     "id": "1",
-    "name": "Product_1",
-    "description": "",
+    "name": "Product 1",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan. Etiam ornare, metus quis congue pretium, nulla magna condimentum libero, at interdum justo nibh at ipsum. Donec commodo lectus ac dui iaculis cursus. Curabitur sit amet libero nec nibh semper tempus nec ac nunc. In sit.",
     "price": 100,
     "category": ["new", "lastone"],
     "promo": false,

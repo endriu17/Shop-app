@@ -1,13 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import ProductItem from "./ProductItem/ProductItem";
 import "./Product.css";
 
 const Product = (props) => {
-  // console.log(props);
+
 return (
   <Link
-    // key={props.id}
-    to={"/products/id_"+ props.id + "_" + props.name}
+    // id={props.id}
+    to={`/product/${props.id}`}
+    // component={ProductItem}
     className="Product"
   >
     <img src={props.photo} alt={props.name} />
@@ -15,6 +17,7 @@ return (
       <span className="product-name">{props.name}</span>
       <span className="product-price product-price_promo">
         $ {props.price}
+        {console.log(props.id)}
       </span>
     </div>
   </Link>     
