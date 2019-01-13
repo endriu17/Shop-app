@@ -6,16 +6,40 @@ class ProductItem extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      id: this.props.match.params.id - 1,
-      photo: data[this.props.match.params.id - 1].photo,
-      name: data[this.props.match.params.id - 1].name,
-      price: data[this.props.match.params.id - 1].price.toFixed(2),
-      description: data[this.props.match.params.id - 1].description
+      text: "Add to bag",
+      color: "#000",
+      isButtonDisabled: false,
+      productID: [],
+      bag: []
     };
-
-    console.log(data[this.state.id]);
   }
-
+  componentWillMount() {
+    const param = this.props.match.params.id - 1;
+    
+    this.setState({
+      id: param,
+      photo: data[param].photo,
+      name: data[param].name,
+      price: data[param].price.toFixed(2),
+      description: data[param].description
+    });
+    // this.state.bag.push(this.props.bag);
+    this.state.bag.push(this.props);
+  }
+ 
+  handleClick(e) {
+    
+    
+    this.setState({
+      text: "Product added to bag",
+      color: "red",
+      isButtonDisabled: true,
+      productID: e
+    });
+    console.log(this.state.bag);
+    
+  }
+  
   render() {
     return (
       <div className="product-container">
@@ -31,11 +55,20 @@ class ProductItem extends Component {
               ${this.state.price}
             </span>
             <p className="product-description">{this.state.description}</p>
-            <button className="add_to-bag">Add to bag</button>
+            <button
+              value={this.state.id}
+              style={{ backgroundColor: `${this.state.color}` }}
+              className="add_to-bag"
+              onClick={() => this.handleClick(this.state.id)}
+              disabled={this.state.isButtonDisabled}
+            >
+              {this.state.text}
+            </button>
           </div>
         </div>
       </div>
     );
   }
 }
+
 export default ProductItem;

@@ -13,7 +13,14 @@ import ShoppingBag from "./components/ShoppingBag/ShoppingBag";
 import "./App.css";
 
 class App extends Component {
-  
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      bag: [2, 1]
+    };
+  }
+
   render() {
     return (
       <BrowserRouter>
@@ -24,7 +31,7 @@ class App extends Component {
             </Link>
             <div className="nav-home">
               <Navi />
-              <ShoppingBag />
+              <ShoppingBag value={this.state.bag.length}/>
             </div>
           </div>
           <div className="main-layout">
@@ -32,8 +39,8 @@ class App extends Component {
             <Route path='/faq' component={Faq} />
             <Route path='/regulations' component={Regulations} />
             <Route path='/contact' component={Contact} />
-            <Route path='/product/:id' component={ProductItem} />
-            <Route path='/bag' component={Bag} />
+            <Route path='/product/:id' component={ProductItem} {...this.state.bag} />
+            <Route path='/bag' component={Bag} {...this.state.bag}/>
             {/* <Route path='*' component={NotFound}/> */}
           </div>
           <Footer className="Footer nav-home"/>

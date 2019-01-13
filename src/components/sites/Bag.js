@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./index.css";
+import bag from "../Product/ProductItem/bag.json";
 
 class Bag extends Component {
     constructor(props) {
@@ -8,8 +9,9 @@ class Bag extends Component {
         this.state = {
           price: [],
           item: [],
-          
+          id: bag.id
         };
+        console.log(props)
       }
 
   render() {
@@ -21,7 +23,7 @@ class Bag extends Component {
         <div className="product-wrapper">
           <p>{this.props.description}</p>
           <span className="product-price product-price_promo">
-            {this.props.price}
+            {this.props[0]}
           </span>
           <span>Add item..</span>
         </div>
