@@ -12,10 +12,12 @@ class Bag extends Component {
       bag: this.props.value
     };
     console.log(this.props.value);
+    
   }
 
   render() {
     let bagMap = this.state.bag;
+    const priceSum = [];
     let bagItems = bagMap.map(item => (
       <li key={item} className="bag-item_list">
         <img src={data[item - 1].photo} alt={data[item - 1].name} />
@@ -23,7 +25,8 @@ class Bag extends Component {
           <span className="bag-item__name">{data[item - 1].name}</span>
           <p className="bag-item__description">{data[item - 1].description}</p>
         </div>
-        <span className="bag-item__price">
+        <span className="price-push">{priceSum.push(data[item - 1].price)}</span>
+        <span  className="bag-item__price">
           ${data[item - 1].price.toFixed(2)}
         </span>
         <div className="bag-number__wrapper">
@@ -41,9 +44,9 @@ class Bag extends Component {
       <div className="bag">
         <h2>Shopping bag</h2>
         <ul className="bag-items">{bagItems}</ul>
-        <div>
+        <div className="bag-total">
           <input className="bag-input__code" placeholder="Rabatt code"></input>
-          <span className="bag-sum__total">Total: </span>
+          <span className="bag-sum__total">TOTAL: ${priceSum.reduce((total, value) => total + value).toFixed(2)} </span>
           <button className="bag-button__pay">Pay</button>
         </div>
       </div>
