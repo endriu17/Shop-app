@@ -2,7 +2,6 @@
   border: 1px solid red;
   display: flex;
   justify-content: space-beetwen;
-  /* height: 90vh; */
   padding-top: 50px;
 }
 
@@ -13,7 +12,7 @@
     align-items: center;
     flex-direction: column;
     height: 60vh;
-    padding: 50px;
+    padding: 50px 100px;
     border: 2px solid blue;
     margin: 50px auto;
 }
@@ -71,7 +70,7 @@
   flex-direction: column;
   align-content: center;
   margin-top: 15px;
-  width: 130px;
+  width: 120px;
 }
 
 .number-wrapper__set {
@@ -82,8 +81,8 @@
 
 .number-set {
   font-size: 16px;
-  margin: 5px 0;
   cursor: pointer;
+  margin: auto;
 }
 
 .bag-remove__item {

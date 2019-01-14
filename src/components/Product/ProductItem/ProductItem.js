@@ -39,7 +39,7 @@ class ProductItem extends Component {
   
   render() {
     return (
-      <div className="product-container">
+      <div className="product-container" {...this.state}>
         <div className="product-item">
           <img
             className="product-photo"

@@ -10,7 +10,8 @@ const ShoppingBag = (props) => {
         to="/bag"
         // activeStyle={this.state}
       >
-        <span>Bag ({props.value})</span>
+        <span className="bag-items__icon">Bag</span>
+        <span className="bag-items__number">{props.value}</span>
       </NavLink>
     );
   }

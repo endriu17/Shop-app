@@ -21,7 +21,7 @@ class App extends Component {
     console.log(this.state.shoppingBag);
   }
   addToBag(props) {
-    this.setState(this.state.shoppingBag.push(props));
+    this.setState({shoppingBag: {...props}});
     console.log(this.state.shoppingBag);
   }
   render() {
@@ -45,7 +45,8 @@ class App extends Component {
             <Route
               path="/product/:id"
               component={ProductItem}
-              onEnter={props => this.state.shoppingBag.push(props)}
+              onEnter={props => this.setState({shoppingBag: props.state.bag})}
+              addToBag={this.props.state}
             />
             {/* <Route path="/bag" component={Bag} /> */}
             <Route path="/bag" render={() => <Bag value={this.state.shoppingBag} />} />

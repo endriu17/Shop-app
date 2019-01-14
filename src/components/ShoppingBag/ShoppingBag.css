@@ -1,19 +1,37 @@
 .ShoppingBag {
-    font-size: 24px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 0;
-    width: 80px;
+  font-size: 24px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+  width: 80px;
+  position: relative;
 }
 
 .link-nav:hover {
-    color: #973a69;
-    cursor: pointer;
+  color: #973a69;
+  cursor: pointer;
 }
 
 .link-nav {
-    padding-left: 20px;
-    color: #494848;
-    text-decoration: none;
-  }
+  padding-left: 20px;
+  color: #494848;
+  text-decoration: none;
+}
+
+.bag-items__number {
+  position: absolute;
+  padding: 3px;
+  height: 15px;
+  width: 15px;
+  bottom: 2px;
+  left: 40px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #ff0000;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
