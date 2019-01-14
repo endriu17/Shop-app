@@ -13,14 +13,17 @@ import ShoppingBag from "./components/ShoppingBag/ShoppingBag";
 import "./App.css";
 
 class App extends Component {
-
   constructor(props) {
     super(props);
     this.state = {
-      bag: [2, 1]
+      shoppingBag: [1, 3]
     };
+    console.log(this.state.shoppingBag);
   }
-
+  addToBag(props) {
+    this.setState(this.state.shoppingBag.push(props));
+    console.log(this.state.shoppingBag);
+  }
   render() {
     return (
       <BrowserRouter>
@@ -31,19 +34,24 @@ class App extends Component {
             </Link>
             <div className="nav-home">
               <Navi />
-              <ShoppingBag value={this.state.bag.length}/>
+              <ShoppingBag value={this.state.shoppingBag.length} />
             </div>
           </div>
           <div className="main-layout">
             <Route exact path="/" component={Home} />
-            <Route path='/faq' component={Faq} />
-            <Route path='/regulations' component={Regulations} />
-            <Route path='/contact' component={Contact} />
-            <Route path='/product/:id' component={ProductItem} {...this.state.bag} />
-            <Route path='/bag' component={Bag} {...this.state.bag}/>
+            <Route path="/faq" component={Faq} />
+            <Route path="/regulations" component={Regulations} />
+            <Route path="/contact" component={Contact} />
+            <Route
+              path="/product/:id"
+              component={ProductItem}
+              onEnter={props => this.state.shoppingBag.push(props)}
+            />
+            {/* <Route path="/bag" component={Bag} /> */}
+            <Route path="/bag" render={() => <Bag value={this.state.shoppingBag} />} />
             {/* <Route path='*' component={NotFound}/> */}
           </div>
-          <Footer className="Footer nav-home"/>
+          <Footer className="Footer nav-home" />
         </div>
       </BrowserRouter>
     );

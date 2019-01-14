@@ -8,7 +8,7 @@ return (
   <Link
     to={`/product/${props.id}`}
     className="Product"
-    {...props}
+    {...props.value}
   >
     <img src={props.photo} alt={props.name} />
     <div className="product-wrapper">

@@ -10,7 +10,7 @@ class ProductItem extends Component {
       color: "#000",
       isButtonDisabled: false,
       productID: [],
-      bag: []
+      bag: [4]
     };
   }
   componentWillMount() {
@@ -23,12 +23,10 @@ class ProductItem extends Component {
       price: data[param].price.toFixed(2),
       description: data[param].description
     });
-    // this.state.bag.push(this.props.bag);
-    this.state.bag.push(this.props);
+    console.log(this.props)
   }
  
   handleClick(e) {
-    
     
     this.setState({
       text: "Product added to bag",
@@ -37,7 +35,6 @@ class ProductItem extends Component {
       productID: e
     });
     console.log(this.state.bag);
-    
   }
   
   render() {

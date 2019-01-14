@@ -4,62 +4,55 @@
     "name": "Product 1",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan. Etiam ornare, metus quis congue pretium, nulla magna condimentum libero, at interdum justo nibh at ipsum. Donec commodo lectus ac dui iaculis cursus. Curabitur sit amet libero nec nibh semper tempus nec ac nunc. In sit.",
     "price": 100,
-    "category": ["new", "lastone"],
-    "promo": false,
+    "category": ["new", "lastone", "promo"],
     "photo": "/photos/logo.png"
   },
   {
     "id": "2",
-    "name": "Product_2",
-    "description": "",
-    "price": 100,
+    "name": "Product 2",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan.",
+    "price": 200,
     "category": ["new", "lastone"],
-    "promo": false,
     "photo": "/photos/logo.png"
   },
   {
     "id": "3",
-    "name": "Product_3",
-    "description": "",
-    "price": 100,
+    "name": "Product 3",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan.",
+    "price": 150,
     "category": ["new", "lastone"],
-    "promo": false,
     "photo": "/photos/logo.png"
   },
   {
     "id": "4",
-    "name": "Product_4",
-    "description": "",
-    "price": 100,
-    "category": ["new", "lastone"],
-    "promo": false,
+    "name": "Product 4",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan.",
+    "price": 250,
+    "category": ["new", "lastone", "promo"],
     "photo": "/photos/logo.png"
   },
   {
     "id": "5",
-    "name": "Product_5",
-    "description": "",
-    "price": 100,
+    "name": "Product 5",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan.",
+    "price": 245,
     "category": ["new", "lastone"],
-    "promo": false,
     "photo": "/photos/logo.png"
   },
   {
     "id": "6",
-    "name": "Product_6",
-    "description": "",
-    "price": 100,
+    "name": "Product 6",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan.",
+    "price": 400,
     "category": ["new", "lastone"],
-    "promo": false,
     "photo": "/photos/logo.png"
   },
   {
     "id": "7",
     "name": "Product 7",
-    "description": "",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan.",
     "price": 100,
     "category": ["new", "lastone"],
-    "promo": false,
     "photo": "./photos/"
   },
   {
@@ -67,8 +60,7 @@
     "name": "Product 8",
     "description": "",
     "price": 100,
-    "category": ["new", "lastone"],
-    "promo": false,
+    "category": ["new", "lastone", "promo"],
     "photo": "./photos/"
   },
   {
@@ -77,7 +69,6 @@
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],
-    "promo": false,
     "photo": "./photos/"
   },
   {
@@ -86,7 +77,6 @@
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],
-    "promo": false,
     "photo": "./photos/"
   },
   {
@@ -95,7 +85,6 @@
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],
-    "promo": false,
     "photo": "./photos/"
   },
   {
@@ -103,8 +92,7 @@
     "name": "Product 12",
     "description": "",
     "price": 100,
-    "category": ["new", "lastone"],
-    "promo": false,
+    "category": ["new", "lastone", "promo"],
     "photo": "./photos/"
   },
   {
@@ -113,7 +101,6 @@
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],
-    "promo": false,
     "photo": "./photos/"
   },
   {
@@ -121,8 +108,7 @@
     "name": "Product 14",
     "description": "",
     "price": 100,
-    "category": ["new", "lastone"],
-    "promo": false,
+    "category": ["new", "lastone", "promo"],
     "photo": "./photos/"
   },
   {
@@ -131,7 +117,6 @@
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],
-    "promo": false,
     "photo": "./photos/"
   },
   {
@@ -140,7 +125,6 @@
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],
-    "promo": false,
     "photo": "./photos/"
   },
   {
@@ -149,7 +133,6 @@
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],
-    "promo": false,
     "photo": "./photos/"
   },
   {
@@ -158,7 +141,6 @@
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],
-    "promo": false,
     "photo": "./photos/"
   },
   {
@@ -167,7 +149,6 @@
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],
-    "promo": false,
     "photo": "./photos/"
   },
   {
@@ -176,7 +157,6 @@
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],
-    "promo": false,
     "photo": "./photos/"
   },
   {
@@ -185,7 +165,6 @@
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],
-    "promo": false,
     "photo": "./photos/"
   },
   {
@@ -194,7 +173,6 @@
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],
-    "promo": false,
     "photo": "./photos/"
   },
   {
@@ -203,7 +181,6 @@
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],
-    "promo": false,
     "photo": "./photos/"
   },
   {
@@ -212,7 +189,6 @@
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],
-    "promo": false,
     "photo": "./photos/"
   },
   {
@@ -221,7 +197,6 @@
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],
-    "promo": false,
     "photo": "./photos/"
   },
   {
@@ -230,7 +205,6 @@
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],
-    "promo": false,
     "photo": "./photos/"
   },
   {
@@ -239,7 +213,6 @@
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],
-    "promo": false,
     "photo": "./photos/"
   },
   {
@@ -248,7 +221,6 @@
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],
-    "promo": false,
     "photo": "./photos/"
   },
   {
@@ -257,7 +229,6 @@
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],
-    "promo": false,
     "photo": "./photos/"
   },
   {
@@ -266,7 +237,6 @@
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],
-    "promo": false,
     "photo": "./photos/"
   },
   {
@@ -275,7 +245,6 @@
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],
-    "promo": false,
     "photo": "./photos/"
   },
   {
@@ -284,7 +253,6 @@
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],
-    "promo": false,
     "photo": "./photos/"
   },
   {
@@ -293,7 +261,6 @@
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],
-    "promo": false,
     "photo": "./photos/"
   },
   {
@@ -302,7 +269,6 @@
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],
-    "promo": false,
     "photo": "./photos/"
   },
   {
@@ -311,7 +277,6 @@
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],
-    "promo": false,
     "photo": "./photos/"
   },
   {
@@ -320,7 +285,6 @@
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],
-    "promo": false,
     "photo": "./photos/"
   },
   {
@@ -329,7 +293,6 @@
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],
-    "promo": false,
     "photo": "./photos/"
   },
   {
@@ -338,7 +301,6 @@
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],
-    "promo": false,
     "photo": "./photos/"
   },
   {
@@ -347,7 +309,6 @@
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],
-    "promo": false,
     "photo": "./photos/"
   },
   {
@@ -356,7 +317,6 @@
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],
-    "promo": false,
     "photo": "./photos/"
   },
   {
@@ -365,7 +325,6 @@
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],
-    "promo": false,
     "photo": "./photos/"
   },
   {
@@ -374,7 +333,6 @@
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],
-    "promo": false,
     "photo": "./photos/"
   },
   {
@@ -383,7 +341,6 @@
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],
-    "promo": false,
     "photo": "./photos/"
   },
   {
@@ -392,7 +349,6 @@
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],
-    "promo": false,
     "photo": "./photos/"
   },
   {
@@ -401,7 +357,6 @@
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],
-    "promo": false,
     "photo": "./photos/"
   },
   {
@@ -410,7 +365,6 @@
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],
-    "promo": false,
     "photo": "./photos/"
   },
   {
@@ -419,7 +373,6 @@
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],
-    "promo": false,
     "photo": "./photos/"
   },
   {
@@ -428,7 +381,6 @@
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],
-    "promo": false,
     "photo": "./photos/"
   },
   {
@@ -437,7 +389,6 @@
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],
-    "promo": false,
     "photo": "./photos/"
   },
   {
@@ -446,7 +397,6 @@
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],
-    "promo": false,
     "photo": "./photos/"
   },
   {
@@ -455,7 +405,6 @@
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],
-    "promo": false,
     "photo": "./photos/"
   },
   {
@@ -464,7 +413,6 @@
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],
-    "promo": false,
     "photo": "./photos/"
   },
   {
@@ -473,7 +421,6 @@
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],
-    "promo": false,
     "photo": "./photos/"
   },
   {
@@ -482,7 +429,6 @@
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],
-    "promo": false,
     "photo": "./photos/"
   },
   {
@@ -491,7 +437,6 @@
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],
-    "promo": false,
     "photo": "./photos/"
   },
   {
@@ -500,7 +445,6 @@
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],
-    "promo": false,
     "photo": "./photos/"
   },
   {
@@ -509,7 +453,6 @@
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],
-    "promo": false,
     "photo": "./photos/"
   },
   {
@@ -518,7 +461,6 @@
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],
-    "promo": false,
     "photo": "./photos/"
   },
   {
@@ -527,7 +469,6 @@
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],
-    "promo": false,
     "photo": "./photos/"
   },
   {
@@ -536,7 +477,6 @@
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],
-    "promo": false,
     "photo": "./photos/"
   },
   {
@@ -545,7 +485,6 @@
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],
-    "promo": false,
     "photo": "./photos/"
   },
   {
@@ -554,7 +493,6 @@
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],
-    "promo": false,
     "photo": "./photos/logo.png"
   },
   {
@@ -563,7 +501,6 @@
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],
-    "promo": false,
     "photo": "./photos/"
   },
   {
@@ -572,7 +509,6 @@
     "description": "",
     "price": 100,
     "category": ["new", "lastone"],
-    "promo": false,
     "photo": "./photos/"
   }
 ]
