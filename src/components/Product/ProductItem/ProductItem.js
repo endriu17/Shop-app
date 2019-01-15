@@ -9,12 +9,11 @@ class ProductItem extends Component {
       text: "Add to bag",
       color: "#000",
       isButtonDisabled: false,
-      productID: [],
-      bag: [4]
+      productID: []
     };
   }
   componentWillMount() {
-    let param = this.props.match.params.id - 1;
+    let param = this.props.id - 1;
 
     this.setState({
       id: param,
@@ -27,12 +26,12 @@ class ProductItem extends Component {
 
   handleClick(e) {
     this.setState({
-      text: "Product added to bag",
+      text: "Product is in the bag",
       color: "red",
-      isButtonDisabled: true,
+      added: "Product is already added to the bag"
     });
-    // this.props.match.params.addToBag(e);
-    console.log(e)
+    console.log(this.props.id);
+    this.props.addToBag(this.props.id);
   }
 
   render() {
@@ -53,13 +52,11 @@ class ProductItem extends Component {
             <button
               style={{ backgroundColor: `${this.state.color}` }}
               className="add_to-bag"
-              onClick={() => 
-                this.handleClick(this.state.id)
-              }
-              disabled={this.state.isButtonDisabled}
+              onClick={() => this.handleClick(this.props.id)}
             >
               {this.state.text}
             </button>
+            <p>{this.state.added}</p>
           </div>
         </div>
       </div>

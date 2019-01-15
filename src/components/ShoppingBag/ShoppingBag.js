@@ -8,7 +8,7 @@ const ShoppingBag = (props) => {
       <NavLink
         className="link-nav ShoppingBag"
         to="/bag"
-        // activeStyle={this.state}
+        activeStyle={{fontWeight: 'bold'}}
       >
         <span className="bag-items__icon">Bag</span>
         <span className="bag-items__number">{props.value}</span>

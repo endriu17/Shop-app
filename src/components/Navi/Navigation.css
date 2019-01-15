@@ -27,7 +27,7 @@ a.link-nav {
   font-family: 'Open Sans', sans-serif;
 }
 
-.link-nav:hover {
-  text-decoration: none;
-  color: #973a69;
+a.link-nav:hover {
+  text-decoration: underline;
+  color: #000;
 }

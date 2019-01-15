@@ -15,20 +15,14 @@ import "./App.css";
 class App extends Component {
   constructor(props) {
     super(props);
+    this.addToBag = this.addToBag.bind(this);
     this.state = {
-      shoppingBag: [1, 3]
+      shoppingBag: []
     };
-    console.log(this.state.shoppingBag);
   }
-  
-  componentDidMount() {
-        
-   console.log(this.props)
-  }
-  
-  addToBag(id ) {
-    
-    console.log('clicked an updated...', id);
+
+  addToBag(id) {
+    this.setState(prevState => ({ shoppingBag: [...prevState.shoppingBag, parseFloat(id)]}));
   }
 
   render() {
@@ -51,10 +45,17 @@ class App extends Component {
             <Route path="/contact" component={Contact} />
             <Route
               path="/product/:id"
-              component={ProductItem}
-              addToBag={() => this.addToBag()}
+              render={routeProps => (
+                <ProductItem
+                  id={routeProps.match.params.id}
+                  addToBag={this.addToBag}
+                />
+              )}
             />
-            <Route path="/bag" render={() => <Bag value={this.state.shoppingBag} />} />
+            <Route
+              path="/bag"
+              render={() => <Bag value={this.state.shoppingBag} />}
+            />
             {/* <Route path='*' component={NotFound}/> */}
           </div>
           <Footer className="Footer nav-home" />

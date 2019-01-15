@@ -28,14 +28,14 @@
   width: 30%;
   margin: 0;
   border: 1px solid green;
-  color: #1515bb;
+  /* color: #1515bb; */
   font-weight: bold;
   text-decoration: none;
 }
 
 .navi-logo:hover {
   text-decoration: none;
-  color: red;
+  color: #4b4646;
 }
 
 .nav-home {

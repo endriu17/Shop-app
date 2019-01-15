@@ -8,7 +8,11 @@ class Navi extends React.Component {
 
     this.state = {
       display: "flex",
-      justifyContent: "space-around"
+      justifyContent: "space-around",
+      style: {
+        // color: 'blue',
+        fontWeight: 'bold'
+      }
     };
   }
 
@@ -17,13 +21,13 @@ class Navi extends React.Component {
       <div className="app-header">
         <ul className="navigation">
           <li>
-            <NavLink className="link-nav" exact to="/">
-              {/* // activeStyle={this.state} */}
+            <NavLink className="link-nav" exact to="/" activeStyle={this.state.style}>
+              
               Home
             </NavLink>
           </li>
           <li>
-            <NavLink className="link-nav" to="/faq">
+            <NavLink className="link-nav" to="/faq" activeStyle={this.state.style}>
               FAQ
             </NavLink>
           </li>
@@ -31,7 +35,7 @@ class Navi extends React.Component {
             <NavLink
               className="link-nav"
               to="/regulations"
-              // activeStyle={this.state}
+              activeStyle={this.state.style}
             >
               Regulations
             </NavLink>
@@ -40,7 +44,7 @@ class Navi extends React.Component {
             <NavLink
               className="link-nav"
               to="/contact"
-              // activeStyle={this.state}
+              activeStyle={this.state.style}
             >
               Contact
             </NavLink>
