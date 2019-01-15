@@ -8,11 +8,16 @@ class Bag extends Component {
 
     this.state = {
       price: [],
-      item: [],
+      item: 1,
       bag: this.props.value
     };
     console.log(this.props.value);
     
+  }
+
+  removeItem(e) {
+    
+    return this.valueCount + e;
   }
 
   render() {
@@ -31,9 +36,9 @@ class Bag extends Component {
         </span>
         <div className="bag-number__wrapper">
           <div className="number-wrapper__set">
-            <span className="number-set">-</span>
-            <span className="bag-item__number">1</span>
-            <span className="number-set">+</span>
+            <span className="number-set" onClick={() => this.removeItem(-1)}>-</span>
+            <span counter='1' className="bag-item__number">{this.props.counter}</span>
+            <span className="number-set" onClick={() => this.addItem(+1)}>+</span>
             <p>itm.</p>
           </div>
           <span className="bag-remove__item">remove item</span>

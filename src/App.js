@@ -20,10 +20,17 @@ class App extends Component {
     };
     console.log(this.state.shoppingBag);
   }
-  addToBag(props) {
-    this.setState({shoppingBag: {...props}});
-    console.log(this.state.shoppingBag);
+  
+  componentDidMount() {
+        
+   console.log(this.props)
   }
+  
+  addToBag(id ) {
+    
+    console.log('clicked an updated...', id);
+  }
+
   render() {
     return (
       <BrowserRouter>
@@ -45,10 +52,8 @@ class App extends Component {
             <Route
               path="/product/:id"
               component={ProductItem}
-              onEnter={props => this.setState({shoppingBag: props.state.bag})}
-              addToBag={this.props.state}
+              addToBag={() => this.addToBag()}
             />
-            {/* <Route path="/bag" component={Bag} /> */}
             <Route path="/bag" render={() => <Bag value={this.state.shoppingBag} />} />
             {/* <Route path='*' component={NotFound}/> */}
           </div>
