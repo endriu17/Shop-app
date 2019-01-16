@@ -26,9 +26,10 @@ class App extends Component {
   }
 
   render() {
+    console.log(this.state.shoppingBag);
     return (
       <BrowserRouter>
-        <div className="App">
+        <div className="app">
           <div className="header-wrapper">
             <Link className="navi-logo" to="/">
               <span>Shop app</span>
@@ -54,11 +55,13 @@ class App extends Component {
             />
             <Route
               path="/bag"
-              render={() => <Bag value={this.state.shoppingBag} />}
+              render={() => (
+                <Bag bag={this.state.shoppingBag} addToBag={this.addToBag} />
+              )}
             />
             {/* <Route path='*' component={NotFound}/> */}
           </div>
-          <Footer className="Footer nav-home" />
+          <Footer className="footer nav-home" />
         </div>
       </BrowserRouter>
     );

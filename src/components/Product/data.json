@@ -4,7 +4,7 @@
     "name": "Product 1",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan. Etiam ornare, metus quis congue pretium, nulla magna condimentum libero, at interdum justo nibh at ipsum. Donec commodo lectus ac dui iaculis cursus. Curabitur sit amet libero nec nibh semper tempus nec ac nunc. In sit.",
     "price": 100,
-    "category": ["new", "lastone", "promo"],
+    "category": ["New", "Last one", "Promo"],
     "photo": "/photos/logo.png"
   },
   {
@@ -12,7 +12,7 @@
     "name": "Product 2",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan.",
     "price": 200,
-    "category": ["new", "lastone"],
+    "category": ["New", "Last one"],
     "photo": "/photos/logo.png"
   },
   {
@@ -20,7 +20,7 @@
     "name": "Product 3",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan.",
     "price": 150,
-    "category": ["new", "lastone"],
+    "category": ["New", "Last one"],
     "photo": "/photos/logo.png"
   },
   {
@@ -28,7 +28,7 @@
     "name": "Product 4",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan.",
     "price": 250,
-    "category": ["new", "lastone", "promo"],
+    "category": ["New", "Last one", "Promo"],
     "photo": "/photos/logo.png"
   },
   {
@@ -36,7 +36,7 @@
     "name": "Product 5",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan.",
     "price": 245,
-    "category": ["new", "lastone"],
+    "category": ["New", "Last one"],
     "photo": "/photos/logo.png"
   },
   {
@@ -44,7 +44,7 @@
     "name": "Product 6",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan.",
     "price": 400,
-    "category": ["new", "lastone"],
+    "category": ["New", "Last one"],
     "photo": "/photos/logo.png"
   },
   {
@@ -52,7 +52,7 @@
     "name": "Product 7",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan.",
     "price": 100,
-    "category": ["new", "lastone"],
+    "category": ["New", "Last one"],
     "photo": "./photos/"
   },
   {
@@ -60,7 +60,7 @@
     "name": "Product 8",
     "description": "",
     "price": 100,
-    "category": ["new", "lastone", "promo"],
+    "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
   {

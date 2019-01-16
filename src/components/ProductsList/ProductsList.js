@@ -31,7 +31,7 @@ class ProductsList extends React.Component {
     return (
 
       <React.Fragment>
-        <div className="ProductsList">
+        <div className="products-list">
           {this.dataSet
             .slice(
               currentPage * this.pageSize,

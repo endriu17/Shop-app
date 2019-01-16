@@ -1,4 +1,4 @@
-.App {
+.app {
   padding: 0 5%;
   font-family: Arial, Helvetica, sans-serif;
   max-width: 1200px;
@@ -28,7 +28,6 @@
   width: 30%;
   margin: 0;
   border: 1px solid green;
-  /* color: #1515bb; */
   font-weight: bold;
   text-decoration: none;
 }
@@ -45,13 +44,12 @@
 }
 
 .main-layout {
-  height: 90vh;
   width: 100%;
   display: flex;
   justify-content: space-beetwen;
 }
 
-.Footer {
+.footer {
   display: flex;
   width: 100%;
   border: 1px solid yellow;
@@ -65,5 +63,3 @@
 .footer-copyrights {
   width: 40%;
 }
-
-

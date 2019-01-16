@@ -6,10 +6,11 @@ class SortingBox extends Component {
     render() {
       return (
         <div className="SortingBox">
-          <span  className="sort-list ">Sortuj</span>
-          <Link to={`/`} className="sort-list">Tu będzie sortowanie 1</Link>
-          <Link to={`/`} className="sort-list">Tu będzie sortowanie 2</Link>
-          <Link to={`/`} className="sort-list">Tu będzie sortowanie 3</Link>
+          <span  className="sort-list_header">Sort:</span>
+          <Link to={`/`} className="sort-list">Name A - Z</Link>
+          <Link to={`/`} className="sort-list">Name Z - A</Link>
+          <Link to={`/`} className="sort-list">Price ascending</Link>
+          <Link to={`/`} className="sort-list">Price descending</Link>
           <span className="sort-list sort-line">________________________</span>
         </div>
       );

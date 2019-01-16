@@ -2,7 +2,7 @@
     width: 20%;
     border: 1px solid cyan;
     text-align: left;
-    padding: 20px 100px;
+    padding: 50px 100px;
     font-size: 20px;
 }
 
@@ -11,14 +11,17 @@
     margin: 15px auto;
     display: inline-block;
     flex-wrap: wrap;
+    text-decoration: none;
 }
 
-.sort-list:first-of-type {
+.sort-list:hover {
     font-weight: bold;
 }
 
-span.sort-line {
+.sort-list:first-of-type {
     margin-top: 40px;
-    color: cadetblue;
+}
+
+span.sort-list_header {
     font-weight: bold;
 }

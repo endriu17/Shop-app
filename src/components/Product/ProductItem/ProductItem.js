@@ -20,7 +20,8 @@ class ProductItem extends Component {
       photo: data[param].photo,
       name: data[param].name,
       price: data[param].price.toFixed(2),
-      description: data[param].description
+      description: data[param].description,
+      category: data[param].category
     });
   }
 
@@ -32,22 +33,36 @@ class ProductItem extends Component {
     });
     console.log(this.props.id);
     this.props.addToBag(this.props.id);
+    
   }
-
+  
   render() {
+    
+   
+    
+  console.log(this.state.category[3])
+    
     return (
       <div className="product-container">
         <div className="product-item">
+          <div className="product-item__new" />
+          <span className="product-item__text">{this.state.category[0]}!</span>
+          <h4 className="product-item__promo">{this.state.category[2]}</h4>
           <img
             className="product-photo"
             src={this.state.photo}
             alt={this.state.name}
           />
-          <div className="product-wrapper">
-            <span className="product-name">{this.state.name}</span>
-            <span className="product-price product-price_promo">
+          <div className="product-wrapper" style={{width: '50%'}}>
+            <span className="product-name">
+              {this.state.name}
+            </span>
+            <div className="product-price_wrapper" >
+            <span className="product-price">
               ${this.state.price}
             </span>
+              <p className="product-item__lastone" >{this.state.category[1]}</p>
+              </div>
             <p className="product-description">{this.state.description}</p>
             <button
               style={{ backgroundColor: `${this.state.color}` }}
