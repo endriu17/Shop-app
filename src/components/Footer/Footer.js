@@ -11,7 +11,7 @@ class Footer extends Component {
   }
   render() {
     return (
-      <div className="Footer">
+      <div className="footer">
         <span className="footer-copyrights">All rights reserved</span>
         <Navi styles={this.state}/>
       </div>

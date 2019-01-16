@@ -2,7 +2,6 @@
 
 .app-header {
   display: flex;
-  border: 1px solid red;
   margin: 0;
   justify-content: flex-end;
   text-transform: uppercase;
@@ -16,7 +15,6 @@
   align-items: center;
   margin: 0;
   padding: 0;
-  border: 1px solid #ff0000;
 }
 
 a.link-nav {

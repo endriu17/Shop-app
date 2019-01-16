@@ -40,7 +40,7 @@ class Bag extends Component {
     console.log(this.state.bag);
     if (this.state.bag.length === 0) {
       return (
-        <div className="bag" style={{ fontSize: "26px", color: "red" }}>
+        <div className="bag" style={{ fontSize: "36px", padding: "350px 0"}}>
           Na razie tu nic nie ma...
         </div>
       );
