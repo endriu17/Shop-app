@@ -1,3 +1,3 @@
 ## Last project
 
-**Status**: in development (30%...)
+**Status**: in development (50%...)
