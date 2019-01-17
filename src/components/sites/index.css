@@ -1,19 +1,19 @@
 .home-wrapper {
   display: flex;
-  justify-content: space-beetwen;
+  justify-content: space-between;
   padding-top: 50px;
-  height: 100%;
+  height: 85vh;
 }
 
 .bag {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    margin: 50px auto;
-    min-height: 50vh;
-    background-color: #f3f3f3;
-    padding: 70px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  margin: 50px auto;
+  min-height: 55vh;
+  background-color: #f3f3f3;
+  padding: 70px;
 }
 
 .bag h2 {
@@ -46,7 +46,6 @@
 
 .bag-name__wrapper {
   width: 50%;
-
 }
 
 .bag-item__name {
@@ -135,7 +134,10 @@
   border: 1px solid #000;
 }
 
-.contact-site, .faq-site, .regulations-site, .error-site {
+.contact-site,
+.faq-site,
+.regulations-site,
+.error-site {
   width: 100%;
   display: flex;
   justify-content: center;

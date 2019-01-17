@@ -10,45 +10,40 @@ class Bag extends Component {
       price: [],
       item: 1,
       bag: [],
-      products: [
-        {
-          productId: [],
-          count: 1
-        }
-      ]
+      products: []
     };
   }
 
   componentWillMount() {
     let counts = [];
-    this.props.bag.forEach((x) => counts[x] = (counts[x] || 0) + 1);
+    this.props.bag.forEach(x => (counts[x] = (counts[x] || 0) + 1));
     const filtered = counts.filter((el, id) => el != null);
     console.log(filtered);
     const unique = this.props.bag.filter((v, i, a) => a.indexOf(v) === i);
     this.setState({ bag: unique });
-  }
-
-  removeItem() {
-    return this.props.value - 1;
-  }
-
-  addItem() {
-    return this.props.value + 1;
+    console.log(this.state.bag);
   }
 
   render() {
-    console.log(this.state.bag);
     if (this.state.bag.length === 0) {
       return (
-        <div className="bag" style={{ fontSize: "36px", padding: "350px 0"}}>
-          Na razie tu nic nie ma...
+        <div
+          className="bag"
+          style={{
+            fontSize: "36px",
+            padding: "150px 0",
+            height: "55vh",
+            margin: "54px auto"
+          }}
+        >
+          It's nothing in the shoppingbag yet...
         </div>
       );
     } else {
       const bagMap = this.state.bag;
       const priceSum = [];
       const bagItems = bagMap.map(item => (
-        <li key={item} className="bag-item_list">
+        <li key={data[item - 1].id} className="bag-item_list">
           <img src={data[item - 1].photo} alt={data[item - 1].name} />
           <div className="bag-name__wrapper">
             <span className="bag-item__name">{data[item - 1].name}</span>
@@ -64,20 +59,11 @@ class Bag extends Component {
           </span>
           <div className="bag-number__wrapper">
             <div className="number-wrapper__set">
-              <span
-                className="number-set"
-                // onClick={() => this.state.products.push({id: this.props.id}) - 1}
-              >
+              <span className="number-set fas fa-plus" onClick={this.removeItem}>
                 -
               </span>
-              <span className="bag-item__number">{this.state.bag.length}</span>
-              <span
-                className="number-set"
-                // onClick={() => {
-                //   this.props.addToBag(this.props.id)
-                //   this.setState(prevState => ({ bag: [...prevState.bag, parseFloat(this.props.id)]}))
-                //   }}
-              >
+              <span className="bag-item__number">{this.state.item}</span>
+              <span className="number-set fas fa-plus" onClick={this.addItem}>
                 +
               </span>
               <p>itm.</p>

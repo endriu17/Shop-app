@@ -10,7 +10,7 @@ const ShoppingBag = (props) => {
         to="/bag"
         activeStyle={{fontWeight: 'bold'}}
       >
-        <span className="bag-items__icon">Bag</span>
+        <span className="bag-items__icon fas fa-shopping-bag"></span>
         <span className="bag-items__number">{props.value}</span>
       </NavLink>
     );

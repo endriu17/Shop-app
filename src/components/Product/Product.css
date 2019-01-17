@@ -104,8 +104,8 @@ img {
   padding: 5px 10px;
   border-radius: 20px;
   border: 2px solid #000;
-  -webkit-box-shadow: 1px 1px 10px 2px #2e2b2b;
-  box-shadow: 1px 1px 10px 1px #2e2b2b;
+  -webkit-box-shadow: 1px 1px 6px 1px #2e2b2b;
+  box-shadow: 1px 1px 5px 1px #2e2b2b;
 }
 
 .product-item__promo {

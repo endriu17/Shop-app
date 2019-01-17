@@ -5,10 +5,11 @@ import data from "../Product/data.json";
 import { Pagination, PaginationItem, PaginationLink } from "reactstrap";
 
 class ProductsList extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.dataSet = data.map((a, i) => <Product key={i} {...a} />);
+    this.dataHomeSet = this.props.dataHome.map((a, i)=> <Product key={i} {...a} />)
 
     this.pageSize = 6;
     this.pagesCount = Math.ceil(this.dataSet.length / this.pageSize);
@@ -28,28 +29,30 @@ class ProductsList extends React.Component {
 
   render() {
     const { currentPage } = this.state;
+    console.log(this.props.dataHome[0]);
     return (
-
       <React.Fragment>
         <div className="products-list">
-          {this.dataSet
-            .slice(
-              currentPage * this.pageSize,
-              (currentPage + 1) * this.pageSize
-            )
-            .map((data, i) => (
-              <div className="data-slice" key={i}>
-                {data}
-              </div>
-            ))}
+          <div className="products-list__container">
+            {this.dataHomeSet
+              .slice(
+                currentPage * this.pageSize,
+                (currentPage + 1) * this.pageSize
+              )
+              .map((data, i) => (
+                <div className="product-list__item" key={i}>
+                  {data}
+                </div>
+              ))}
+          </div>
           <div className="pagination-wrapper">
             <Pagination aria-label="Page navigation example">
               <PaginationItem disabled={currentPage <= 0}>
                 <PaginationLink
                   onClick={e => this.handleClick(e, currentPage - 1)}
                   previous
-                  href="#">
-                </PaginationLink>
+                  href="#"
+                />
               </PaginationItem>
 
               {[...Array(this.pagesCount)].map((page, i) => (
