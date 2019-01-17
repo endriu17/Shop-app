@@ -4,7 +4,7 @@ import Navi from "./components/Navi/Navigation";
 import Footer from "./components/Footer/Footer";
 import Home from "./components/sites/Home";
 import Bag from "./components/sites/Bag";
-// import NotFound from './components/sites/NotFound';
+import NotFound from './components/sites/NotFound';
 import ProductItem from "./components/Product/ProductItem/ProductItem";
 import Contact from "./components/sites/Contact";
 import Faq from "./components/sites/Faq";
@@ -59,7 +59,7 @@ class App extends Component {
                 <Bag bag={this.state.shoppingBag} addToBag={this.addToBag} />
               )}
             />
-            {/* <Route path='*' component={NotFound}/> */}
+            <Route path='*' exact={true} component={NotFound}/>
           </div>
           <Footer className="footer nav-home" />
         </div>
