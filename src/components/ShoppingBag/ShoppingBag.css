@@ -24,8 +24,8 @@
   padding: 3px;
   height: 15px;
   width: 15px;
-  bottom: 10px;
-  left: 20px;
+  bottom: -5px;
+  left: 17px;
   border-radius: 50%;
   color: #fff;
   background-color: #ff0000;
@@ -38,4 +38,8 @@
 
 .bag-items__icon {
   color: grey;
+}
+
+.bag-items__icon:hover {
+  color: #000;
 }

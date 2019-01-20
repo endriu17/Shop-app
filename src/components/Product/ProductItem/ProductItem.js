@@ -33,7 +33,6 @@ class ProductItem extends Component {
     });
     console.log(this.props.id);
     this.props.addToBag(this.props.id);
-    
   }
   
   render() {
@@ -66,8 +65,9 @@ class ProductItem extends Component {
             <p className="product-description">{this.state.description}</p>
             <button
               style={{ backgroundColor: `${this.state.color}` }}
-              className="add_to-bag"
+              className="add-to-bag"
               onClick={() => this.handleClick(this.props.id)}
+              text={'Add to bag'}
             >
               {this.state.text}
             </button>

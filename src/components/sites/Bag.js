@@ -13,62 +13,57 @@ class Bag extends Component {
       products: []
     };
   }
-
   componentWillMount() {
-    let counts = [];
-    this.props.bag.forEach(x => (counts[x] = (counts[x] || 0) + 1));
-    const filtered = counts.filter((el, id) => el != null);
-    console.log(filtered);
-    const unique = this.props.bag.filter((v, i, a) => a.indexOf(v) === i);
-    this.setState({ bag: unique });
-    console.log(this.state.bag);
+  
+  }
+  handleClick(e) {
+    
+    console.log(this.props.id);
+    this.props.removeFromBag(e);
   }
 
   render() {
-    if (this.state.bag.length === 0) {
+    if (this.props.bag.length === 0) {
       return (
-        <div
-          className="bag"
+        <h1
           style={{
-            fontSize: "36px",
-            padding: "150px 0",
-            height: "55vh",
-            margin: "54px auto"
+            fontSize: "2em",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            height: "80vh",
+            marginTop: "0",
           }}
         >
           It's nothing in the shoppingbag yet...
-        </div>
+        </h1>
       );
     } else {
-      const bagMap = this.state.bag;
+      const bagMap = this.props.bag;
       const priceSum = [];
-      const bagItems = bagMap.map(item => (
-        <li key={data[item - 1].id} className="bag-item_list">
-          <img src={data[item - 1].photo} alt={data[item - 1].name} />
+      const bagItems = bagMap.map((item, i) => (
+        <li key={i} className="bag-item_list">
+          <img src={data[item.id - 1].photo} alt={data[item.id - 1].name} />
           <div className="bag-name__wrapper">
-            <span className="bag-item__name">{data[item - 1].name}</span>
+            <span className="bag-item__name">{data[item.id - 1].name}</span>
             <p className="bag-item__description">
-              {data[item - 1].description}
+              {data[item.id - 1].description}
             </p>
           </div>
           <span className="price-push">
-            {priceSum.push(data[item - 1].price)}
+            {priceSum.push(data[item.id - 1].price)}
           </span>
           <span className="bag-item__price">
-            ${data[item - 1].price.toFixed(2)}
+            ${data[item.id - 1].price.toFixed(2)}
           </span>
           <div className="bag-number__wrapper">
             <div className="number-wrapper__set">
-              <span className="number-set fas fa-plus" onClick={this.removeItem}>
-                -
-              </span>
-              <span className="bag-item__number">{this.state.item}</span>
-              <span className="number-set fas fa-plus" onClick={this.addItem}>
-                +
-              </span>
+              <i className="number-set fas fa-minus" onClick={() => this.props.bag.count - 1}/>
+              <span className="bag-item__number">{item.count}</span>
+              <i className="number-set fas fa-plus" onClick={() => this.props.bag.count + 1}/>
               <p>itm.</p>
             </div>
-            <span className="bag-remove__item">remove item</span>
+            <span className="bag-remove__item" onClick={() => this.handleClick(data[item.id - 1].id)}>remove item</span>
           </div>
         </li>
       ));
@@ -80,7 +75,7 @@ class Bag extends Component {
             <input className="bag-input__code" placeholder="Rabatt code" />
             <span className="bag-sum__total">
               TOTAL: $
-              {priceSum.reduce((total, value) => total + value).toFixed(2)}{" "}
+              {priceSum.reduce((total, value) => total + value).toFixed(2)}
             </span>
             <button className="bag-button__pay">Pay</button>
           </div>

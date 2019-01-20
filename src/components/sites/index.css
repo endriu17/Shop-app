@@ -1,8 +1,10 @@
 .home-wrapper {
   display: flex;
   justify-content: space-between;
-  padding-top: 50px;
-  height: 85vh;
+  padding-top: 40px;
+  background-color: #fafafa;
+  margin-top: 0;
+  width: 100%;
 }
 
 .bag {
@@ -10,10 +12,9 @@
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  margin: 50px auto;
   min-height: 55vh;
   background-color: #f3f3f3;
-  padding: 70px;
+  padding: 50px;
 }
 
 .bag h2 {
@@ -142,6 +143,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 81vh;
-  margin: 50px auto;
+  height: 80vh;
+  background-color: #fafafa;
+  margin-top: 0;
 }
