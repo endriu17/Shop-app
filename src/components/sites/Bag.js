@@ -13,9 +13,7 @@ class Bag extends Component {
       products: []
     };
   }
-  componentWillMount() {
-  
-  }
+
   handleClick(e) {
     
     console.log(this.props.id);

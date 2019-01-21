@@ -4,6 +4,7 @@
     "name": "Product 1",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan. Etiam ornare, metus quis congue pretium, nulla magna condimentum libero, at interdum justo nibh at ipsum. Donec commodo lectus ac dui iaculis cursus. Curabitur sit amet libero nec nibh semper tempus nec ac nunc. In sit.",
     "price": 100,
+    "oldPrice": [],
     "category": ["New", "Last one", "Promo"],
     "photo": "/photos/logo.png"
   },
@@ -12,7 +13,8 @@
     "name": "Product 2",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan.",
     "price": 200,
-    "category": ["New", "Last one"],
+    "oldPrice": "$ 250.00",
+    "category": ["New", "New price", "Promo"],
     "photo": "/photos/logo.png"
   },
   {
@@ -20,7 +22,8 @@
     "name": "Product 3",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan.",
     "price": 150,
-    "category": ["New", "Last one"],
+    "oldPrice": [],
+    "category": ["New", "Last one", ""],
     "photo": "/photos/logo.png"
   },
   {
@@ -28,7 +31,8 @@
     "name": "Product 4",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan.",
     "price": 250,
-    "category": ["New", "Last one", "Promo"],
+    "oldPrice": [],
+    "category": ["New", "Last one", ""],
     "photo": "/photos/logo.png"
   },
   {
@@ -36,7 +40,8 @@
     "name": "Product 5",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan.",
     "price": 245,
-    "category": ["New", "Last one"],
+    "oldPrice": [],
+    "category": ["New", "Last one", "Promo"],
     "photo": "/photos/logo.png"
   },
   {
@@ -44,7 +49,8 @@
     "name": "Product 6",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan.",
     "price": 400,
-    "category": ["New", "Last one"],
+    "oldPrice": [],
+    "category": ["New", "Last one", "Promo"],
     "photo": "/photos/logo.png"
   },
   {
@@ -52,7 +58,8 @@
     "name": "Product 7",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan.",
     "price": 100,
-    "category": ["New", "Last one"],
+    "oldPrice": [],
+    "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
   {
@@ -60,6 +67,7 @@
     "name": "Product 8",
     "description": "",
     "price": 100,
+    "oldPrice": [],
     "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
@@ -68,7 +76,8 @@
     "name": "Product 9",
     "description": "",
     "price": 100,
-    "category": ["new", "lastone"],
+    "oldPrice": [],
+    "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
   {
@@ -76,7 +85,8 @@
     "name": "Product 10",
     "description": "",
     "price": 100,
-    "category": ["new", "lastone"],
+    "oldPrice": [],
+    "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
   {
@@ -84,7 +94,8 @@
     "name": "Product 11",
     "description": "",
     "price": 100,
-    "category": ["new", "lastone"],
+    "oldPrice": [],
+    "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
   {
@@ -92,6 +103,7 @@
     "name": "Product 12",
     "description": "",
     "price": 100,
+    "oldPrice": [],
     "category": ["new", "lastone", "promo"],
     "photo": "./photos/"
   },
@@ -100,7 +112,8 @@
     "name": "Product 13",
     "description": "",
     "price": 100,
-    "category": ["new", "lastone"],
+    "oldPrice": [],
+    "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
   {
@@ -108,7 +121,8 @@
     "name": "Product 14",
     "description": "",
     "price": 100,
-    "category": ["new", "lastone", "promo"],
+    "oldPrice": [],
+    "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
   {
@@ -116,7 +130,8 @@
     "name": "Product 15",
     "description": "",
     "price": 100,
-    "category": ["new", "lastone"],
+    "oldPrice": [],
+    "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
   {
@@ -124,7 +139,8 @@
     "name": "Product 16",
     "description": "",
     "price": 100,
-    "category": ["new", "lastone"],
+    "oldPrice": [],
+    "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
   {
@@ -132,7 +148,8 @@
     "name": "Product 17",
     "description": "",
     "price": 100,
-    "category": ["new", "lastone"],
+    "oldPrice": [],
+    "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
   {
@@ -140,7 +157,8 @@
     "name": "Product 18",
     "description": "",
     "price": 100,
-    "category": ["new", "lastone"],
+    "oldPrice": [],
+    "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
   {
@@ -148,7 +166,8 @@
     "name": "Product 19",
     "description": "",
     "price": 100,
-    "category": ["new", "lastone"],
+    "oldPrice": [],
+    "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
   {
@@ -156,7 +175,8 @@
     "name": "Product 20",
     "description": "",
     "price": 100,
-    "category": ["new", "lastone"],
+    "oldPrice": [],
+    "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
   {
@@ -164,7 +184,8 @@
     "name": "Product 21",
     "description": "",
     "price": 100,
-    "category": ["new", "lastone"],
+    "oldPrice": [],
+    "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
   {
@@ -172,7 +193,8 @@
     "name": "Product 22",
     "description": "",
     "price": 100,
-    "category": ["new", "lastone"],
+    "oldPrice": [],
+    "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
   {
@@ -180,7 +202,8 @@
     "name": "Product 23",
     "description": "",
     "price": 100,
-    "category": ["new", "lastone"],
+    "oldPrice": [],
+    "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
   {
@@ -188,7 +211,8 @@
     "name": "Product 24",
     "description": "",
     "price": 100,
-    "category": ["new", "lastone"],
+    "oldPrice": [],
+    "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
   {
@@ -196,7 +220,8 @@
     "name": "Product 25",
     "description": "",
     "price": 100,
-    "category": ["new", "lastone"],
+    "oldPrice": [],
+    "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
   {
@@ -204,7 +229,8 @@
     "name": "Product 26",
     "description": "",
     "price": 100,
-    "category": ["new", "lastone"],
+    "oldPrice": [],
+    "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
   {
@@ -212,7 +238,8 @@
     "name": "Product 27",
     "description": "",
     "price": 100,
-    "category": ["new", "lastone"],
+    "oldPrice": [],
+    "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
   {
@@ -220,7 +247,8 @@
     "name": "Product 28",
     "description": "",
     "price": 100,
-    "category": ["new", "lastone"],
+    "oldPrice": [],
+    "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
   {
@@ -228,7 +256,8 @@
     "name": "Product 29",
     "description": "",
     "price": 100,
-    "category": ["new", "lastone"],
+    "oldPrice": [],
+    "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
   {
@@ -236,7 +265,8 @@
     "name": "Product 30",
     "description": "",
     "price": 100,
-    "category": ["new", "lastone"],
+    "oldPrice": [],
+    "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
   {
@@ -244,7 +274,8 @@
     "name": "Product 31",
     "description": "",
     "price": 100,
-    "category": ["new", "lastone"],
+    "oldPrice": [],
+    "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
   {
@@ -252,7 +283,8 @@
     "name": "Product 32",
     "description": "",
     "price": 100,
-    "category": ["new", "lastone"],
+    "oldPrice": [],
+    "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
   {
@@ -260,7 +292,8 @@
     "name": "Product 33",
     "description": "",
     "price": 100,
-    "category": ["new", "lastone"],
+    "oldPrice": [],
+    "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
   {
@@ -268,7 +301,8 @@
     "name": "Product 34",
     "description": "",
     "price": 100,
-    "category": ["new", "lastone"],
+    "oldPrice": [],
+    "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
   {
@@ -276,7 +310,8 @@
     "name": "Product 35",
     "description": "",
     "price": 100,
-    "category": ["new", "lastone"],
+    "oldPrice": [],
+    "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
   {
@@ -284,7 +319,8 @@
     "name": "Product 36",
     "description": "",
     "price": 100,
-    "category": ["new", "lastone"],
+    "oldPrice": [],
+    "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
   {
@@ -292,7 +328,8 @@
     "name": "Product 37",
     "description": "",
     "price": 100,
-    "category": ["new", "lastone"],
+    "oldPrice": [],
+    "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
   {
@@ -300,7 +337,8 @@
     "name": "Product 38",
     "description": "",
     "price": 100,
-    "category": ["new", "lastone"],
+    "oldPrice": [],
+    "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
   {
@@ -308,7 +346,8 @@
     "name": "Product 39",
     "description": "",
     "price": 100,
-    "category": ["new", "lastone"],
+    "oldPrice": [],
+    "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
   {
@@ -316,7 +355,8 @@
     "name": "Product 40",
     "description": "",
     "price": 100,
-    "category": ["new", "lastone"],
+    "oldPrice": [],
+    "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
   {
@@ -324,7 +364,8 @@
     "name": "Product 41",
     "description": "",
     "price": 100,
-    "category": ["new", "lastone"],
+    "oldPrice": [],
+    "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
   {
@@ -332,7 +373,8 @@
     "name": "Product 42",
     "description": "",
     "price": 100,
-    "category": ["new", "lastone"],
+    "oldPrice": [],
+    "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
   {
@@ -340,7 +382,8 @@
     "name": "Product 43",
     "description": "",
     "price": 100,
-    "category": ["new", "lastone"],
+    "oldPrice": [],
+    "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
   {
@@ -348,7 +391,8 @@
     "name": "Product 44",
     "description": "",
     "price": 100,
-    "category": ["new", "lastone"],
+    "oldPrice": [],
+    "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
   {
@@ -356,7 +400,8 @@
     "name": "Product 45",
     "description": "",
     "price": 100,
-    "category": ["new", "lastone"],
+    "oldPrice": [],
+    "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
   {
@@ -364,7 +409,8 @@
     "name": "Product 46",
     "description": "",
     "price": 100,
-    "category": ["new", "lastone"],
+    "oldPrice": [],
+    "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
   {
@@ -372,7 +418,8 @@
     "name": "Product 47",
     "description": "",
     "price": 100,
-    "category": ["new", "lastone"],
+    "oldPrice": [],
+    "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
   {
@@ -380,7 +427,8 @@
     "name": "Product 48",
     "description": "",
     "price": 100,
-    "category": ["new", "lastone"],
+    "oldPrice": [],
+    "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
   {
@@ -388,7 +436,8 @@
     "name": "Product 49",
     "description": "",
     "price": 100,
-    "category": ["new", "lastone"],
+    "oldPrice": [],
+    "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
   {
@@ -396,7 +445,8 @@
     "name": "Product 50",
     "description": "",
     "price": 100,
-    "category": ["new", "lastone"],
+    "oldPrice": [],
+    "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
   {
@@ -404,7 +454,8 @@
     "name": "Product 51",
     "description": "",
     "price": 100,
-    "category": ["new", "lastone"],
+    "oldPrice": [],
+    "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
   {
@@ -412,7 +463,8 @@
     "name": "Product 52",
     "description": "",
     "price": 100,
-    "category": ["new", "lastone"],
+    "oldPrice": [],
+    "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
   {
@@ -420,7 +472,8 @@
     "name": "Product 53",
     "description": "",
     "price": 100,
-    "category": ["new", "lastone"],
+    "oldPrice": [],
+    "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
   {
@@ -428,7 +481,8 @@
     "name": "Product 54",
     "description": "",
     "price": 100,
-    "category": ["new", "lastone"],
+    "oldPrice": [],
+    "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
   {
@@ -436,7 +490,8 @@
     "name": "Product 55",
     "description": "",
     "price": 100,
-    "category": ["new", "lastone"],
+    "oldPrice": [],
+    "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
   {
@@ -444,7 +499,8 @@
     "name": "Product 56",
     "description": "",
     "price": 100,
-    "category": ["new", "lastone"],
+    "oldPrice": [],
+    "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
   {
@@ -452,7 +508,8 @@
     "name": "Product 57",
     "description": "",
     "price": 100,
-    "category": ["new", "lastone"],
+    "oldPrice": [],
+    "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
   {
@@ -460,7 +517,8 @@
     "name": "Product 58",
     "description": "",
     "price": 100,
-    "category": ["new", "lastone"],
+    "oldPrice": [],
+    "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
   {
@@ -468,7 +526,8 @@
     "name": "Product 59",
     "description": "",
     "price": 100,
-    "category": ["new", "lastone"],
+    "oldPrice": [],
+    "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
   {
@@ -476,7 +535,8 @@
     "name": "Product 60",
     "description": "",
     "price": 100,
-    "category": ["new", "lastone"],
+    "oldPrice": [],
+    "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
   {
@@ -484,7 +544,8 @@
     "name": "Product 61",
     "description": "",
     "price": 100,
-    "category": ["new", "lastone"],
+    "oldPrice": [],
+    "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
   {
@@ -492,7 +553,8 @@
     "name": "Product 62",
     "description": "",
     "price": 100,
-    "category": ["new", "lastone"],
+    "oldPrice": [],
+    "category": ["New", "Last one", "Promo"],
     "photo": "./photos/logo.png"
   },
   {
@@ -500,7 +562,8 @@
     "name": "Product 63",
     "description": "",
     "price": 100,
-    "category": ["new", "lastone"],
+    "oldPrice": [],
+    "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
   {
@@ -508,8 +571,8 @@
     "name": "Product 64",
     "description": "",
     "price": 100,
-    "category": ["new", "lastone"],
+    "oldPrice": [],
+    "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   }
 ]
-

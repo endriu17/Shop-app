@@ -20,6 +20,7 @@ class ProductItem extends Component {
       photo: data[param].photo,
       name: data[param].name,
       price: data[param].price.toFixed(2),
+      oldPrice: data[param].oldPrice.toFixed(2),
       description: data[param].description,
       category: data[param].category
     });
@@ -34,13 +35,10 @@ class ProductItem extends Component {
     console.log(this.props.id);
     this.props.addToBag(this.props.id);
   }
-  
+
   render() {
-    
-   
-    
-  console.log(this.state.category[3])
-    
+    console.log(this.state.category[3]);
+
     return (
       <div className="product-container">
         <div className="product-item">
@@ -52,22 +50,18 @@ class ProductItem extends Component {
             src={this.state.photo}
             alt={this.state.name}
           />
-          <div className="product-wrapper" style={{width: '50%'}}>
-            <span className="product-name">
-              {this.state.name}
-            </span>
-            <div className="product-price_wrapper" >
-            <span className="product-price">
-              ${this.state.price}
-            </span>
-              <p className="product-item__lastone" >{this.state.category[1]}</p>
-              </div>
+          <div className="product-wrapper" style={{ width: "50%" }}>
+            <span className="product-name">{this.state.name}</span>
+            <div className="product-price_wrapper">
+              <span className="product-price">${this.state.price}</span>
+              <p className="product-item__lastone">{this.state.category[1]}</p>
+            </div>
             <p className="product-description">{this.state.description}</p>
             <button
               style={{ backgroundColor: `${this.state.color}` }}
               className="add-to-bag"
               onClick={() => this.handleClick(this.props.id)}
-              text={'Add to bag'}
+              text={"Add to bag"}
             >
               {this.state.text}
             </button>

@@ -2,13 +2,13 @@
   width: 200px;
   text-decoration: none;
   color: #000;
-  height: 250px;
+  min-height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   background-color: #ebeef1;
   margin: 15px;
-  padding: 20px 40px;
+  padding: 20px 40px 10px;
   position: relative;
 }
 
@@ -31,7 +31,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin-bottom: 0;
+  margin: 10px 0;
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
 }
@@ -39,7 +39,7 @@ img {
 .product-name {
   font-size: 20px;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
 }
@@ -95,14 +95,14 @@ img {
   transform: rotate(-45deg);
 }
 
-.product-item__lastone {
+.product-item_special {
   font-size: 20px;
   font-weight: bold;
   margin: 0;
   color: #000;
   background-color: #fff;
-  padding: 5px 10px;
-  border-radius: 20px;
+  padding: 5px;
+  border-radius: 5px;
   border: 2px solid #000;
   -webkit-box-shadow: 1px 1px 6px 1px #2e2b2b;
   box-shadow: 1px 1px 5px 1px #2e2b2b;
@@ -137,4 +137,12 @@ img {
 .product-description {
   width: 80%;
   margin-top: 10px;
+}
+
+.product-price_old {
+  font-size: 16px;
+  text-decoration: line-through;
+  height: 18px;
+  margin-left: 5px;
+  color: #686666;
 }

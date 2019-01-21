@@ -10,7 +10,9 @@ class Home extends Component {
     this.state = {
       data: data,
       direction: {
-        price: "desc"
+        price: "asc",
+        name: "asc",
+        id: "desc"
       }
     };
 
@@ -18,21 +20,20 @@ class Home extends Component {
   }
 
   sortBy(key) {
-    console.log('sort')
+    console.log('sort', key)
     this.setState({
       data: data.sort((a, b) =>
-        this.state.direction[key] === "asc"
+        this.state.direction[key] === "desc"
           ? parseFloat(a[key]) - parseFloat(b[key])
           : parseFloat(b[key]) - parseFloat(a[key])
       ),
-      direction: {
-        [key]: this.state.direction[key] === "asc" ? "desc" : "asc"
-      }
+      // direction: {
+      //   [key]: this.state.direction[key] === "asc" ? "desc" : "asc"
+      // }
     });
   }
 
   render() {
-    console.log(this.state.data)
     return (
       <div className="home-wrapper">
         <SortingBox dataHome={this.state.data} sortBy={this.sortBy} />

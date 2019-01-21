@@ -8,7 +8,7 @@ class ProductsList extends React.Component {
   constructor(props) {
     super(props);
 
-    // this.dataSet = data.map((a, i) => <Product key={i} {...a} />);
+    this.props.sortBy("price")
     this.dataHomeSet = this.props.dataHome.map((a, i)=> <Product key={i} {...a} />)
 
     this.pageSize = 6;
@@ -29,7 +29,6 @@ class ProductsList extends React.Component {
 
   render() {
     const { currentPage } = this.state;
-    console.log(this.props.dataHome[0]);
     return (
       <React.Fragment>
         <div className="products-list">
