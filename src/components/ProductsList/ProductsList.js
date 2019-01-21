@@ -1,18 +1,18 @@
 import React from "react";
 import "./ProductsList.css";
 import Product from "../Product/Product";
-import data from "../Product/data.json";
+// import data from "../Product/data.json";
 import { Pagination, PaginationItem, PaginationLink } from "reactstrap";
 
 class ProductsList extends React.Component {
   constructor(props) {
     super(props);
 
-    this.dataSet = data.map((a, i) => <Product key={i} {...a} />);
+    // this.dataSet = data.map((a, i) => <Product key={i} {...a} />);
     this.dataHomeSet = this.props.dataHome.map((a, i)=> <Product key={i} {...a} />)
 
     this.pageSize = 6;
-    this.pagesCount = Math.ceil(this.dataSet.length / this.pageSize);
+    this.pagesCount = Math.ceil(this.dataHomeSet.length / this.pageSize);
 
     this.state = {
       currentPage: 0

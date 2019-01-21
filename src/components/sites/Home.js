@@ -10,7 +10,7 @@ class Home extends Component {
     this.state = {
       data: data,
       direction: {
-        price: "asc"
+        price: "desc"
       }
     };
 
@@ -21,7 +21,7 @@ class Home extends Component {
     console.log('sort')
     this.setState({
       data: data.sort((a, b) =>
-        this.state.direction[key] === "desc"
+        this.state.direction[key] === "asc"
           ? parseFloat(a[key]) - parseFloat(b[key])
           : parseFloat(b[key]) - parseFloat(a[key])
       ),

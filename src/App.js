@@ -35,17 +35,12 @@ class App extends Component {
       });
     }
 
-    if (!this.state.shoppingBag.find(x => x.id === parseFloat(id)) && this.state.shoppingBag.length === 0) {
+    if (!this.state.shoppingBag.find(x => x.id === parseFloat(id)) ) {
       console.log("dodaję nowy object...");
       return this.setState(prevState => ({
             shoppingBag: [...prevState.shoppingBag, { id: parseFloat(id), count: 1 }]
           }));
-    } else {
-      console.log("dodaję nowy object z nowym id...");
-      return this.setState(prevState => ({
-            shoppingBag: [...prevState.shoppingBag, { id: parseFloat(id), count: 1 }]
-          }));
-    }
+    } 
   }
 
   removeFromBag(id) {
