@@ -18,31 +18,41 @@ class App extends Component {
     this.addToBag = this.addToBag.bind(this);
     this.removeFromBag = this.removeFromBag.bind(this);
     this.state = {
-      shoppingBag: [{ id: 1, count: 1 }, { id: 2, count: 1 }, { id: 3, count: 1 }]
+      shoppingBag: []
     };
   }
 
   addToBag(id) {
-    const  iD = parseFloat(id);
-    this.setState(prevState => ({
-      shoppingBag: [...prevState.shoppingBag, { id: iD, count: 1 }]
-    }));
-    const map = this.state.shoppingBag.reduce(function (map, e) {
-      map[e.id] = +e.count + (map[e.count] || 0) 
-      return map
-    }, {})
-    
-    const result = Object.keys(map).map(function (k) {
-      return { id: parseFloat(k), count: map[k] }
-    })
-    this.setState({
-      shoppingBag: result
-    })
+    // const iD = parseFloat(id);
+
+    console.log(id, "szukam podobnych....");
+
+    if (this.state.shoppingBag.find(x => x.id === parseFloat(id))) {
+      console.log("znalazłem taki sam...");
+      console.log(this.state.shoppingBag.find(item => item.id === parseFloat(id)).count++);
+      return this.setState({
+        shoppingBag: [{ id: parseFloat(id), count: parseFloat(this.state.shoppingBag.find(item => item.id === parseFloat(id)).count++) }]
+      });
+    }
+
+    if (!this.state.shoppingBag.find(x => x.id === parseFloat(id)) && this.state.shoppingBag.length === 0) {
+      console.log("dodaję nowy object...");
+      return this.setState(prevState => ({
+            shoppingBag: [...prevState.shoppingBag, { id: parseFloat(id), count: 1 }]
+          }));
+    } else {
+      console.log("dodaję nowy object z nowym id...");
+      return this.setState(prevState => ({
+            shoppingBag: [...prevState.shoppingBag, { id: parseFloat(id), count: 1 }]
+          }));
+    }
   }
 
-  removeFromBag(id){
-    const itemList = this.state.shoppingBag.filter(item => item.id === parseFloat(id));
-    console.log('click to remove', id, itemList)
+  removeFromBag(id) {
+    const itemList = this.state.shoppingBag.filter(
+      item => item.id === parseFloat(id)
+    );
+    console.log("click to remove", id, itemList);
   }
   render() {
     console.log(this.state.shoppingBag);
@@ -80,7 +90,12 @@ class App extends Component {
             />
             <Route
               path="/bag"
-              render={() => <Bag bag={this.state.shoppingBag} removeFromBag={this.removeFromBag}/>}
+              render={() => (
+                <Bag
+                  bag={this.state.shoppingBag}
+                  removeFromBag={this.removeFromBag}
+                />
+              )}
             />
             {/* <Route path='*' exact={true} component={NotFound}/> */}
           </div>

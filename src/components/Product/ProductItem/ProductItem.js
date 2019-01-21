@@ -7,7 +7,7 @@ class ProductItem extends Component {
     super(props);
     this.state = {
       text: "Add to bag",
-      color: "#000",
+      color: "",
       isButtonDisabled: false,
       productID: []
     };
