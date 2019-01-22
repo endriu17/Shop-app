@@ -17,7 +17,7 @@ class Bag extends Component {
   handleClick(e) {
     
     console.log(this.props.id);
-    this.props.removeFromBag(e);
+    this.props.addToBag(e);
   }
 
   render() {
@@ -33,7 +33,7 @@ class Bag extends Component {
             marginTop: "0",
           }}
         >
-          It's nothing in the shoppingbag yet...
+          It's nothing in the shoppingbag now...
         </h1>
       );
     } else {
@@ -56,12 +56,12 @@ class Bag extends Component {
           </span>
           <div className="bag-number__wrapper">
             <div className="number-wrapper__set">
-              <i className="number-set fas fa-minus" onClick={() => this.props.bag.count - 1}/>
+              <i className="number-set fas fa-minus" onClick={() => this.props.removeItem(data[item.id - 1].id)}/>
               <span className="bag-item__number">{item.count}</span>
-              <i className="number-set fas fa-plus" onClick={() => this.props.bag.count + 1}/>
+              <i className="number-set fas fa-plus" onClick={() => this.props.addToBag(data[item.id - 1].id)}/>
               <p>itm.</p>
             </div>
-            <span className="bag-remove__item" onClick={() => this.handleClick(data[item.id - 1].id)}>remove item</span>
+            <span className="bag-remove__item" onClick={() => this.props.removeFromBag(data[item.id - 1].id)}>remove item</span>
           </div>
         </li>
       ));

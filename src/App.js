@@ -17,40 +17,99 @@ class App extends Component {
     super(props);
     this.addToBag = this.addToBag.bind(this);
     this.removeFromBag = this.removeFromBag.bind(this);
+    this.removeItem = this.removeItem.bind(this);
     this.state = {
-      shoppingBag: []
+      shoppingBag: [],
+      counter: 0
     };
   }
 
   addToBag(id) {
-    // const iD = parseFloat(id);
+    const found = this.state.shoppingBag.find(x => x.id === parseFloat(id));
 
-    console.log(id, "szukam podobnych....");
-
-    if (this.state.shoppingBag.find(x => x.id === parseFloat(id))) {
-      console.log("znalazłem taki sam...");
-      console.log(this.state.shoppingBag.find(item => item.id === parseFloat(id)).count++);
-      return this.setState({
-        shoppingBag: [{ id: parseFloat(id), count: parseFloat(this.state.shoppingBag.find(item => item.id === parseFloat(id)).count++) }]
-      });
-    }
-
-    if (!this.state.shoppingBag.find(x => x.id === parseFloat(id)) ) {
-      console.log("dodaję nowy object...");
-      return this.setState(prevState => ({
-            shoppingBag: [...prevState.shoppingBag, { id: parseFloat(id), count: 1 }]
+    if (found) {
+      found.count = found.count + 1;
+      this.state.shoppingBag.map(item => ({
+        ...item,
+        [item.id]: found.id,
+        [item.count]: found.count
+      }));
+    } else {
+      this.state.shoppingBag.length === 0
+        ? setTimeout(() => {
+            this.setState({
+              shoppingBag: [{ id: parseFloat(id), count: 1 }],
+              counter: 1
+            });
+          }, 10)
+        : this.setState(prevState => ({
+            shoppingBag: [
+              { id: parseFloat(id), count: 1 },
+              ...prevState.shoppingBag
+            ],
+            counter: 1
           }));
-    } 
+    }
+    setTimeout(() => {
+      this.setState({
+        counter: this.state.shoppingBag.reduce(
+          (acc, count) => acc + count.count,
+          0
+        )
+      });
+    }, 10);
+  }
+
+  removeItem(id) {
+    const found = this.state.shoppingBag.find(x => x.id === parseFloat(id));
+    found.count = found.count - 1;
+    if (found.count > 0) {
+      this.state.shoppingBag.map(item => ({
+        ...item,
+        [item.id]: found.id,
+        [item.count]: found.count
+      }));
+      setTimeout(() => {
+        this.setState({
+          counter: this.state.shoppingBag.reduce(
+            (acc, count) => acc + count.count,
+            0
+          )
+        });
+      }, 10);
+    } else {
+      setTimeout(() => {
+        this.setState({
+          shoppingBag: [
+            ...this.state.shoppingBag.filter(item => item.id !== found.id)
+          ],
+          counter: this.state.shoppingBag.reduce(
+            (acc, count) => acc + count.count,
+            0
+          )
+        });
+      }, 10);
+    }
   }
 
   removeFromBag(id) {
-    const itemList = this.state.shoppingBag.filter(
-      item => item.id === parseFloat(id)
-    );
-    console.log("click to remove", id, itemList);
+    const found = this.state.shoppingBag.find(x => x.id === parseFloat(id));
+    setTimeout(() => {
+      this.setState({
+        shoppingBag: [
+          ...this.state.shoppingBag.filter(item => item.id !== found.id)
+        ],
+        counter: this.state.shoppingBag.reduce(
+          (acc, count) => acc + count.count,
+          0
+        )
+      });
+    }, 10);
   }
+
   render() {
-    console.log(this.state.shoppingBag);
+    console.log(this.state);
+    console.log(this.state.shoppingBag.length);
     return (
       <BrowserRouter>
         <div className="app">
@@ -60,12 +119,7 @@ class App extends Component {
             </Link>
             <div className="nav-home">
               <Navi />
-              <ShoppingBag
-                value={this.state.shoppingBag.reduce(
-                  (acc, { count }) => acc + count,
-                  0
-                )}
-              />
+              <ShoppingBag value={this.state.counter} />
             </div>
           </div>
           <div className="main-layout">
@@ -88,6 +142,8 @@ class App extends Component {
               render={() => (
                 <Bag
                   bag={this.state.shoppingBag}
+                  addToBag={this.addToBag}
+                  removeItem={this.removeItem}
                   removeFromBag={this.removeFromBag}
                 />
               )}

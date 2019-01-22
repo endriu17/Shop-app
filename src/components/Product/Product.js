@@ -13,7 +13,7 @@ const Product = props => {
         <span className="product-name">{props.name}</span>
         <div className="product-price_wrapper" >
           <span className="product-price ">$ {props.price.toFixed(2)}</span>
-          <span className="product-item_special">{props.category[1]}</span>
+          <span className="product-item_special" style={{visibility: ((props.category[1] === "")? 'hidden':'show')}}>{props.category[1]}</span>
         </div>
           <span className="product-price_old">{props.oldPrice}</span>
       </div>

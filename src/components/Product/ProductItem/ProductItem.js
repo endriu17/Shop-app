@@ -5,25 +5,20 @@ import "../Product.css";
 class ProductItem extends Component {
   constructor(props) {
     super(props);
+    let param = this.props.id - 1;
     this.state = {
+      id: param,
+      photo: data[param].photo,
+      name: data[param].name,
+      price: data[param].price.toFixed(2),
+      oldPrice: data[param].oldPrice,
+      description: data[param].description,
+      category: data[param].category,
       text: "Add to bag",
       color: "",
       isButtonDisabled: false,
       productID: []
     };
-  }
-  componentWillMount() {
-    let param = this.props.id - 1;
-
-    this.setState({
-      id: param,
-      photo: data[param].photo,
-      name: data[param].name,
-      price: data[param].price.toFixed(2),
-      oldPrice: data[param].oldPrice.toFixed(2),
-      description: data[param].description,
-      category: data[param].category
-    });
   }
 
   handleClick(e) {
@@ -32,13 +27,10 @@ class ProductItem extends Component {
       color: "red",
       added: "Product is already added to the bag"
     });
-    console.log(this.props.id);
     this.props.addToBag(this.props.id);
   }
 
   render() {
-    console.log(this.state.category[3]);
-
     return (
       <div className="product-container">
         <div className="product-item">
@@ -54,11 +46,12 @@ class ProductItem extends Component {
             <span className="product-name">{this.state.name}</span>
             <div className="product-price_wrapper">
               <span className="product-price">${this.state.price}</span>
-              <p className="product-item__lastone">{this.state.category[1]}</p>
+              <span className="product-price_old">{this.state.oldPrice}</span>
+              <p className="product-item_special" style={{visibility: ((this.state.category[1] === "")? 'hidden':'show')}}>{this.state.category[1]}</p>
             </div>
             <p className="product-description">{this.state.description}</p>
             <button
-              style={{ backgroundColor: `${this.state.color}` }}
+              style={{backgroundColor:`${this.state.color}`}}
               className="add-to-bag"
               onClick={() => this.handleClick(this.props.id)}
               text={"Add to bag"}

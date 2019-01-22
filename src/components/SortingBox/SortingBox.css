@@ -11,10 +11,12 @@
     display: inline-block;
     flex-wrap: wrap;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .sort-list:hover {
     font-weight: bold;
+    color: #3b3b3b;
 }
 
 .sort-list:first-of-type {
@@ -23,4 +25,9 @@
 
 span.sort-list_header {
     font-weight: bold;
+}
+
+.sort-line {
+    width: 100%;
+    margin: 15px auto;
 }

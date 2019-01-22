@@ -12,6 +12,7 @@ const ShoppingBag = (props) => {
       >
         <span className="bag-items__icon fas fa-shopping-bag"></span>
         <span className="bag-items__number">{props.value}</span>
+        {console.log('odświeżone!')}
       </NavLink>
     );
   }

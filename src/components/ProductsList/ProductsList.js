@@ -8,9 +8,8 @@ class ProductsList extends React.Component {
   constructor(props) {
     super(props);
 
-    this.props.sortBy("price")
+    this.props.sortBy(this.props.sortKey)
     this.dataHomeSet = this.props.dataHome.map((a, i)=> <Product key={i} {...a} />)
-
     this.pageSize = 6;
     this.pagesCount = Math.ceil(this.dataHomeSet.length / this.pageSize);
 
