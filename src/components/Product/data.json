@@ -5,12 +5,12 @@
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan. Etiam ornare, metus quis congue pretium, nulla magna condimentum libero, at interdum justo nibh at ipsum. Donec commodo lectus ac dui iaculis cursus. Curabitur sit amet libero nec nibh semper tempus nec ac nunc. In sit.",
     "price": 100,
     "oldPrice": [],
-    "category": ["New", "Last one", "Promo"],
+    "category": ["", "Last one", "Promo"],
     "photo": "/photos/logo.png"
   },
   {
     "id": "2",
-    "name": "Oroduct_2",
+    "name": "Product_2",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan.",
     "price": 200,
     "oldPrice": "$ 250.00",
@@ -19,11 +19,11 @@
   },
   {
     "id": "3",
-    "name": "Oroduct_3",
+    "name": "Product_3",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan.",
     "price": 150,
     "oldPrice": "",
-    "category": ["New", "", ""],
+    "category": ["", "", ""],
     "photo": "/photos/logo.png"
   },
   {
@@ -41,7 +41,7 @@
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan.",
     "price": 245,
     "oldPrice": [],
-    "category": ["New", "", "Promo"],
+    "category": ["", "", "Promo"],
     "photo": "/photos/logo.png"
   },
   {
@@ -104,7 +104,7 @@
     "description": "",
     "price": 100,
     "oldPrice": [],
-    "category": ["new", "lastone", "promo"],
+    "category": ["", "Last one", "Promo"],
     "photo": "./photos/"
   },
   {
@@ -212,7 +212,7 @@
     "description": "",
     "price": 100,
     "oldPrice": [],
-    "category": ["New", "Last one", "Promo"],
+    "category": ["", "", "Promo"],
     "photo": "./photos/"
   },
   {
@@ -257,7 +257,7 @@
     "description": "",
     "price": 100,
     "oldPrice": [],
-    "category": ["New", "Last one", "Promo"],
+    "category": ["", "", "Promo"],
     "photo": "./photos/"
   },
   {

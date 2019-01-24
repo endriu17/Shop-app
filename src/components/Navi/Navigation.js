@@ -10,7 +10,6 @@ class Navi extends React.Component {
       display: "flex",
       justifyContent: "space-around",
       style: {
-        // color: 'blue',
         fontWeight: 'bold'
       }
     };

@@ -1,8 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./ProductsList.css";
 import Product from "../Product/Product";
-import data from "../Product/data.json";
 import { Pagination, PaginationItem, PaginationLink } from "reactstrap";
 
 class ProductsList extends React.Component {
@@ -10,24 +8,14 @@ class ProductsList extends React.Component {
     super(props);
 
     this.state = {
-      currentPage: 0
+      currentPage: 0,
     };
 
-    const sortType = this.props.match.params.type;
-    const sortDirection = this.props.match.params.direction;
-    const dataHome = data.sort((a, b) => {
-      if (sortDirection === "asc") {
-        return a[sortType] > b[sortType] ? -1 : 0;
-      } else if (sortDirection === "desc") {
-        return a[sortType] < b[sortType] ? -1 : 0;
-      } else {
-        return 0;
-      }
-    });
-    this.dataHomeSet = dataHome.map((a, i) => <Product key={i} {...a} />);
+    this.dataHomeSet = this.props.data.map((a, i) => <Product key={i} {...a} />);
     this.pageSize = 6;
     this.pagesCount = Math.ceil(this.dataHomeSet.length / this.pageSize);
   }
+
 
   handleClick(e, index) {
     e.preventDefault();
@@ -39,21 +27,11 @@ class ProductsList extends React.Component {
 
   render() {
     const { currentPage } = this.state;
-    console.log(this.props.match.params.type);
     return (
       <React.Fragment>
-        <Link
-          to="/"
-          className="button-back_home"
-          style={{
-            visibility: this.props.match.url === "/" ? "hidden" : "show"
-          }}
-        >
-          Back to Home
-        </Link>
         <div className="products-list">
           <div className="products-list__container">
-            {this.dataHomeSet
+            {this.props.data.map((a, i) => <Product key={i} {...a} />)
               .slice(
                 currentPage * this.pageSize,
                 (currentPage + 1) * this.pageSize

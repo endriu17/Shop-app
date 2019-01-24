@@ -5,8 +5,8 @@ import "./Product.css";
 const Product = props => {
   return (
     <Link to={`/product/${props.id}`} className="product" {...props.value}>
-      <div className="product-item__new" />
-      <span className="product-item__text">{props.category[0]}!</span>
+      <div className="product-item__new" style={{visibility: ((props.category[0] === "")? 'hidden':'show')}}/>
+      <span className="product-item__text" style={{visibility: ((props.category[0] === "")? 'hidden':'show')}}>{props.category[0]}!</span>
       <h4 className="product-item__promo">{props.category[2]}</h4>
       <img src={props.photo} alt={props.name} />
       <div className="product-wrapper" style={{width: '100%'}}>

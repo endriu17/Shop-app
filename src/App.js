@@ -4,25 +4,25 @@ import Navi from "./components/Navi/Navigation";
 import Footer from "./components/Footer/Footer";
 import Home from "./components/sites/Home";
 import Bag from "./components/sites/Bag";
-import NotFound from './components/sites/NotFound';
+// import NotFound from './components/sites/NotFound';
 import ProductItem from "./components/Product/ProductItem/ProductItem";
 import Contact from "./components/sites/Contact";
 import Faq from "./components/sites/Faq";
 import Regulations from "./components/sites/Regulations";
 import ShoppingBag from "./components/ShoppingBag/ShoppingBag";
 import "./App.css";
-import ProductsList from "./components/ProductsList/ProductsList";
 
 class App extends Component {
   constructor(props) {
     super(props);
-    this.addToBag = this.addToBag.bind(this);
-    this.removeFromBag = this.removeFromBag.bind(this);
-    this.removeItem = this.removeItem.bind(this);
     this.state = {
       shoppingBag: [],
       counter: 0
     };
+
+    this.addToBag = this.addToBag.bind(this);
+    this.removeFromBag = this.removeFromBag.bind(this);
+    this.removeItem = this.removeItem.bind(this);
   }
 
   addToBag(id) {
@@ -123,12 +123,11 @@ class App extends Component {
           </div>
           <div className="main-layout">
           <Switch>
-            <Route exact path="/"  component={Home} />
+            <Route exact path={["/", "/order/:type/:direction"]} component={Home} />
             <Route path="/faq" component={Faq} />
             <Route path="/regulations" component={Regulations} />
             <Route path="/contact" component={Contact} />
-            <Route path="/order/:type/:direction" component={ProductsList} />
-            <Route component={NotFound}/>
+            {/* <Route path="*" component={NotFound}/> */}
             <Route
               path="/product/:id"
               render={routeProps => (
