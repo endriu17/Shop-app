@@ -12,7 +12,7 @@ class Footer extends Component {
   render() {
     return (
       <div className="footer">
-        <span className="footer-copyrights">&copy; Copyrights: endriu17</span>
+        <span className="footer-copyrights">&copy; Copyright: endriu17</span>
         <Navi styles={this.state}/>
       </div>
     );

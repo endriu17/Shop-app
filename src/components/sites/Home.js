@@ -1,46 +1,35 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import ProductsList from "../ProductsList/ProductsList";
-import SortingBox from "../SortingBox/SortingBox";
+import "../SortingBox/SortingBox.css";
 import "./index.css";
-import data from "../Product/data.json";
 
 class Home extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      data: data,
-      direction: {
-        name: "asc",
-        price: "desc",
-      }
-    };
-
-    this.sortBy = this.sortBy.bind(this);
-  }
-
-  sortBy(type, value) {
-    console.log('sort', type, value)
-    this.setState({
-      direction: {
-        [parseFloat([type])]: value, 
-      }
-    })
-    this.setState({
-      data: data.sort((a, b) =>
-        this.state.direction[type] === "desc"
-          ? parseFloat(a[type]) - parseFloat(b[type])
-          : parseFloat(b[type]) - parseFloat(a[type])
-      ),
-    });
-    console.log(this.state)
   }
 
   render() {
-    console.log(this.state)
+    console.log(this.props);
     return (
       <div className="home-wrapper">
-        <SortingBox  sortBy={this.sortBy} />
-        <ProductsList sortKey={this.state.direction} dataHome={this.state.data} sortBy={this.sortBy}/>
+        <div className="SortingBox">
+          <span className="sort-list_header">Sort:</span>
+          <Link to="/order/name/asc" className="sort-list">
+            Name A - Z
+          </Link>
+          <Link to="/order/name/desc" className="sort-list">
+            Name Z - A
+          </Link>
+          <Link to="/order/price/asc" className="sort-list">
+            Price ascending
+          </Link>
+          <Link to="/order/price/desc" className="sort-list">
+            Price descending
+          </Link>
+          <span className="sort-line">________________________</span>
+        </div>
+        <ProductsList {...this.props} />
       </div>
     );
   }

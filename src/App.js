@@ -1,16 +1,17 @@
 import React, { Component } from "react";
-import { Route, BrowserRouter, Link } from "react-router-dom";
+import { Route, BrowserRouter, Link, Switch } from "react-router-dom";
 import Navi from "./components/Navi/Navigation";
 import Footer from "./components/Footer/Footer";
 import Home from "./components/sites/Home";
 import Bag from "./components/sites/Bag";
-// import NotFound from './components/sites/NotFound';
+import NotFound from './components/sites/NotFound';
 import ProductItem from "./components/Product/ProductItem/ProductItem";
 import Contact from "./components/sites/Contact";
 import Faq from "./components/sites/Faq";
 import Regulations from "./components/sites/Regulations";
 import ShoppingBag from "./components/ShoppingBag/ShoppingBag";
 import "./App.css";
+import ProductsList from "./components/ProductsList/ProductsList";
 
 class App extends Component {
   constructor(props) {
@@ -108,8 +109,6 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.state);
-    console.log(this.state.shoppingBag.length);
     return (
       <BrowserRouter>
         <div className="app">
@@ -123,10 +122,13 @@ class App extends Component {
             </div>
           </div>
           <div className="main-layout">
-            <Route exact path="/" component={Home} />
+          <Switch>
+            <Route exact path="/"  component={Home} />
             <Route path="/faq" component={Faq} />
             <Route path="/regulations" component={Regulations} />
             <Route path="/contact" component={Contact} />
+            <Route path="/order/:type/:direction" component={ProductsList} />
+            <Route component={NotFound}/>
             <Route
               path="/product/:id"
               render={routeProps => (
@@ -148,7 +150,7 @@ class App extends Component {
                 />
               )}
             />
-            {/* <Route path='*' exact={true} component={NotFound}/> */}
+          </Switch>
           </div>
           <Footer className="footer nav-home" />
         </div>

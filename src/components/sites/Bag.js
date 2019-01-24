@@ -14,12 +14,6 @@ class Bag extends Component {
     };
   }
 
-  handleClick(e) {
-    
-    console.log(this.props.id);
-    this.props.addToBag(e);
-  }
-
   render() {
     if (this.props.bag.length === 0) {
       return (

@@ -10,7 +10,7 @@
   },
   {
     "id": "2",
-    "name": "Product_2",
+    "name": "Oroduct_2",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan.",
     "price": 200,
     "oldPrice": "$ 250.00",
@@ -19,7 +19,7 @@
   },
   {
     "id": "3",
-    "name": "Product_3",
+    "name": "Oroduct_3",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan.",
     "price": 150,
     "oldPrice": "",
@@ -82,7 +82,7 @@
   },
   {
     "id": "10",
-    "name": "Product 10",
+    "name": "Product_10",
     "description": "",
     "price": 100,
     "oldPrice": [],
@@ -91,7 +91,7 @@
   },
   {
     "id": "11",
-    "name": "Product 11",
+    "name": "Product_11",
     "description": "",
     "price": 100,
     "oldPrice": [],
