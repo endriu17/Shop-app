@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route, BrowserRouter, Link, Switch, Redirect } from "react-router-dom";
+import { Route, BrowserRouter, Link, Switch } from "react-router-dom";
 import Navi from "./components/Navi/Navigation";
 import Footer from "./components/Footer/Footer";
 import Home from "./components/sites/Home";
@@ -26,8 +26,8 @@ class App extends Component {
   }
 
   addToBag(id) {
-    const found = this.state.shoppingBag.find(x => x.id === parseFloat(id));
-
+    const found = this.state.shoppingBag.find(x => x.id === id);
+    console.log(id, found)
     if (found) {
       found.count = found.count + 1;
       this.state.shoppingBag.map(item => ({
@@ -37,11 +37,12 @@ class App extends Component {
       }));
     } else {
       this.state.shoppingBag.length === 0
-        ? setTimeout(() => {
+        ?
+        setTimeout(() => {
             this.setState({
               shoppingBag: [{ id: parseFloat(id), count: 1 }],
               counter: 1
-            });
+            })
           }, 10)
         : this.setState(prevState => ({
             shoppingBag: [
@@ -63,12 +64,14 @@ class App extends Component {
 
   removeItem(id) {
     const found = this.state.shoppingBag.find(x => x.id === parseFloat(id));
-    found.count = found.count - 1;
+    console.log(found)
+
     if (found.count > 0) {
+      found.count = found.count - 1;
       this.state.shoppingBag.map(item => ({
         ...item,
         [item.id]: found.id,
-        [item.count]: found.count
+        [item.count]: found.count,
       }));
       setTimeout(() => {
         this.setState({
@@ -77,6 +80,13 @@ class App extends Component {
             0
           )
         });
+      }, 10);
+    } else if (found.count === undefined && found.count === 0) {
+      setTimeout(() => {
+        this.setState({
+          shoppingBag: [],
+          counter: 0,
+        })
       }, 10);
     } else {
       setTimeout(() => {
@@ -95,12 +105,14 @@ class App extends Component {
 
   removeFromBag(id) {
     const found = this.state.shoppingBag.find(x => x.id === parseFloat(id));
-    (id === -1)
-    ? this.setState({
+    console.log(found, found.id)
+    (id === -1)?
+    this.setState({
       shoppingBag: [],
       counter: 0,
     })
-    : setTimeout(() => {
+    :
+    // setTimeout(() => {
       this.setState({
         shoppingBag: [
           ...this.state.shoppingBag.filter(item => item.id !== found.id)
@@ -110,7 +122,7 @@ class App extends Component {
           0
         )
       });
-    }, 10);
+    // }, 10);
   }
 
   render() {
@@ -130,7 +142,12 @@ class App extends Component {
             <Switch>
               <Route
                 exact
-                path={["/", "/order/:type/:direction"]}
+                path="/"
+                component={Home}
+              />
+              <Route
+                exact
+                path="/order/:type/:direction"
                 component={Home}
               />
               <Route path="/faq" component={Faq} />

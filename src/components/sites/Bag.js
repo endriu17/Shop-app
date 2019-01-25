@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./index.css";
+import { Table } from "reactstrap";
 import data from "../Product/data.json";
 
 class Bag extends Component {
@@ -8,40 +9,53 @@ class Bag extends Component {
     super(props);
 
     this.state = {
-      price: [],
-      item: 1,
-      bag: [],
-      products: [],
       order: false,
-      orderItem: []
+      rabat: ["", null, ""]
     };
     this.showOrder = this.showOrder.bind(this);
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
-  showOrder(orderItem) {
+
+  showOrder() {
     this.setState({
       order: true,
-      orderItem: orderItem
+      value: "",
+      validate: ""
     });
   }
+
+  handleChange(event) {
+    this.setState({
+      value: event.target.value,
+      validate: false
+    });
+  }
+
+  handleSubmit(event) {
+    alert(
+      "The rebate code: " +
+        this.state.value +
+        " is valid. You get 10% discount! "
+    );
+    event.preventDefault();
+
+     this.setState({
+        validate: "Your rabat: ",
+        rabat: ["Discount: ", 10, "%"]
+      })
+
+  }
+
   render() {
+    const bagMap = this.props.bag;
+    const priceSum = [];
+    console.log(this.state.rabat[1])
     if (this.props.bag.length === 0) {
       return (
-        <h1
-          style={{
-            fontSize: "2em",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            height: "80vh",
-            marginTop: "0"
-          }}
-        >
-          It's nothing in the shoppingbag now...
-        </h1>
+        <h1 className="bag-empty">It's nothing in the shoppingbag now...</h1>
       );
     } else if (!this.state.order) {
-      const bagMap = this.props.bag;
-      const priceSum = [];
       const bagItems = bagMap.map((item, i) => (
         <li key={i} className="bag-item_list">
           <img src={data[item.id - 1].photo} alt={data[item.id - 1].name} />
@@ -84,14 +98,41 @@ class Bag extends Component {
           <h2>Shopping bag</h2>
           <ul className="bag-items">{bagItems}</ul>
           <div className="bag-total">
-            <input className="bag-input__code" placeholder="Rabatt code" />
+            <form onSubmit={this.handleSubmit}>
+              <label>
+                <p
+                className="bag-text_label"
+                  style={{
+                    visibility: !this.state.validate ? "show" : "hidden"
+                  }}
+                >
+                  Enter the code <br/> (and press enter):
+                </p>
+                <input
+                  type="text"
+                  name="code"
+                  value={this.state.value}
+                  onChange={this.handleChange}
+                  className="bag-input_code"
+                  placeholder="Rabatt code"
+                />
+                <span />
+              </label>
+              {/* <button className="bag-input_submit" onClick={this.handleSubmit}>Validate</button> */}
+              <p className="bag-text_label">{this.state.rabat}</p>
+            </form>
             <span className="bag-sum__total">
-              TOTAL: $
-              {priceSum.reduce((total, value) => total + value).toFixed(2)}
+              TOTAL: ${" "}
+              {(
+                priceSum.reduce((total, value) => total + value) -
+                (priceSum.reduce((total, value) => total + value) *
+                  this.state.rabat[1]) /
+                  100
+              ).toFixed(2)}
             </span>
             <button
               className="bag-button__pay"
-              onClick={() => this.showOrder(bagItems)}
+              onClick={() => this.showOrder()}
             >
               Pay
             </button>
@@ -99,46 +140,69 @@ class Bag extends Component {
         </div>
       );
     } else {
-      const bagMap = this.props.bag;
-      const priceSum = [];
       const bagItems = bagMap.map((item, i) => (
-        <li key={i} className="bag-item_list">
-          <div className="bag-name__wrapper">
-            <span className="bag-item__name">{data[item.id - 1].name}</span>
-          </div>
-          <span className="price-push">
-            {priceSum.push(data[item.id - 1].price * item.count)}
-          </span>
-          <span className="bag-item__price">
-            ${data[item.id - 1].price.toFixed(2) * item.count}
-          </span>
-          <div className="bag-number__wrapper">
-            <div className="number-wrapper__set">
-              <span className="bag-item__number">{item.count}</span>
-            </div>
-          </div>
-        </li>
+        <tr key={i} data={priceSum.push(data[item.id - 1].price * item.count)}>
+          <td>1</td>
+          <td>{data[item.id - 1].name}</td>
+          <td>{item.count}</td>
+          <td>{data[item.id - 1].price.toFixed(2)}</td>
+          <td><p style={{
+                    display: (this.state.rabat === null) ? "none" : "inline-flex"
+                  }}>{this.state.rabat}</p></td>
+          <td>{(data[item.id - 1].price * item.count).toFixed(2)}</td>
+        </tr>
       ));
       return (
         <div className="bag">
           <h2>Your order</h2>
-          <ul className="bag-items">{bagItems}</ul>
-          <div className="bag-total">
-            <span className="bag-sum__total">
-              TOTAL: $
-              {priceSum.reduce((total, value) => total + value).toFixed(2)} 
-
-              minus rabat 10%  
-
-              {((priceSum.reduce((total, value) => total + value).toFixed(2))*10)/100}
-            </span>
-            <Link to="/"
-              className="bag-button__pay"
-              onClick={() => this.props.removeFromBag(-1)}
-            >
-              Send
-            </Link>
-          </div>
+          <Table className="minimalistBlack">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Product</th>
+                <th>Items</th>
+                <th>Price</th>
+                <th>Rabat</th>
+                <th>Sum</th>
+              </tr>
+            </thead>
+            <tfoot>
+              <tr>
+                <td />
+                <td />
+                <td />
+                <td />
+                <td>
+                  <p>Rabat:</p>{" "}
+                  {(
+                    (priceSum.reduce((total, value) => total + value) *
+                      this.state.rabat[1]) /
+                    100
+                  ).toFixed(2)}
+                </td>
+                <td>
+                  <p>Total: </p>{" "}
+                  {(
+                    priceSum.reduce((total, value) => total + value) -
+                    (priceSum.reduce((total, value) => total + value) *
+                      this.state.rabat[1]) /
+                      100
+                  ).toFixed(2)}
+                </td>
+              </tr>
+            </tfoot>
+            <tbody>{bagItems}</tbody>
+          </Table>
+          <Link
+            to="/"
+            className="bag-button__pay"
+            onClick={() => {
+              alert("Success! Your order has been completed!");
+              this.props.removeFromBag(-1);
+            }}
+          >
+            Ok
+          </Link>
         </div>
       );
     }
