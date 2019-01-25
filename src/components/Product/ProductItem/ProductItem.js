@@ -34,8 +34,8 @@ class ProductItem extends Component {
     return (
       <div className="product-container">
         <div className="product-item">
-          <div className="product-item__new" />
-          <span className="product-item__text">{this.state.category[0]}!</span>
+          <div className="product-item__new" style={{visibility: ((this.state.category[0] === "")? 'hidden':'show')}}></div>
+          <span className="product-item__text" style={{visibility: ((this.state.category[0] === "")? 'hidden':'show')}}>{this.state.category[0]}!</span>
           <h4 className="product-item__promo">{this.state.category[2]}</h4>
           <img
             className="product-photo"

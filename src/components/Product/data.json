@@ -6,7 +6,7 @@
     "price": 100,
     "oldPrice": [],
     "category": ["", "Last one", "Promo"],
-    "photo": "/photos/logo.png"
+    "photo": "/photos/bulb1.jpg"
   },
   {
     "id": "2",
@@ -15,7 +15,7 @@
     "price": 200,
     "oldPrice": "$ 250.00",
     "category": ["New", "New price", "Promo"],
-    "photo": "/photos/logo.png"
+    "photo": "/photos/bulb2.jpg"
   },
   {
     "id": "3",
@@ -24,7 +24,7 @@
     "price": 150,
     "oldPrice": "",
     "category": ["", "", ""],
-    "photo": "/photos/logo.png"
+    "photo": "/photos/bulb3.jpg"
   },
   {
     "id": "4",
@@ -33,7 +33,7 @@
     "price": 250,
     "oldPrice": [],
     "category": ["New", "", ""],
-    "photo": "/photos/logo.png"
+    "photo": "/photos/bulb5.jpg"
   },
   {
     "id": "5",
@@ -42,7 +42,7 @@
     "price": 245,
     "oldPrice": [],
     "category": ["", "", "Promo"],
-    "photo": "/photos/logo.png"
+    "photo": "/photos/bulb6.jpg"
   },
   {
     "id": "6",
@@ -51,7 +51,7 @@
     "price": 400,
     "oldPrice": [],
     "category": ["New", "Last one", "Promo"],
-    "photo": "/photos/logo.png"
+    "photo": "/photos/bulb7.jpg"
   },
   {
     "id": "7",
@@ -60,7 +60,7 @@
     "price": 100,
     "oldPrice": [],
     "category": ["New", "Last one", "Promo"],
-    "photo": "./photos/"
+    "photo": "./photos/bulb8.jpg"
   },
   {
     "id": "8",
@@ -69,7 +69,7 @@
     "price": 100,
     "oldPrice": [],
     "category": ["New", "Last one", "Promo"],
-    "photo": "./photos/"
+    "photo": "./photos/lamp1.jpg"
   },
   {
     "id": "9",
@@ -78,7 +78,7 @@
     "price": 100,
     "oldPrice": [],
     "category": ["New", "Last one", "Promo"],
-    "photo": "./photos/"
+    "photo": "./photos/lamp2.jpg"
   },
   {
     "id": "10",
@@ -87,7 +87,7 @@
     "price": 100,
     "oldPrice": [],
     "category": ["New", "Last one", "Promo"],
-    "photo": "./photos/"
+    "photo": "./photos/lamp3.jpg"
   },
   {
     "id": "11",
@@ -96,7 +96,7 @@
     "price": 100,
     "oldPrice": [],
     "category": ["New", "Last one", "Promo"],
-    "photo": "./photos/"
+    "photo": "./photos/lamp4.jpg"
   },
   {
     "id": "12",
@@ -105,7 +105,7 @@
     "price": 100,
     "oldPrice": [],
     "category": ["", "Last one", "Promo"],
-    "photo": "./photos/"
+    "photo": "./photos/lamp5.jpg"
   },
   {
     "id": "13",
@@ -114,7 +114,7 @@
     "price": 100,
     "oldPrice": [],
     "category": ["New", "Last one", "Promo"],
-    "photo": "./photos/"
+    "photo": "./photos/lamp5.jpg"
   },
   {
     "id": "14",
@@ -123,7 +123,7 @@
     "price": 100,
     "oldPrice": [],
     "category": ["New", "Last one", "Promo"],
-    "photo": "./photos/"
+    "photo": "./photos/lamp6.jpg"
   },
   {
     "id": "15",
@@ -132,7 +132,7 @@
     "price": 100,
     "oldPrice": [],
     "category": ["New", "Last one", "Promo"],
-    "photo": "./photos/"
+    "photo": "./photos/lamp7.jpg"
   },
   {
     "id": "16",
@@ -141,7 +141,7 @@
     "price": 100,
     "oldPrice": [],
     "category": ["New", "Last one", "Promo"],
-    "photo": "./photos/"
+    "photo": "./photos/lamp8.jpg"
   },
   {
     "id": "17",

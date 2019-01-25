@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import { Route, BrowserRouter, Link, Switch } from "react-router-dom";
+import { Route, BrowserRouter, Link, Switch, Redirect } from "react-router-dom";
 import Navi from "./components/Navi/Navigation";
 import Footer from "./components/Footer/Footer";
 import Home from "./components/sites/Home";
 import Bag from "./components/sites/Bag";
-// import NotFound from './components/sites/NotFound';
+// import NotFound from "./components/sites/NotFound";
 import ProductItem from "./components/Product/ProductItem/ProductItem";
 import Contact from "./components/sites/Contact";
 import Faq from "./components/sites/Faq";
@@ -95,7 +95,12 @@ class App extends Component {
 
   removeFromBag(id) {
     const found = this.state.shoppingBag.find(x => x.id === parseFloat(id));
-    setTimeout(() => {
+    (id === -1)
+    ? this.setState({
+      shoppingBag: [],
+      counter: 0,
+    })
+    : setTimeout(() => {
       this.setState({
         shoppingBag: [
           ...this.state.shoppingBag.filter(item => item.id !== found.id)
@@ -122,34 +127,39 @@ class App extends Component {
             </div>
           </div>
           <div className="main-layout">
-          <Switch>
-            <Route exact path={["/", "/order/:type/:direction"]} component={Home} />
-            <Route path="/faq" component={Faq} />
-            <Route path="/regulations" component={Regulations} />
-            <Route path="/contact" component={Contact} />
-            {/* <Route path="*" component={NotFound}/> */}
-            <Route
-              path="/product/:id"
-              render={routeProps => (
-                <ProductItem
-                  id={routeProps.match.params.id}
-                  addToBag={this.addToBag}
-                  removefromBag={this.removeFromBag}
-                />
-              )}
-            />
-            <Route
-              path="/bag"
-              render={() => (
-                <Bag
-                  bag={this.state.shoppingBag}
-                  addToBag={this.addToBag}
-                  removeItem={this.removeItem}
-                  removeFromBag={this.removeFromBag}
-                />
-              )}
-            />
-          </Switch>
+            <Switch>
+              <Route
+                exact
+                path={["/", "/order/:type/:direction"]}
+                component={Home}
+              />
+              <Route path="/faq" component={Faq} />
+              <Route path="/regulations" component={Regulations} />
+              <Route path="/contact" component={Contact} />
+              {/* <Route path="/404" component={NotFound} /> */}
+              {/* <Redirect from="*" to="/404" /> */}
+              <Route
+                path="/product/:id"
+                render={routeProps => (
+                  <ProductItem
+                    id={routeProps.match.params.id}
+                    addToBag={this.addToBag}
+                    removefromBag={this.removeFromBag}
+                  />
+                )}
+              />
+              <Route
+                path="/bag"
+                render={() => (
+                  <Bag
+                    bag={this.state.shoppingBag}
+                    addToBag={this.addToBag}
+                    removeItem={this.removeItem}
+                    removeFromBag={this.removeFromBag}
+                  />
+                )}
+              />
+            </Switch>
           </div>
           <Footer className="footer nav-home" />
         </div>
