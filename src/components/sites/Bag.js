@@ -86,7 +86,7 @@ class Bag extends Component {
             </div>
             <span
               className="bag-remove__item"
-              onClick={() => this.props.removeFromBag(data[item.id - 1].id)}
+              onClick={() => this.props.removeFromBag(data[item.id - 1].id, -1)}
             >
               remove item
             </span>
