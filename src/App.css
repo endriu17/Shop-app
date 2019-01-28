@@ -18,26 +18,36 @@
 }
 
 .navi-logo {
-  padding: 0;
+  padding: 20px;
   display: flex;
   align-items: center;
-  font-size: 22px;
+  
   font-weight: bold;
   text-decoration: none;
   position: relative;
+  background-color: #fa973ac9;
+  width: 150px;
+  margin-left: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 
 .logo-text {
-  margin-left: 25px;
-  color: #fa983a;
+  position: absolute;
+  left: 5px;
+  top: 12px;
+  color: #fff;
+  font-size: 26px;
+  background-color: transparent;
+  letter-spacing: 8px;
 }
 
 .navi-logo img {
-  height: 50px;
-  width: 50px;
+  height: 70px;
+  width: 70px;
   position: absolute;
-  left: 0;
+  left: -26px;
   top: -15px;
 }
 

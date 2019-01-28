@@ -4,7 +4,7 @@
     "name": "Product_1",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan. Etiam ornare, metus quis congue pretium, nulla magna condimentum libero, at interdum justo nibh at ipsum. Donec commodo lectus ac dui iaculis cursus. Curabitur sit amet libero nec nibh semper tempus nec ac nunc. In sit.",
     "price": 100,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["", "Last one", "Promo"],
     "photo": "/photos/bulb1.jpg"
   },
@@ -13,7 +13,7 @@
     "name": "Product_2",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan.",
     "price": 200,
-    "oldPrice": "$ 250.00",
+    "oldprice": "$ 250.00",
     "category": ["New", "New price", "Promo"],
     "photo": "/photos/bulb2.jpg"
   },
@@ -22,7 +22,7 @@
     "name": "Product_3",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan.",
     "price": 150,
-    "oldPrice": "",
+    "oldprice": "",
     "category": ["", "", ""],
     "photo": "/photos/bulb3.jpg"
   },
@@ -31,7 +31,7 @@
     "name": "Product_4",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan.",
     "price": 250,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["New", "", ""],
     "photo": "/photos/bulb5.jpg"
   },
@@ -40,7 +40,7 @@
     "name": "Product_5",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan.",
     "price": 245,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["", "", "Promo"],
     "photo": "/photos/bulb6.jpg"
   },
@@ -49,7 +49,7 @@
     "name": "Product_6",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan.",
     "price": 400,
-    "oldPrice": [],
+    "oldrice": "",
     "category": ["New", "Last one", "Promo"],
     "photo": "/photos/bulb7.jpg"
   },
@@ -58,7 +58,7 @@
     "name": "Product 7",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan.",
     "price": 100,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["New", "Last one", "Promo"],
     "photo": "./photos/bulb8.jpg"
   },
@@ -67,7 +67,7 @@
     "name": "Product 8",
     "description": "",
     "price": 100,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["New", "Last one", "Promo"],
     "photo": "./photos/lamp1.jpg"
   },
@@ -76,7 +76,7 @@
     "name": "Product 9",
     "description": "",
     "price": 100,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["New", "Last one", "Promo"],
     "photo": "./photos/lamp2.jpg"
   },
@@ -85,7 +85,7 @@
     "name": "Product_10",
     "description": "",
     "price": 100,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["New", "Last one", "Promo"],
     "photo": "./photos/lamp3.jpg"
   },
@@ -94,7 +94,7 @@
     "name": "Product_11",
     "description": "",
     "price": 100,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["New", "Last one", "Promo"],
     "photo": "./photos/logo.png"
   },
@@ -103,7 +103,7 @@
     "name": "Product 12",
     "description": "",
     "price": 100,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["", "Last one", "Promo"],
     "photo": "./photos/lamp5.jpg"
   },
@@ -112,7 +112,7 @@
     "name": "Product 13",
     "description": "",
     "price": 100,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["New", "Last one", "Promo"],
     "photo": "./photos/lamp5.jpg"
   },
@@ -121,7 +121,7 @@
     "name": "Product 14",
     "description": "",
     "price": 100,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["New", "Last one", "Promo"],
     "photo": "./photos/lamp6.jpg"
   },
@@ -130,7 +130,7 @@
     "name": "Product 15",
     "description": "",
     "price": 100,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["New", "Last one", "Promo"],
     "photo": "./photos/lamp7.jpg"
   },
@@ -139,7 +139,7 @@
     "name": "Product 16",
     "description": "",
     "price": 100,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["New", "Last one", "Promo"],
     "photo": "./photos/lamp8.jpg"
   },
@@ -148,7 +148,7 @@
     "name": "Product 17",
     "description": "",
     "price": 100,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
@@ -157,7 +157,7 @@
     "name": "Product 18",
     "description": "",
     "price": 100,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
@@ -166,7 +166,7 @@
     "name": "Product 19",
     "description": "",
     "price": 100,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
@@ -175,7 +175,7 @@
     "name": "Product 20",
     "description": "",
     "price": 100,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
@@ -184,7 +184,7 @@
     "name": "Product 21",
     "description": "",
     "price": 100,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
@@ -193,7 +193,7 @@
     "name": "Product 22",
     "description": "",
     "price": 100,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
@@ -202,7 +202,7 @@
     "name": "Product 23",
     "description": "",
     "price": 100,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
@@ -211,7 +211,7 @@
     "name": "Product 24",
     "description": "",
     "price": 100,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["", "", "Promo"],
     "photo": "./photos/"
   },
@@ -220,7 +220,7 @@
     "name": "Product 25",
     "description": "",
     "price": 100,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
@@ -229,7 +229,7 @@
     "name": "Product 26",
     "description": "",
     "price": 100,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
@@ -238,7 +238,7 @@
     "name": "Product 27",
     "description": "",
     "price": 100,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
@@ -247,7 +247,7 @@
     "name": "Product 28",
     "description": "",
     "price": 100,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
@@ -256,7 +256,7 @@
     "name": "Product 29",
     "description": "",
     "price": 100,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["", "", "Promo"],
     "photo": "./photos/"
   },
@@ -265,7 +265,7 @@
     "name": "Product 30",
     "description": "",
     "price": 100,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
@@ -274,7 +274,7 @@
     "name": "Product 31",
     "description": "",
     "price": 100,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
@@ -283,7 +283,7 @@
     "name": "Product 32",
     "description": "",
     "price": 100,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
@@ -292,7 +292,7 @@
     "name": "Product 33",
     "description": "",
     "price": 100,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
@@ -301,7 +301,7 @@
     "name": "Product 34",
     "description": "",
     "price": 100,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
@@ -310,7 +310,7 @@
     "name": "Product 35",
     "description": "",
     "price": 100,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
@@ -319,7 +319,7 @@
     "name": "Product 36",
     "description": "",
     "price": 100,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
@@ -328,7 +328,7 @@
     "name": "Product 37",
     "description": "",
     "price": 100,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
@@ -337,7 +337,7 @@
     "name": "Product 38",
     "description": "",
     "price": 100,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
@@ -346,7 +346,7 @@
     "name": "Product 39",
     "description": "",
     "price": 100,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
@@ -355,7 +355,7 @@
     "name": "Product 40",
     "description": "",
     "price": 100,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
@@ -364,7 +364,7 @@
     "name": "Product 41",
     "description": "",
     "price": 100,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
@@ -373,7 +373,7 @@
     "name": "Product 42",
     "description": "",
     "price": 100,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
@@ -382,7 +382,7 @@
     "name": "Product 43",
     "description": "",
     "price": 100,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
@@ -391,7 +391,7 @@
     "name": "Product 44",
     "description": "",
     "price": 100,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
@@ -400,7 +400,7 @@
     "name": "Product 45",
     "description": "",
     "price": 100,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
@@ -409,7 +409,7 @@
     "name": "Product 46",
     "description": "",
     "price": 100,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
@@ -418,7 +418,7 @@
     "name": "Product 47",
     "description": "",
     "price": 100,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
@@ -427,7 +427,7 @@
     "name": "Product 48",
     "description": "",
     "price": 100,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
@@ -436,7 +436,7 @@
     "name": "Product 49",
     "description": "",
     "price": 100,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
@@ -445,7 +445,7 @@
     "name": "Product 50",
     "description": "",
     "price": 100,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
@@ -454,7 +454,7 @@
     "name": "Product 51",
     "description": "",
     "price": 100,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
@@ -463,7 +463,7 @@
     "name": "Product 52",
     "description": "",
     "price": 100,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
@@ -472,7 +472,7 @@
     "name": "Product 53",
     "description": "",
     "price": 100,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
@@ -481,7 +481,7 @@
     "name": "Product 54",
     "description": "",
     "price": 100,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
@@ -490,7 +490,7 @@
     "name": "Product 55",
     "description": "",
     "price": 100,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
@@ -499,7 +499,7 @@
     "name": "Product 56",
     "description": "",
     "price": 100,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
@@ -508,7 +508,7 @@
     "name": "Product 57",
     "description": "",
     "price": 100,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
@@ -517,7 +517,7 @@
     "name": "Product 58",
     "description": "",
     "price": 100,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
@@ -526,7 +526,7 @@
     "name": "Product 59",
     "description": "",
     "price": 100,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
@@ -535,7 +535,7 @@
     "name": "Product 60",
     "description": "",
     "price": 100,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
@@ -544,7 +544,7 @@
     "name": "Product 61",
     "description": "",
     "price": 100,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
@@ -553,7 +553,7 @@
     "name": "Product 62",
     "description": "",
     "price": 100,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["New", "Last one", "Promo"],
     "photo": "./photos/logo.png"
   },
@@ -562,7 +562,7 @@
     "name": "Product 63",
     "description": "",
     "price": 100,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   },
@@ -571,7 +571,7 @@
     "name": "Product 64",
     "description": "",
     "price": 100,
-    "oldPrice": [],
+    "oldprice": "",
     "category": ["New", "Last one", "Promo"],
     "photo": "./photos/"
   }

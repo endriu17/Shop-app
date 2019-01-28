@@ -1,62 +1,60 @@
-import React, { Component } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import "./Product.css";
+import data from "./data.json"
 
-class Product extends Component {
-  constructor(props) {
-    super(props);
-  
-  }
-
-  render() {
-    return (
-      <Link
-        to={`/product/${this.props.id}`}
+const Product = props => {
+  // console.log(data[props.id].id-1);
+  // console.log(props.id);
+  return (
+    <Link
+      to={`/product/${props.id}`}
+      key={`product-${data[props.id].id-1}`}
+      data-id={data[props.id].id-1}
+      style={{
+        backgroundImage: `url(${props.photo})`,
+        backgroundRepeat: `no-repeat`,
+        backgroundSize: `cover`,
+        backgroundPosition: `center`
+      }}
+      className="product"
+      {...props}
+    >
+      <div
+        className="product-item_new"
         style={{
-          backgroundImage: `url(${this.props.photo})`,
-          backgroundRepeat: `no-repeat`,
-          backgroundSize: `cover`,
-          backgroundPosition: `center`
+          visibility: props.category[0] === "" ? "hidden" : "show"
         }}
-        className="product"
-        {...this.props.value}
+      />
+      <span
+        className="product-item_text"
+        style={{
+          visibility: props.category[0] === "" ? "hidden" : "show"
+        }}
       >
-        <div
-          className="product-item_new"
-          style={{
-            visibility: this.props.category[0] === "" ? "hidden" : "show"
-          }}
-        />
-        <span
-          className="product-item_text"
-          style={{
-            visibility: this.props.category[0] === "" ? "hidden" : "show"
-          }}
-        >
-          {this.props.category[0]}!
-        </span>
-        <h4 className="product_promo">{this.props.category[2]}</h4>
-        {/* <img src={props.photo} alt={props.name} /> */}
-        <div className="product-wrapper" style={{ width: "100%" }}>
-          <span className="product-name">{this.props.name}</span>
-          <div className="product-price_wrapper">
-            <span className="product-price ">
-              $ {this.props.price.toFixed(2)}
-            </span>
-            <span
-              className="product-item_special"
-              style={{
-                visibility: this.props.category[1] === "" ? "hidden" : "show"
-              }}
-            >
-              {this.props.category[1]}
-            </span>
-          </div>
-          <span className="product-price_old">{this.props.oldPrice}</span>
+        {props.category[0]}!
+      </span>
+      <h4 className="product_promo">{props.category[2]}</h4>
+      {/* <img src={props.photo} alt={props.name} /> */}
+      <div className="product-wrapper" style={{ width: "100%" }}>
+        <span className="product-name">{props.name}</span>
+        <div className="product-price_wrapper">
+          <span className="product-price ">
+            $ {props.price.toFixed(2)}
+          </span>
+          <span
+            className="product-item_special"
+            style={{
+              visibility: props.category[1] === "" ? "hidden" : "show"
+            }}
+          >
+            {props.category[1]}
+          </span>
+        <span className="product-price_old">{props.oldprice}</span>
         </div>
-      </Link>
-    );
-  }
-}
+      </div>
+    </Link>
+  );
+};
 
 export default Product;

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import ProductsList from "../ProductsList/ProductsList";
-import "../SortingBox/SortingBox.css";
+// import "../SortingBox/SortingBox.css";
 import data from "../Product/data.json";
 import "./index.css";
 
@@ -9,11 +9,17 @@ class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: data
+      data: data,
+      status: 0
     };
+    setTimeout(() => {
+      this.setState({
+        status: 1
+      })
+    }, 1000);
     this.addData = this.addData.bind(this);
   }
-
+  
   addData(type, dir) {
     setTimeout(() => {
       this.setState({
@@ -31,10 +37,10 @@ class Home extends Component {
   }
 
   render() {
-    console.log(this.props.match.params.type);
+    const { data } = this.state;
     return (
       <div className="home-wrapper">
-        <div className="SortingBox">
+        <div className="sortingBox">
           <span className="sort-list_header">Sort:</span>
           <Link
             to="/order/name/asc"
@@ -66,7 +72,9 @@ class Home extends Component {
           </Link>
           <span className="sort-line">________________________</span>
         </div>
-        <ProductsList data={this.state.data} />
+        <ProductsList
+          data={data}
+        />
       </div>
     );
   }

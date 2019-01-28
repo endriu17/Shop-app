@@ -48,6 +48,7 @@ class Bag extends Component {
   }
 
   render() {
+    console.log(this.props)
     const bagMap = this.props.bag;
     const priceSum = [];
     if (this.props.bag.length === 0) {
@@ -56,7 +57,7 @@ class Bag extends Component {
       );
     } else if (!this.state.order) {
       const bagItems = bagMap.map((item, i) => (
-        <li key={i} className="bag-item_list">
+        <li key={`product-${data[item.id - 1].id}`} id={data[item.id - 1].id} className="bag-item_list">
           <img src={data[item.id - 1].photo} alt={data[item.id - 1].name} />
           <div className="bag-name__wrapper">
             <span className="bag-item__name">{data[item.id - 1].name}</span>
@@ -139,7 +140,7 @@ class Bag extends Component {
       );
     } else {
       const bagItems = bagMap.map((item, i) => (
-        <tr key={i} data={priceSum.push(data[item.id - 1].price * item.count)}>
+        <tr key={data[item.id - 1].id} data={priceSum.push(data[item.id - 1].price * item.count)}>
           <td>1</td>
           <td>{data[item.id - 1].name}</td>
           <td>{item.count}</td>

@@ -15,7 +15,10 @@ class ProductsList extends React.Component {
     this.pageSize = 6;
     this.pagesCount = Math.ceil(this.dataHomeSet.length / this.pageSize);
   }
-
+  shouldComponentUpdate(nextProps, nextState){
+    console.log('update', nextProps, nextState);
+    return true;
+  }
 
   handleClick(e, index) {
     e.preventDefault();
@@ -31,7 +34,7 @@ class ProductsList extends React.Component {
       <React.Fragment>
         <div className="products-list">
           <div className="products-list__container">
-            {this.props.data.map((a, i) => <Product key={i} {...a} />)
+            {this.props.data.map((a) => <Product key={`product-${a.id}`} {...a} />)
               .slice(
                 currentPage * this.pageSize,
                 (currentPage + 1) * this.pageSize

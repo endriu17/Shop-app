@@ -11,7 +11,7 @@ import Faq from "./components/sites/Faq";
 import Regulations from "./components/sites/Regulations";
 import ShoppingBag from "./components/ShoppingBag/ShoppingBag";
 import "./App.css";
-import Product from "./components/Product/Product";
+// import Product from "./components/Product/Product";
 
 class App extends Component {
   constructor(props) {
@@ -27,42 +27,49 @@ class App extends Component {
   }
 
   addToBag(id) {
-    const found = this.state.shoppingBag.find(x => x.id === parseFloat(id));
+    const found = this.state.shoppingBag.find(x => {
+      return x.id === parseFloat(id);
+    });
 
     if (found) {
       found.count = found.count + 1;
-      this.state.shoppingBag.map(item => ({
-        ...item,
-        [item.id]: found.id,
-        [item.count]: found.count
-      }));
+      this.state.shoppingBag.map(item => {
+        return {
+          ...item,
+          [item.id]: found.id,
+          [item.count]: found.count
+        };
+      });
     } else {
       this.state.shoppingBag.length === 0
-        ? // setTimeout(() => {
-          this.setState({
-            shoppingBag: [{ id: parseFloat(id), count: 1 }],
-            counter: 1
-          })
-        : // }, 10)
-          this.setState(prevState => ({
-            shoppingBag: [
-              { id: parseFloat(id), count: 1 },
-              ...prevState.shoppingBag
-            ],
-            counter: 1
-          }));
+        ? setTimeout(() => {
+            this.setState({
+              shoppingBag: [{ id: parseFloat(id), count: 1 }],
+              counter: 1
+            });
+          }, 10)
+        : this.setState(prevState => {
+            return {
+              shoppingBag: [
+                { id: parseFloat(id), count: 1 },
+                ...prevState.shoppingBag
+              ],
+              counter: 1
+            };
+          });
     }
     setTimeout(() => {
       this.setState({
-        counter: this.state.shoppingBag.reduce(
-          (acc, count) => acc + count.count,
-          0
-        )
+        counter: this.state.shoppingBag.reduce((acc, count) => {
+          return acc + count.count;
+        }, 0)
       });
     }, 10);
   }
 
   removeItem(id) {
+    console.log(this.state.shoppingBag[0].id);
+    console.log(this.state.shoppingBag.find(x => x.id === parseFloat(id)));
     const found = this.state.shoppingBag.find(x => x.id === parseFloat(id));
     console.log(found);
     found.count = found.count - 1;
@@ -72,45 +79,46 @@ class App extends Component {
         [item.id]: found.id,
         [item.count]: found.count
       }));
-      // setTimeout(() => {
-      this.setState({
-        counter: this.state.shoppingBag.reduce(
-          (acc, count) => acc + count.count,
-          0
-        )
-      });
-      // }, 10);
+      setTimeout(() => {
+        this.setState({
+          counter: this.state.shoppingBag.reduce(
+            (acc, count) => acc + count.count,
+            0
+          )
+        });
+      }, 10);
     } else {
-      // setTimeout(() => {
-      this.setState({
-        shoppingBag: [
-          ...this.state.shoppingBag.filter(item => item.id !== found.id)
-        ],
-        counter: this.state.shoppingBag.reduce(
-          (acc, count) => acc + count.count,
-          0
-        )
-      });
-      // }, 10);
+      setTimeout(() => {
+        this.setState({
+          shoppingBag: [
+            ...this.state.shoppingBag.filter(item => item.id !== found.id)
+          ],
+          counter: this.state.shoppingBag.reduce(
+            (acc, count) => acc + count.count,
+            0
+          )
+        });
+      }, 10);
     }
   }
 
   removeFromBag(id) {
     console.log(id);
+    console.log(this.state.shoppingBag);
     const found = this.state.shoppingBag.find(x => x.id === parseFloat(id));
     this.setState({
       shoppingBag: [
         ...this.state.shoppingBag.filter(item => item.id !== found.id)
       ]
     });
-    // setTimeout(() => {
-    this.setState({
-      counter: this.state.shoppingBag.reduce(
-        (acc, count) => acc + count.count,
-        0
-      )
-    });
-    // }, 10);
+    setTimeout(() => {
+      this.setState({
+        counter: this.state.shoppingBag.reduce(
+          (acc, count) => acc + count.count,
+          0
+        )
+      });
+    }, 10);
   }
 
   render() {
@@ -130,7 +138,10 @@ class App extends Component {
           <div className="main-layout">
             <Switch>
               <Route exact path="/" component={Home} />
-              <Route exact path="/order/:type/:direction" component={Home} />
+              <Route
+                path="/order/:type/:direction"
+                render={routeProps => <Home {...routeProps} />}
+              />
               <Route path="/faq" component={Faq} />
               <Route path="/regulations" component={Regulations} />
               <Route path="/contact" component={Contact} />
@@ -138,25 +149,25 @@ class App extends Component {
               {/* <Redirect from="*" to="/404" /> */}
               <Route
                 path="/product/:id"
-                render={routeProps => (
+                render={props => (
                   <ProductItem
-                    path="/product/:id"
-                    id={routeProps.match.params.id}
+                    id={props.match.params.id}
                     addToBag={this.addToBag}
                     removefromBag={this.removeFromBag}
                     bag={this.state.shoppingBag}
-                    {...routeProps}
+                    {...props}
                   />
                 )}
               />
               <Route
                 path="/bag"
-                render={() => (
+                render={props => (
                   <Bag
                     bag={this.state.shoppingBag}
                     addToBag={this.addToBag}
                     removeItem={this.removeItem}
                     removeFromBag={this.removeFromBag}
+                    {...props}
                   />
                 )}
               />
