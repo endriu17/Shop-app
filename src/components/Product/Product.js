@@ -22,20 +22,20 @@ class Product extends Component {
         {...this.props.value}
       >
         <div
-          className="product-item__new"
+          className="product-item_new"
           style={{
             visibility: this.props.category[0] === "" ? "hidden" : "show"
           }}
         />
         <span
-          className="product-item__text"
+          className="product-item_text"
           style={{
             visibility: this.props.category[0] === "" ? "hidden" : "show"
           }}
         >
           {this.props.category[0]}!
         </span>
-        <h4 className="product-item__promo">{this.props.category[2]}</h4>
+        <h4 className="product_promo">{this.props.category[2]}</h4>
         {/* <img src={props.photo} alt={props.name} /> */}
         <div className="product-wrapper" style={{ width: "100%" }}>
           <span className="product-name">{this.props.name}</span>

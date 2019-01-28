@@ -31,7 +31,7 @@ class Home extends Component {
   }
 
   render() {
-    // console.log(this.state.data);
+    console.log(this.props.match.params.type);
     return (
       <div className="home-wrapper">
         <div className="SortingBox">
@@ -66,7 +66,7 @@ class Home extends Component {
           </Link>
           <span className="sort-line">________________________</span>
         </div>
-        <ProductsList {...this.state} />
+        <ProductsList data={this.state.data} />
       </div>
     );
   }

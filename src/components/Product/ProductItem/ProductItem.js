@@ -15,7 +15,7 @@ class ProductItem extends Component {
       description: data[param].description,
       category: data[param].category,
       text: "Add to bag",
-      added: "Product is already added to the bag",
+      added: "Product is already added to the shoppingbag",
       // isButtonDisabled: false,
       // productID: []
     };
@@ -74,7 +74,7 @@ class ProductItem extends Component {
           </div>
           <button
             style={{
-              backgroundColor: this.props.bag[parseFloat(this.props.match.params.id)]
+              backgroundColor: this.props.bag[param]
                 ? "red"
                 : "#000"
             }}
