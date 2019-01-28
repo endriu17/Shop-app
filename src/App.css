@@ -20,13 +20,25 @@
 .navi-logo {
   padding: 0;
   display: flex;
-  justify-content: center;
   align-items: center;
-  font-size: 32px;
-  width: 30%;
-  margin: 0;
+  font-size: 22px;
   font-weight: bold;
   text-decoration: none;
+  position: relative;
+}
+
+
+.logo-text {
+  margin-left: 25px;
+  color: #fa983a;
+}
+
+.navi-logo img {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  left: 0;
+  top: -15px;
 }
 
 .navi-logo:hover {

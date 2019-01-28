@@ -50,7 +50,6 @@ class Bag extends Component {
   render() {
     const bagMap = this.props.bag;
     const priceSum = [];
-    console.log(this.state.rabat[1])
     if (this.props.bag.length === 0) {
       return (
         <h1 className="bag-empty">It's nothing in the shoppingbag now...</h1>
@@ -118,7 +117,6 @@ class Bag extends Component {
                 />
                 <span />
               </label>
-              {/* <button className="bag-input_submit" onClick={this.handleSubmit}>Validate</button> */}
               <p className="bag-text_label">{this.state.rabat}</p>
             </form>
             <span className="bag-sum__total">
@@ -146,9 +144,6 @@ class Bag extends Component {
           <td>{data[item.id - 1].name}</td>
           <td>{item.count}</td>
           <td>{data[item.id - 1].price.toFixed(2)}</td>
-          <td><p style={{
-                    display: (this.state.rabat === null) ? "none" : "inline-flex"
-                  }}>{this.state.rabat}</p></td>
           <td>{(data[item.id - 1].price * item.count).toFixed(2)}</td>
         </tr>
       ));
@@ -162,13 +157,11 @@ class Bag extends Component {
                 <th>Product</th>
                 <th>Items</th>
                 <th>Price</th>
-                <th>Rabat</th>
                 <th>Sum</th>
               </tr>
             </thead>
             <tfoot>
               <tr>
-                <td />
                 <td />
                 <td />
                 <td />

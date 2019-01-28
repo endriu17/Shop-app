@@ -5,9 +5,9 @@ import "../Product.css";
 class ProductItem extends Component {
   constructor(props) {
     super(props);
-    let param = this.props.id - 1;
+    let param = parseFloat(this.props.match.params.id)-1;
     this.state = {
-      id: param,
+      id: data[param].id,
       photo: data[param].photo,
       name: data[param].name,
       price: data[param].price.toFixed(2),
@@ -15,51 +15,86 @@ class ProductItem extends Component {
       description: data[param].description,
       category: data[param].category,
       text: "Add to bag",
-      color: "",
-      isButtonDisabled: false,
-      productID: []
+      added: "Product is already added to the bag",
+      // isButtonDisabled: false,
+      // productID: []
     };
   }
 
   handleClick(e) {
     this.setState({
-      text: "Product is in the bag",
-      color: "red",
-      added: "Product is already added to the bag"
+      text: "add next one"
     });
-    this.props.addToBag(this.props.id);
+    this.props.addToBag(e);
+    console.log(e)
   }
 
   render() {
-    return (
+    console.log(this.props.id);
+    let param = parseFloat(this.props.match.params.id)-1;
+    console.log(data[param].id);
+        return (
       <div className="product-container">
         <div className="product-item">
-          <div className="product-item__new" style={{visibility: ((this.state.category[0] === "")? 'hidden':'show')}}></div>
-          <span className="product-item__text" style={{visibility: ((this.state.category[0] === "")? 'hidden':'show')}}>{this.state.category[0]}!</span>
-          <h4 className="product-item__promo">{this.state.category[2]}</h4>
+          <div
+            className="product-item_new"
+            style={{
+              visibility: data[param].category[0] === "" ? "hidden" : "show"
+            }}
+          />
+          <span
+            className="product-item_text"
+            style={{
+              visibility: data[param].category[0] === "" ? "hidden" : "show"
+            }}
+          >
+            {this.state.category[0]}!
+          </span>
+          <h4 className="product-item_promo">{data[param].category[2]}</h4>
           <img
             className="product-photo"
-            src={this.state.photo}
-            alt={this.state.name}
+            src={data[param].photo}
+            alt={data[param].name}
           />
-          <div className="product-wrapper" style={{ width: "50%" }}>
-            <span className="product-name">{this.state.name}</span>
+          <div className="product-wrapper_item" style={{ width: "60%" }}>
+            <span className="product-name">{data[param].name}</span>
             <div className="product-price_wrapper">
-              <span className="product-price">${this.state.price}</span>
-              <span className="product-price_old">{this.state.oldPrice}</span>
-              <p className="product-item_special" style={{visibility: ((this.state.category[1] === "")? 'hidden':'show')}}>{this.state.category[1]}</p>
+              <span className="product-price">${data[param].price}</span>
+              <span className="product-price_old">{data[param].oldPrice}</span>
+              <p
+                className="product-item_special"
+                style={{
+                  visibility: data[param].category[1] === "" ? "hidden" : "show"
+                }}
+              >
+                {data[param].category[1]}
+              </p>
             </div>
-            <p className="product-description">{this.state.description}</p>
-            <button
-              style={{backgroundColor:`${this.state.color}`}}
-              className="add-to-bag"
-              onClick={() => this.handleClick(this.props.id)}
-              text={"Add to bag"}
-            >
-              {this.state.text}
-            </button>
-            <p>{this.state.added}</p>
+            <p className="product-description">{data[param].description}</p>
           </div>
+          <button
+            style={{
+              backgroundColor: this.props.bag[parseFloat(this.props.match.params.id)]
+                ? "red"
+                : "#000"
+            }}
+            className="add-to-bag"
+            onClick={() => {
+              this.handleClick(parseFloat(this.props.match.params.id));
+            }}
+            text={"Add to bag"}
+          >
+            {" "}
+            {this.state.text}
+          </button>
+          <p className="add-to-bag_text">
+            {this.props.bag[param] ? this.state.added : " "}
+          </p>
+          <p className="add-to-bag_count" style={{color: this.props.bag.find(item => item.id === parseFloat(this.props.match.params.id))  ? "#000" : "#fff"}}>
+            Items in shoppingbag:{" "} <b>{this.props.bag.find(item => item.id === parseFloat(this.props.match.params.id)) 
+              ? this.props.bag.find(item => item.id === parseFloat(this.props.match.params.id)).count
+              : 0}</b>
+          </p>
         </div>
       </div>
     );
