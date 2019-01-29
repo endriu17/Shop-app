@@ -51,8 +51,9 @@ img {
 }
 
 
-.product-name:hover {
-  opacity: 0.8;
+.product:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease-out;
 }
 
 .product-price {

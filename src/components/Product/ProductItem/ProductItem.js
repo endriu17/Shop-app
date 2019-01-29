@@ -5,35 +5,25 @@ import "../Product.css";
 class ProductItem extends Component {
   constructor(props) {
     super(props);
-    let param = parseFloat(this.props.match.params.id)-1;
     this.state = {
-      id: data[param].id,
-      photo: data[param].photo,
-      name: data[param].name,
-      price: data[param].price.toFixed(2),
-      oldPrice: data[param].oldPrice,
-      description: data[param].description,
-      category: data[param].category,
       text: "Add to bag",
-      added: "Product is already added to the shoppingbag",
+      added: "Product is already added to the shoppingbag"
     };
-  
   }
- 
+
   handleClick(e) {
     this.setState({
       text: "add next one"
     });
     this.props.addToBag(e);
-    console.log(e)
   }
 
   render() {
     const found = data.find(x => x.id === parseFloat(this.props.id));
     const foundMatch = this.props.bag.find(item => item.id === found.id);
-    console.log(this.props.id);
-        return (
-      <div className="product-container" >
+
+    return (
+      <div className="product-container">
         <div className="product-item">
           <div
             className="product-item_new"
@@ -49,12 +39,10 @@ class ProductItem extends Component {
           >
             {found.category[0]}!
           </span>
-          <h4 className="product-item_promo">{data[this.props.id -1].category[2]}</h4>
-          <img
-            className="product-photo"
-            src={found.photo}
-            alt={found.name}
-          />
+          <h4 className="product-item_promo">
+            {data[this.props.id - 1].category[2]}
+          </h4>
+          <img className="product-photo" src={found.photo} alt={found.name} />
           <div className="product-wrapper_item" style={{ width: "60%" }}>
             <span className="product-name">{found.name}</span>
             <div className="product-price_wrapper">
@@ -67,16 +55,13 @@ class ProductItem extends Component {
                 }}
               >
                 {found.category[1]}
-               
               </p>
             </div>
             <p className="product-description">{found.description}</p>
           </div>
           <button
             style={{
-              backgroundColor: foundMatch
-                ? "red"
-                : "#000"
+              backgroundColor: foundMatch ? "red" : "#000"
             }}
             className="add-to-bag"
             onClick={() => {
@@ -85,15 +70,16 @@ class ProductItem extends Component {
             text={"Add to bag"}
           >
             {" "}
-            {this.state.text}
+            {foundMatch ? "add next one" : "Add to bag"}
           </button>
           <p className="add-to-bag_text">
             {foundMatch ? this.state.added : " "}
           </p>
-          <p className="add-to-bag_count" style={{color: foundMatch  ? "#000" : "#fff"}}>
-            Items in shoppingbag:{" "} <b>{foundMatch 
-              ? foundMatch.count
-              : 0}</b>
+          <p
+            className="add-to-bag_count"
+            style={{ color: foundMatch ? "#000" : "#fff" }}
+          >
+            Items in shoppingbag: <b>{foundMatch ? foundMatch.count : 0}</b>
           </p>
         </div>
       </div>

@@ -11,7 +11,6 @@ import Faq from "./components/sites/Faq";
 import Regulations from "./components/sites/Regulations";
 import ShoppingBag from "./components/ShoppingBag/ShoppingBag";
 import "./App.css";
-// import Product from "./components/Product/Product";
 
 class App extends Component {
   constructor(props) {

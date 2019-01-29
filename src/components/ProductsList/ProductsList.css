@@ -49,3 +49,25 @@ li {
   text-decoration: underline;
   font-weight: bold;
 }
+
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 1000ms ease;
+}
+.fade-leave {
+  opacity: 1;
+}
+.fade-leave-active {
+  opacity: 0;
+  transition: opacity 1000ms ease;
+}
+.fade-appear {
+  opacity: 0;
+}
+.fade-appear-active {
+  opacity: 1;
+  transition: opacity 1000ms ease;
+}

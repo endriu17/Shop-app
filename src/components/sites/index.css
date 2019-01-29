@@ -241,10 +241,10 @@ table.minimalistBlack th:nth-of-type(6) {
   text-align: center;
 }
 
-.sortingBox {
-  width: 20%;
+.sortingbox {
+  /* width: 20%; */
   text-align: left;
-  padding: 50px 100px;
+  padding: 50px 0  50px 100px;
   font-size: 20px;
 }
 
@@ -273,4 +273,8 @@ span.sort-list_header {
 .sort-line {
   width: 100%;
   margin: 15px auto;
+}
+
+i.fas {
+  margin-left: 10px;
 }

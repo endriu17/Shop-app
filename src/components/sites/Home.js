@@ -1,20 +1,20 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import ProductsList from "../ProductsList/ProductsList";
-// import "../SortingBox/SortingBox.css";
 import data from "../Product/data.json";
 import "./index.css";
+import "./indexRWD.css";
 
 class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: data,
+      data: data
     };
 
     this.addData = this.addData.bind(this);
   }
-  
+
   addData(type, dir) {
     setTimeout(() => {
       this.setState({
@@ -35,41 +35,41 @@ class Home extends Component {
     const { data } = this.state;
     return (
       <div className="home-wrapper">
-        <div className="sortingBox">
+        <div className="sortingbox">
           <span className="sort-list_header">Sort:</span>
           <Link
             to="/order/name/asc"
             onClick={() => this.addData("name", "asc")}
             className="sort-list"
           >
-            Name A - Z
+            <span className="name-hidden">Name</span> A - Z
           </Link>
           <Link
             to="/order/name/desc"
             onClick={() => this.addData("name", "desc")}
             className="sort-list"
           >
-            Name Z - A
+            <span className="name-hidden">Name</span> Z - A
           </Link>
           <Link
             to="/order/price/asc"
             onClick={() => this.addData("price", "asc")}
             className="sort-list"
           >
-            Price ascending
+            Price <span className="price-hidden">ascending</span>
+            <i class="fas fa-long-arrow-alt-up"></i>
           </Link>
           <Link
             to="/order/price/desc"
             onClick={() => this.addData("price", "desc")}
             className="sort-list"
           >
-            Price descending
+            Price <span className="price-hidden">descending</span>
+            <i class="fas fa-long-arrow-alt-down"></i>
           </Link>
           <span className="sort-line">________________________</span>
         </div>
-        <ProductsList
-          data={data}
-        />
+        <ProductsList data={data} />
       </div>
     );
   }
