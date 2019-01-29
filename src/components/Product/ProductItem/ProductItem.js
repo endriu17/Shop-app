@@ -17,11 +17,7 @@ class ProductItem extends Component {
       text: "Add to bag",
       added: "Product is already added to the shoppingbag",
     };
-    setTimeout(() => {
-      this.setState({
-        status: 1
-      })
-    }, 2000);
+  
   }
  
   handleClick(e) {
@@ -33,9 +29,9 @@ class ProductItem extends Component {
   }
 
   render() {
-    const found = data.find(x => x.id === this.props.id);
-    const foundMatch = this.props.bag.find(item => item.id === parseFloat(found.id));
-    // console.log(this.props);
+    const found = data.find(x => x.id === parseFloat(this.props.id));
+    const foundMatch = this.props.bag.find(item => item.id === found.id);
+    console.log(this.props.id);
         return (
       <div className="product-container" >
         <div className="product-item">

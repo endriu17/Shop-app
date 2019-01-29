@@ -4,13 +4,11 @@ import "./Product.css";
 import data from "./data.json"
 
 const Product = props => {
-  // console.log(data[props.id].id-1);
-  // console.log(props.id);
   return (
     <Link
       to={`/product/${props.id}`}
       key={`product-${data[props.id].id-1}`}
-      data-id={data[props.id].id-1}
+      id={`product-${data[props.id].id-1}`}
       style={{
         backgroundImage: `url(${props.photo})`,
         backgroundRepeat: `no-repeat`,
@@ -35,7 +33,6 @@ const Product = props => {
         {props.category[0]}!
       </span>
       <h4 className="product_promo">{props.category[2]}</h4>
-      {/* <img src={props.photo} alt={props.name} /> */}
       <div className="product-wrapper" style={{ width: "100%" }}>
         <span className="product-name">{props.name}</span>
         <div className="product-price_wrapper">

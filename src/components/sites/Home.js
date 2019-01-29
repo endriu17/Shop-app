@@ -10,13 +10,8 @@ class Home extends Component {
     super(props);
     this.state = {
       data: data,
-      status: 0
     };
-    setTimeout(() => {
-      this.setState({
-        status: 1
-      })
-    }, 1000);
+
     this.addData = this.addData.bind(this);
   }
   

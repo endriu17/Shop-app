@@ -15,10 +15,6 @@ class ProductsList extends React.Component {
     this.pageSize = 6;
     this.pagesCount = Math.ceil(this.dataHomeSet.length / this.pageSize);
   }
-  shouldComponentUpdate(nextProps, nextState){
-    console.log('update', nextProps, nextState);
-    return true;
-  }
 
   handleClick(e, index) {
     e.preventDefault();

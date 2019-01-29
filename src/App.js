@@ -4,7 +4,7 @@ import Navi from "./components/Navi/Navigation";
 import Footer from "./components/Footer/Footer";
 import Home from "./components/sites/Home";
 import Bag from "./components/sites/Bag";
-// import NotFound from "./components/sites/NotFound";
+import NotFound from "./components/sites/NotFound";
 import ProductItem from "./components/Product/ProductItem/ProductItem";
 import Contact from "./components/sites/Contact";
 import Faq from "./components/sites/Faq";
@@ -68,10 +68,7 @@ class App extends Component {
   }
 
   removeItem(id) {
-    console.log(this.state.shoppingBag[0].id);
-    console.log(this.state.shoppingBag.find(x => x.id === parseFloat(id)));
     const found = this.state.shoppingBag.find(x => x.id === parseFloat(id));
-    console.log(found);
     found.count = found.count - 1;
     if (found.count > 0) {
       this.state.shoppingBag.map(item => ({
@@ -103,8 +100,6 @@ class App extends Component {
   }
 
   removeFromBag(id) {
-    console.log(id);
-    console.log(this.state.shoppingBag);
     const found = this.state.shoppingBag.find(x => x.id === parseFloat(id));
     this.setState({
       shoppingBag: [
@@ -137,7 +132,7 @@ class App extends Component {
           </div>
           <div className="main-layout">
             <Switch>
-              <Route exact path="/" component={Home} />
+              <Route path="/" exact component={Home} />
               <Route
                 path="/order/:type/:direction"
                 render={routeProps => <Home {...routeProps} />}
@@ -145,8 +140,6 @@ class App extends Component {
               <Route path="/faq" component={Faq} />
               <Route path="/regulations" component={Regulations} />
               <Route path="/contact" component={Contact} />
-              {/* <Route path="/404" component={NotFound} /> */}
-              {/* <Redirect from="*" to="/404" /> */}
               <Route
                 path="/product/:id"
                 render={props => (
@@ -171,6 +164,7 @@ class App extends Component {
                   />
                 )}
               />
+              <Route component={NotFound} />
             </Switch>
           </div>
           <Footer className="footer nav-home" />

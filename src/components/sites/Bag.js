@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./index.css";
 import { Table } from "reactstrap";
-import data from "../Product/data.json";
+import bag from "../Product/bag.json";
 
 class Bag extends Component {
   constructor(props) {
@@ -57,36 +57,36 @@ class Bag extends Component {
       );
     } else if (!this.state.order) {
       const bagItems = bagMap.map((item, i) => (
-        <li key={`product-${data[item.id - 1].id}`} id={data[item.id - 1].id} className="bag-item_list">
-          <img src={data[item.id - 1].photo} alt={data[item.id - 1].name} />
+        <li key={`product-${bag[item.id - 1].id}`} id={bag[item.id - 1].id} className="bag-item_list">
+          <img src={bag[item.id - 1].photo} alt={bag[item.id - 1].name} />
           <div className="bag-name__wrapper">
-            <span className="bag-item__name">{data[item.id - 1].name}</span>
+            <span className="bag-item__name">{bag[item.id - 1].name}</span>
             <p className="bag-item__description">
-              {data[item.id - 1].description}
+              {bag[item.id - 1].description}
             </p>
           </div>
           <span className="price-push">
-            {priceSum.push(data[item.id - 1].price * item.count)}
+            {priceSum.push(bag[item.id - 1].price * item.count)}
           </span>
           <span className="bag-item__price">
-            ${data[item.id - 1].price.toFixed(2) * item.count}
+            ${bag[item.id - 1].price.toFixed(2) * item.count}
           </span>
           <div className="bag-number__wrapper">
             <div className="number-wrapper__set">
               <i
                 className="number-set fas fa-minus"
-                onClick={() => this.props.removeItem(data[item.id - 1].id)}
+                onClick={() => this.props.removeItem(bag[item.id - 1].id)}
               />
               <span className="bag-item__number">{item.count}</span>
               <i
                 className="number-set fas fa-plus"
-                onClick={() => this.props.addToBag(data[item.id - 1].id)}
+                onClick={() => this.props.addToBag(bag[item.id - 1].id)}
               />
               <p>itm.</p>
             </div>
             <span
               className="bag-remove__item"
-              onClick={() => this.props.removeFromBag(data[item.id - 1].id, -1)}
+              onClick={() => this.props.removeFromBag(bag[item.id - 1].id, -1)}
             >
               remove item
             </span>
@@ -140,12 +140,12 @@ class Bag extends Component {
       );
     } else {
       const bagItems = bagMap.map((item, i) => (
-        <tr key={data[item.id - 1].id} data={priceSum.push(data[item.id - 1].price * item.count)}>
+        <tr key={bag[item.id - 1].id} data={priceSum.push(bag[item.id - 1].price * item.count)}>
           <td>1</td>
-          <td>{data[item.id - 1].name}</td>
+          <td>{bag[item.id - 1].name}</td>
           <td>{item.count}</td>
-          <td>{data[item.id - 1].price.toFixed(2)}</td>
-          <td>{(data[item.id - 1].price * item.count).toFixed(2)}</td>
+          <td>{bag[item.id - 1].price.toFixed(2)}</td>
+          <td>{(bag[item.id - 1].price * item.count).toFixed(2)}</td>
         </tr>
       ));
       return (
