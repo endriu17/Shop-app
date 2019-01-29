@@ -57,7 +57,7 @@ class Home extends Component {
             className="sort-list"
           >
             Price <span className="price-hidden">ascending</span>
-            <i class="fas fa-long-arrow-alt-up"></i>
+            <i class="fas fa-long-arrow-alt-up" />
           </Link>
           <Link
             to="/order/price/desc"
@@ -65,7 +65,7 @@ class Home extends Component {
             className="sort-list"
           >
             Price <span className="price-hidden">descending</span>
-            <i class="fas fa-long-arrow-alt-down"></i>
+            <i class="fas fa-long-arrow-alt-down" />
           </Link>
           <span className="sort-line">________________________</span>
         </div>

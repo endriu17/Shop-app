@@ -57,7 +57,6 @@ img {
 }
 
 .product-price {
-  /* color: #302f2f; */
   font-size: 18px;
   font-weight: 600;
 }
@@ -147,7 +146,6 @@ img {
 }
 
 .add-to-bag {
-  /* width: 250px; */
   padding: 20px;
   border: none;
   color: #fff;
@@ -159,10 +157,10 @@ img {
   position: absolute;
   bottom: 50px;
   margin-left: 40%;
+  border-radius: 5px;
 }
 
 .product-description {
-  /* width: 80%; */
   margin-top: 10px;
 }
 

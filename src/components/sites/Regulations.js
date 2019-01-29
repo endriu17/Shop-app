@@ -1,8 +1,11 @@
-import React from 'react';
-import './index.css';
+import React from "react";
+import "./index.css";
 
 const Regulations = () => (
-    <h1 className="regulations-site">Regulations and...</h1>
+  <div className="regulations-site">
+    <img src="/photos/regulations.png" alt={"regulations"} />
+    <h1>Regulations and...</h1>
+  </div>
 );
 
 export default Regulations;

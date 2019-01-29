@@ -7,6 +7,7 @@
 @media only screen and (max-width: 950px) {
   .home-wrapper {
     flex-wrap: wrap;
+    padding-top: 0;
   }
 
   span.sort-list_header {
@@ -46,12 +47,6 @@
 
   .sort-list {
     text-align: center;
-    /* border: none; */
     margin: 2px 0;
-    /* font-size: 18px; */
-  }
-
-  .home-wrapper {
-    padding-top: 0;
   }
 }

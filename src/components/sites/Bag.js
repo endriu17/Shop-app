@@ -10,7 +10,8 @@ class Bag extends Component {
 
     this.state = {
       order: false,
-      rabat: ["", null, ""]
+      rabat: ["", null, ""],
+      disabled: false
     };
     this.showOrder = this.showOrder.bind(this);
     this.handleChange = this.handleChange.bind(this);
@@ -28,7 +29,7 @@ class Bag extends Component {
   handleChange(event) {
     this.setState({
       value: event.target.value,
-      validate: false
+      validate: false,
     });
   }
 
@@ -40,44 +41,51 @@ class Bag extends Component {
     );
     event.preventDefault();
 
-     this.setState({
-        validate: "Your rabat: ",
-        rabat: ["Discount: ", 10, "%"]
-      })
-
+    this.setState({
+      validate: "Your rabat: ",
+      rabat: ["Discount: ", 10, "%"],
+      disabled: true
+    });
   }
 
   render() {
-    console.log(this.props)
+    console.log(this.props);
     const bagMap = this.props.bag;
     const priceSum = [];
     if (this.props.bag.length === 0) {
       return (
-        <h1 className="bag-empty">It's nothing in the shoppingbag now...</h1>
+        <div className="bag-empty">
+          <img src="/photos/shoppingbag.png" alt={"shoppingbag"} />
+          <h1>It's nothing in the shoppingbag now...</h1>
+        </div>
       );
     } else if (!this.state.order) {
       const bagItems = bagMap.map((item, i) => (
-        <li key={`product-${bag[item.id - 1].id}`} id={bag[item.id - 1].id} className="bag-item_list">
+        <li
+          key={`product-${bag[item.id - 1].id}`}
+          id={bag[item.id - 1].id}
+          className="bag-item_list"
+        >
           <img src={bag[item.id - 1].photo} alt={bag[item.id - 1].name} />
-          <div className="bag-name__wrapper">
-            <span className="bag-item__name">{bag[item.id - 1].name}</span>
-            <p className="bag-item__description">
+          <div className="bag-name_wrapper">
+            <span className="bag-item_name">{bag[item.id - 1].name}</span>
+            <p className="bag-item_description">
               {bag[item.id - 1].description}
             </p>
           </div>
           <span className="price-push">
             {priceSum.push(bag[item.id - 1].price * item.count)}
           </span>
-          <span className="bag-item__price">
+          <span className="bag-item_price">
             ${bag[item.id - 1].price.toFixed(2) * item.count}
           </span>
-          <div className="bag-number__wrapper">
-            <div className="number-wrapper__set">
+          <div className="bag-number_wrapper">
+            <div className="number-wrapper_set">
               <i
                 className="number-set fas fa-minus"
                 onClick={() => this.props.removeItem(bag[item.id - 1].id)}
               />
-              <span className="bag-item__number">{item.count}</span>
+              <span className="bag-item_number">{item.count}</span>
               <i
                 className="number-set fas fa-plus"
                 onClick={() => this.props.addToBag(bag[item.id - 1].id)}
@@ -85,28 +93,33 @@ class Bag extends Component {
               <p>itm.</p>
             </div>
             <span
-              className="bag-remove__item"
+              className="bag-remove_item"
               onClick={() => this.props.removeFromBag(bag[item.id - 1].id, -1)}
             >
-              remove item
+              <i className="far fa-trash-alt"></i>
             </span>
           </div>
         </li>
       ));
       return (
         <div className="bag">
+          <img
+            className="shoppingbag-image"
+            src="/photos/shoppingbag.png"
+            alt={"shoppingbag"}
+          />
           <h2>Shopping bag</h2>
           <ul className="bag-items">{bagItems}</ul>
           <div className="bag-total">
             <form onSubmit={this.handleSubmit}>
               <label>
                 <p
-                className="bag-text_label"
+                  className="bag-text_label"
                   style={{
                     visibility: !this.state.validate ? "show" : "hidden"
                   }}
                 >
-                  Enter the code <br/> (and press enter):
+                  Enter the code <br /> (and press enter):
                 </p>
                 <input
                   type="text"
@@ -115,12 +128,13 @@ class Bag extends Component {
                   onChange={this.handleChange}
                   className="bag-input_code"
                   placeholder="Rabatt code"
+                  disabled = {(this.state.disabled)? true : false}
                 />
                 <span />
               </label>
               <p className="bag-text_label">{this.state.rabat}</p>
             </form>
-            <span className="bag-sum__total">
+            <span className="bag-sum_total">
               TOTAL: ${" "}
               {(
                 priceSum.reduce((total, value) => total + value) -
@@ -130,7 +144,7 @@ class Bag extends Component {
               ).toFixed(2)}
             </span>
             <button
-              className="bag-button__pay"
+              className="bag-button_pay"
               onClick={() => this.showOrder()}
             >
               Pay
@@ -140,7 +154,10 @@ class Bag extends Component {
       );
     } else {
       const bagItems = bagMap.map((item, i) => (
-        <tr key={bag[item.id - 1].id} data={priceSum.push(bag[item.id - 1].price * item.count)}>
+        <tr
+          key={bag[item.id - 1].id}
+          data={priceSum.push(bag[item.id - 1].price * item.count)}
+        >
           <td>1</td>
           <td>{bag[item.id - 1].name}</td>
           <td>{item.count}</td>
@@ -150,6 +167,7 @@ class Bag extends Component {
       ));
       return (
         <div className="bag">
+        
           <h2>Your order</h2>
           <Table className="minimalistBlack">
             <thead>
@@ -189,7 +207,7 @@ class Bag extends Component {
           </Table>
           <Link
             to="/"
-            className="bag-button__pay"
+            className="bag-button_pay"
             onClick={() => {
               alert("Success! Your order has been completed!");
               this.props.removeFromBag(-1);
@@ -197,6 +215,11 @@ class Bag extends Component {
           >
             Ok
           </Link>
+          <img
+            className="order-image"
+            src="/photos/order.png"
+            alt={"order"}
+          />
         </div>
       );
     }

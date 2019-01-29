@@ -60,6 +60,7 @@ class ProductsList extends React.Component {
                     previous
                     href="#"
                   />
+                  <i className="far fa-chevron-square-left" />
                 </PaginationItem>
 
                 {[...Array(this.pagesCount)].map((page, i) => (
