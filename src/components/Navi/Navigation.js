@@ -12,7 +12,6 @@ class Navi extends Component {
     this.state = {
       show: false,
       menu: true
-      // hidden:
     };
   }
 

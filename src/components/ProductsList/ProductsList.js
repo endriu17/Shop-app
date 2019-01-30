@@ -38,7 +38,7 @@ class ProductsList extends React.Component {
           transitionAppearTimeout={1000}
         >
           <div className="products-list">
-            <div className="products-list__container">
+            <div className="products-list_container">
               {this.props.data
                 .map(a => <Product key={`product-${a.id}`} {...a} />)
                 .slice(
@@ -46,7 +46,7 @@ class ProductsList extends React.Component {
                   (currentPage + 1) * this.pageSize
                 )
                 .map((data, i) => (
-                  <div className="product-list__item" key={i}>
+                  <div className="product-list_item" key={i}>
                     {data}
                   </div>
                 ))}

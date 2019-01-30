@@ -119,13 +119,15 @@ class App extends Component {
       <BrowserRouter>
         <div className="app">
           <div className="header-wrapper">
-            <Link className="navi-logo" to="/">
-              <img src="/photos/logoShop.png" alt={"logo"} />
-              <span className="logo-text">Lighting</span>
-            </Link>
-            <div className="nav-home">
-              <Navi />
-              <ShoppingBag value={this.state.counter} />
+            <div className="hidden-nav_wrapper">
+              <Link className="navi-logo" to="/">
+                <img src="/photos/logoShop.png" alt={"logo"} />
+                <span className="logo-text">Lighting</span>
+              </Link>
+              <div className="nav-home">
+                <Navi />
+                <ShoppingBag value={this.state.counter} />
+              </div>
             </div>
           </div>
           <div className="main-layout">

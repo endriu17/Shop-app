@@ -8,6 +8,17 @@
   box-shadow: 1px 1px 4px 1px #90909c;
 }
 
+.hidden-nav_wrapper {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
 .home-wrapper {
   display: flex;
   justify-content: space-between;
