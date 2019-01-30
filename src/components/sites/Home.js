@@ -33,10 +33,10 @@ class Home extends Component {
   }
 
   clear(e) {
-    console.log('clicked')
+    console.log("clicked");
     setTimeout(() => {
       this.setState({
-        data: main 
+        data: main
       });
     }, 10);
   }
@@ -47,7 +47,6 @@ class Home extends Component {
       <div className="home-wrapper">
         <div className="sortingbox">
           <span className="sort-list_header">Sort:</span>
-
           <Link
             to="/order/name/asc"
             onClick={() => this.addData("name", "asc")}
@@ -78,14 +77,10 @@ class Home extends Component {
             Price <span className="price-hidden">descending</span>
             <i className="fas fa-long-arrow-alt-down" />
           </Link>
-          <Link
-            to="/"
-            onClick={this.clear}
-            className="sort-list"
-          >
-            Reset
+          <Link to="/" onClick={this.clear} className="sort-list">
+            <i className="fas fa-undo-alt" />
           </Link>
-          <span className="sort-line">________________________</span>
+          <span className="sort-line">______________________</span>
         </div>
         <ProductsList data={data} />
       </div>

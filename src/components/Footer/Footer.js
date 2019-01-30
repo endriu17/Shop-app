@@ -12,7 +12,7 @@ class Footer extends Component {
     return (
       <div className="footer">
         <span className="footer-copyrights">&copy; 2019 by endriu17. All rights reserved</span>
-        <Navi styles={this.state}/>
+        <Navi className="footer-nav" styles={this.state}/>
       </div>
     );
   }

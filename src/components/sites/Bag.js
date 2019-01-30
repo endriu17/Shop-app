@@ -29,7 +29,7 @@ class Bag extends Component {
   handleChange(event) {
     this.setState({
       value: event.target.value,
-      validate: false,
+      validate: false
     });
   }
 
@@ -96,7 +96,7 @@ class Bag extends Component {
               className="bag-remove_item"
               onClick={() => this.props.removeFromBag(bag[item.id - 1].id, -1)}
             >
-              <i className="far fa-trash-alt"></i>
+              <i className="far fa-trash-alt" />
             </span>
           </div>
         </li>
@@ -128,7 +128,7 @@ class Bag extends Component {
                   onChange={this.handleChange}
                   className="bag-input_code"
                   placeholder="Rabatt code"
-                  disabled = {(this.state.disabled)? true : false}
+                  disabled={this.state.disabled ? true : false}
                 />
                 <span />
               </label>
@@ -143,10 +143,7 @@ class Bag extends Component {
                   100
               ).toFixed(2)}
             </span>
-            <button
-              className="bag-button_pay"
-              onClick={() => this.showOrder()}
-            >
+            <button className="bag-button_pay" onClick={() => this.showOrder()}>
               Pay
             </button>
           </div>
@@ -167,7 +164,6 @@ class Bag extends Component {
       ));
       return (
         <div className="bag">
-        
           <h2>Your order</h2>
           <Table className="minimalistBlack">
             <thead>
@@ -215,11 +211,7 @@ class Bag extends Component {
           >
             Ok
           </Link>
-          <img
-            className="order-image"
-            src="/photos/order.png"
-            alt={"order"}
-          />
+          <img className="order-image" src="/photos/order.png" alt={"order"} />
         </div>
       );
     }
