@@ -19,13 +19,13 @@
   text-decoration: none;
 }
 
-.bag-items__number {
+.bag-items_number_1 {
   position: absolute;
   padding: 3px;
   height: 15px;
   width: 15px;
-  bottom: 5px;
-  left: 17px;
+  bottom: -5px;
+  left: 15px;
   border-radius: 50%;
   color: #fff;
   background-color: #ff0000;
@@ -36,10 +36,27 @@
   font-weight: bold;
 }
 
-.bag-items__icon {
+.bag-items_number_2 {
+  position: absolute;
+  padding: 3px;
+  height: 20px;
+  width: 20px;
+  right: -15px;
+  bottom: -10px;
+  font-size: 24px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #ff0000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.bag-items_icon {
   color: grey;
 }
 
-.bag-items__icon:hover {
+.bag-items_icon:hover {
   color: #000;
 }

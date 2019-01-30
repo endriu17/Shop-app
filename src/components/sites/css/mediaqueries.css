@@ -60,13 +60,23 @@
   a.link-nav_hidden {
     width: 100vh;
     display: table-cell;
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 2px;
+
   }
 
   a.link-nav {
     position: absolute;
-    top: 39px;
-    right: 100px;
+    right: 120px;
     width: 20px;
+  }
+
+  span.bag-items_number {
+    height: 20px;
+    width: 20px;
+    right: -15px;
+    font-size: 24px;
   }
 
   .footer .app-header_hidden {

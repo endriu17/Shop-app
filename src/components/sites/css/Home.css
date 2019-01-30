@@ -56,3 +56,9 @@ span.sort-list_header {
   width: 100%;
   margin: 15px auto;
 }
+
+
+i.fas:hover {
+  transform: scale(1.2);
+  transition: all 0.5s ease-out;
+}
