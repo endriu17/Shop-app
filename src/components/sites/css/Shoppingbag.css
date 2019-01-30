@@ -1,12 +1,3 @@
-/* .home-wrapper {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 50px;
-  background-color: #fafafa;
-  margin-top: 0;
-  width: 100%;
-}
-
 .bag {
   display: flex;
   justify-content: flex-start;
@@ -154,7 +145,7 @@
 }
 
 .bag-button_pay:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .bag-button_pay:active {
@@ -171,32 +162,6 @@
 
 input:focus::-webkit-input-placeholder {
   color: transparent;
-}
-
-.contact-site,
-.faq-site,
-.regulations-site,
-.error-site,
-.bag-empty {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80vh;
-  background-color: #fafafa;
-  margin-top: 0;
-  position: relative;
-}
-
-.contact-site img,
-.regulations-site img,
-.faq-site img,
-.bag-empty img,
-img.shoppingbag-image
-{
-  position: absolute;
-  top: 40px;
-  right: 40px;
 }
 
 img.order-image {
@@ -271,53 +236,19 @@ table.minimalistBlack th:nth-of-type(6) {
   text-align: center;
 }
 
-.sortingbox {
-  text-align: left;
-  padding: 50px 0 50px 100px;
-  font-size: 20px;
+.bag-empty {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-color: #fafafa;
+  margin-top: 0;
   position: relative;
 }
 
-.sort-list {
-  width: 100%;
-  margin: 15px auto;
-  display: inline-block;
-  flex-wrap: wrap;
-  text-decoration: none;
-  cursor: pointer;
+.bag-empty img {
+  position: absolute;
+  top: 40px;
+  right: 40px;
 }
-
-.sort-list i {
-  margin-left: 10px;
-}
-
-.sort-list:first-of-type {
-  margin-top: 40px;
-}
-
-span.sort-list_header {
-  font-weight: bold;
-}
-
-.sort-line {
-  width: 100%;
-  margin: 15px auto;
-} */
-
-i.fas:hover {
-  transform: scale(1.2);
-  transition: all 0.5s ease-out;
-}
-
-@import url('./css/Shoppingbag.css');
-@import url('./css/Contact.css');
-@import url('./css/Faq.css');
-@import url('./css/Footer.css');
-@import url('./css/Home.css');
-@import url('./css/Navigation.css');
-@import url('./css/NotFound.css');
-@import url('./css/Product.css');
-@import url('./css/ProductList.css');
-@import url('./css/Regulations.css');
-@import url('./css/mediaqueries.css');
-@import url('./css/ShoppingbagLink.css');

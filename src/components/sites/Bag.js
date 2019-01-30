@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./index.css";
 import { Table } from "reactstrap";
-import bag from "../Product/bag.json";
+import bag from "../Product/main.json";
 
 class Bag extends Component {
   constructor(props) {

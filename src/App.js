@@ -10,7 +10,6 @@ import Contact from "./components/sites/Contact";
 import Faq from "./components/sites/Faq";
 import Regulations from "./components/sites/Regulations";
 import ShoppingBag from "./components/ShoppingBag/ShoppingBag";
-import "./App.css";
 
 class App extends Component {
   constructor(props) {

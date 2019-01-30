@@ -1,0 +1,16 @@
+.faq-site {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-color: #fafafa;
+  margin-top: 0;
+  position: relative;
+}
+
+.faq-site img {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}

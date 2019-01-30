@@ -1,12 +1,11 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import "./ShoppingBag.css";
 
 const ShoppingBag = (props) => {
 
   return (
       <NavLink
-        className="link-nav ShoppingBag"
+        className="link-nav shoppingBag"
         to="/bag"
         activeStyle={{fontWeight: 'bold'}}
       >

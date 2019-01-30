@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import ProductsList from "../ProductsList/ProductsList";
 import data from "../Product/data.json";
+import main from "../Product/main.json";
 import "./index.css";
-import "./indexRWD.css";
 
 class Home extends Component {
   constructor(props) {
@@ -13,6 +13,7 @@ class Home extends Component {
     };
 
     this.addData = this.addData.bind(this);
+    this.clear = this.clear.bind(this);
   }
 
   addData(type, dir) {
@@ -31,12 +32,22 @@ class Home extends Component {
     }, 10);
   }
 
+  clear(e) {
+    console.log('clicked')
+    setTimeout(() => {
+      this.setState({
+        data: main 
+      });
+    }, 10);
+  }
+
   render() {
     const { data } = this.state;
     return (
       <div className="home-wrapper">
         <div className="sortingbox">
           <span className="sort-list_header">Sort:</span>
+
           <Link
             to="/order/name/asc"
             onClick={() => this.addData("name", "asc")}
@@ -57,7 +68,7 @@ class Home extends Component {
             className="sort-list"
           >
             Price <span className="price-hidden">ascending</span>
-            <i class="fas fa-long-arrow-alt-up" />
+            <i className="fas fa-long-arrow-alt-up" />
           </Link>
           <Link
             to="/order/price/desc"
@@ -65,7 +76,14 @@ class Home extends Component {
             className="sort-list"
           >
             Price <span className="price-hidden">descending</span>
-            <i class="fas fa-long-arrow-alt-down" />
+            <i className="fas fa-long-arrow-alt-down" />
+          </Link>
+          <Link
+            to="/"
+            onClick={this.clear}
+            className="sort-list"
+          >
+            Reset
           </Link>
           <span className="sort-line">________________________</span>
         </div>

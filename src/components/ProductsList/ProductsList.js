@@ -1,5 +1,4 @@
 import React from "react";
-import "./ProductsList.css";
 import Product from "../Product/Product";
 import { Pagination, PaginationItem, PaginationLink } from "reactstrap";
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
