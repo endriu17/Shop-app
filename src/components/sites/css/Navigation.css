@@ -86,6 +86,7 @@ a.link-nav_hidden {
   margin-left: 20px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.2), 0 2px 12px 0 rgba(185, 126, 126, 0.19);
 }
 
 a.navi-logo {

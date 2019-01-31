@@ -77,7 +77,7 @@ class Home extends Component {
             Price <span className="price-hidden">descending</span>
             <i className="fas fa-long-arrow-alt-down" />
           </Link>
-          <Link to="/" onClick={this.clear} className="sort-list">
+          <Link to="/" onClick={this.clear} className="sort-list_back">
             <i className="fas fa-undo-alt" />
           </Link>
           <span className="sort-line">______________________</span>

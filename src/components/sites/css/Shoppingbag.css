@@ -14,6 +14,9 @@
   margin: 50px 0 0;
   padding: 0;
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .bag-item_list {
@@ -22,22 +25,63 @@
   justify-content: space-around;
   align-items: center;
   min-height: 200px;
+  width: 70%;
+  flex-wrap: wrap;
 }
 
-.bag-item_list img {
+.bag-description_link {
   margin: 0;
-  width: 100px;
-  height: 100px;
-  border: 1px solid #000;
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.2), 0 2px 12px 0 rgba(0, 0, 0, 0.19);
+  transition: width 1s;
+  padding: 20px;
+  text-decoration: none;
+  display: inline-flex;
+  position: relative;
+}
+
+.bag-description_link:active .bag-description_hidden {
+  opacity: 1;
+}
+
+.bag-description_hidden {
+  transition: 0.5s ease;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px;
+  color: #fff;
+  font-size: 26px;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+}
+
+.bag-description_label {
+  font-size: 20px;
+  margin: 0;
+}
+
+.bag-description_text {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.bag-item_list img:active {
+  transform: translate(1px, 1px);
 }
 
 .bag-name_wrapper {
-  width: 50%;
+  text-align: center;
 }
 
 .bag-item_name {
-  font-size: 20px;
+  font-size: 26px;
   font-weight: bold;
+  margin-block-end: 5px;
 }
 
 .bag-item_description {
@@ -46,7 +90,9 @@
 }
 
 .bag-item_price {
-  font-size: 22px;
+  font-size: 24px;
+  margin: 0 auto;
+  font-weight: bold;
 }
 
 .bag-item_number {
@@ -56,21 +102,22 @@
   margin: 0 5px;
   border: 1px solid grey;
   border-radius: 5px;
+  font-weight: bold;
 }
 
 .bag-number_wrapper {
   display: flex;
-  flex-direction: column;
   align-content: center;
-  margin-top: 15px;
-  width: 120px;
+  justify-content: space-around;
   font-size: 20px;
+  min-width: 180px;
 }
 
 .number-wrapper_set {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  width: 100%;
 }
 
 .number-set {
@@ -80,11 +127,12 @@
 }
 
 .bag-remove_item {
-  width: 90px;
+  /* width: 90px; */
   color: #ff0000;
   cursor: pointer;
   display: flex;
   justify-content: center;
+  margin-left: 15px;
 }
 
 .bag-remove_item:hover {
@@ -172,9 +220,10 @@ img.order-image {
 
 table.minimalistBlack {
   border: 2px solid #000000;
-  width: 80%;
+  width: 100%;
   text-align: left;
   border-collapse: collapse;
+  overflow-x: auto;
 }
 
 table.minimalistBlack td,
@@ -247,7 +296,8 @@ table.minimalistBlack th:nth-of-type(6) {
   position: relative;
 }
 
-.bag-empty img {
+.bag-empty img,
+img.shoppingbag-image {
   position: absolute;
   top: 40px;
   right: 40px;
