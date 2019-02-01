@@ -1,9 +1,9 @@
 .product {
+
     min-width: 250px;
     text-decoration: none;
     color: #000;
     min-height: 300px;
-    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -11,6 +11,7 @@
     margin: 15px;
     padding: 10px 20px;
     position: relative;
+    box-shadow: 0 6px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   }
   
   .product:hover {

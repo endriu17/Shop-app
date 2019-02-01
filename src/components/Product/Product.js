@@ -40,7 +40,7 @@ const Product = props => {
           >
             {props.category[1]}
           </span>
-      <div className="product-wrapper" style={{ width: "100%" }}>
+      <div className="product-wrapper">
         <span className="product-name">{props.name}</span>
         <div className="product-price_wrapper">
           <span className="product-price ">

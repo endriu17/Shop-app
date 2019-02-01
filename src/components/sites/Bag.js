@@ -102,7 +102,7 @@ class Bag extends Component {
           <div className="bag-name_wrapper">
             <h2 className="bag-item_name">{bag[item.id - 1].name}</h2>
             <p className="bag-description_label">
-              (Click foto for description)
+              (click foto for description)
             </p>
             <span className="price-push">
               {priceSum.push(bag[item.id - 1].price * item.count)}
