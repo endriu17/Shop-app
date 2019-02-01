@@ -5,7 +5,7 @@ import MediaQuery from "react-responsive";
 const ShoppingBag = props => {
   return (
     <NavLink
-      className="link-nav shoppingBag"
+      className="link-nav shoppingbag"
       to="/bag"
       activeStyle={{ fontWeight: "bold" }}
     >

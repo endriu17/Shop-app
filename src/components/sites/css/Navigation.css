@@ -36,8 +36,12 @@ a.link-nav {
 }
 
 a.link-nav:hover {
-  text-decoration: underline;
+  border-bottom: 3px solid #fa8212c9;
   color: #000;
+}
+
+a.shoppingbag:hover {
+  border-bottom: none;
 }
 
 .link-nav_hidden {
@@ -81,12 +85,12 @@ a.link-nav_hidden {
   font-weight: bold;
   text-decoration: none;
   position: relative;
-  background-color: #fa973ac9;
+  background-color:#fa973a;
   width: 150px;
   margin-left: 20px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.2), 0 2px 12px 0 rgba(185, 126, 126, 0.19);
+  box-shadow: 0 6px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 a.navi-logo {
@@ -96,7 +100,7 @@ a.navi-logo {
 .logo-text {
   position: absolute;
   left: 5px;
-  top: 12px;
+  top: 10px;
   color: #fff;
   font-size: 26px;
   background-color: transparent;

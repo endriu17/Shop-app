@@ -41,12 +41,6 @@ class ProductItem extends Component {
           <h4 className="product-item_promo">
             {data[this.props.id - 1].category[2]}
           </h4>
-          <img className="product-photo" src={found.photo} alt={found.name} />
-          <div className="product-wrapper_item" style={{ width: "60%" }}>
-            <span className="product-name">{found.name}</span>
-            <div className="product-price_wrapper">
-              <span className="product-price">${found.price}</span>
-              <span className="product-price_old">{found.oldPrice}</span>
               <p
                 className="product-item_special"
                 style={{
@@ -55,6 +49,12 @@ class ProductItem extends Component {
               >
                 {found.category[1]}
               </p>
+          <img className="product-photo" src={found.photo} alt={found.name} />
+          <div className="product-wrapper_item">
+            <span className="product-name">{found.name}</span>
+            <div className="product-price_wrapper">
+              <span className="product-price">${found.price.toFixed(2)}</span>
+              <span className="product-price_old">{found.oldprice}</span>
             </div>
             <p className="product-description">{found.description}</p>
           </div>

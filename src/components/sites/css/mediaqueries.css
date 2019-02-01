@@ -2,10 +2,6 @@
   .sort-line {
     display: none;
   }
-
-  /* .nav-hamburger_hidden {
-    display: none;
-  } */
 }
 
 @media only screen and (max-width: 1060px) {
@@ -122,34 +118,49 @@
 
   .product-item {
     flex-direction: column;
-    padding: 100px 50px;
+    padding: 0 50px 100px;
+    margin: 0 auto;
   }
 
   .product-photo {
-    width: 120px;
-    height: 120px;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    top: 10px;
+    left: 0;
   }
 
   .product-item_promo {
-    font-size: 34px;
-    top: 150px;
-    left: 41%;
+    position: relative;
+    top: 130px;
+    left: 0;
   }
 
   .product-wrapper_item {
-    align-items: center;
     margin-top: 15px;
     width: 100%;
+    margin: 20px auto;
   }
 
   .product-item_special {
-    top: -240px;
-    right: -100px;
+    top: 0;
+    right: 20px;
   }
 
   .add-to-bag {
-    margin: 0 auto;
-    bottom: 100px;
+    left: 25%;
+    bottom: 120px;
+  }
+
+  .add-to-bag_text {
+    left: 25%;
+    bottom: 60px;
+  }
+
+  .add-to-bag_count {
+    bottom: 15px;
+    left: 25%;
   }
 }
 
@@ -181,6 +192,32 @@
   table.minimalistBlack thead th,
   table.minimalistBlack tfoot td {
     font-size: 14px;
+  }
+
+  .product-container {
+    padding: 0 5px 100px;
+  }
+
+  .product-item {
+    padding: 0 5px 50px;
+  }
+
+  .product-wrapper_item {
+    padding: 10px 0;
+  }
+
+  .add-to-bag {
+    left: 10px;
+  }
+
+  .add-to-bag_text {
+    left: 10px;
+    font-size: 14px;
+  }
+
+  .add-to-bag_count {
+    left: 10px;
+    font-size: 18px
   }
  
 }

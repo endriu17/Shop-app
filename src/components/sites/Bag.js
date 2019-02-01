@@ -108,7 +108,7 @@ class Bag extends Component {
               {priceSum.push(bag[item.id - 1].price * item.count)}
             </span>
             <p className="bag-item_price">
-              ${bag[item.id - 1].price.toFixed(2) * item.count}
+              ${(bag[item.id - 1].price * item.count).toFixed(2)}
             </p>
             <div className="bag-number_wrapper">
               <div className="number-wrapper_set">
@@ -202,11 +202,11 @@ class Bag extends Component {
           key={bag[item.id - 1].id}
           data={priceSum.push(bag[item.id - 1].price * item.count)}
         >
-          <td data-column="#">1</td>
-          <td data-column="Product">{bag[item.id - 1].name}</td>
-          <td data-column="Items">{item.count}</td>
-          <td data-column="Price">{bag[item.id - 1].price.toFixed(2)}</td>
-          <td data-column="Sum">{(bag[item.id - 1].price * item.count).toFixed(2)}</td>
+          <td>1</td>
+          <td>{bag[item.id - 1].name}</td>
+          <td>{item.count}</td>
+          <td>{bag[item.id - 1].price.toFixed(2)}</td>
+          <td>{(bag[item.id - 1].price * item.count).toFixed(2)}</td>
         </tr>
       ));
       return (

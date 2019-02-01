@@ -32,21 +32,21 @@ const Product = props => {
         {props.category[0]}!
       </span>
       <h4 className="product_promo">{props.category[2]}</h4>
-      <div className="product-wrapper" style={{ width: "100%" }}>
-        <span className="product-name">{props.name}</span>
-        <div className="product-price_wrapper">
-          <span className="product-price ">
-            $ {props.price.toFixed(2)}
-          </span>
           <span
-            className="product-item_special"
+            className="product-special_home"
             style={{
               visibility: props.category[1] === "" ? "hidden" : "show"
             }}
           >
             {props.category[1]}
           </span>
-        <span className="product-price_old">{props.oldprice}</span>
+      <div className="product-wrapper" style={{ width: "100%" }}>
+        <span className="product-name">{props.name}</span>
+        <div className="product-price_wrapper">
+          <span className="product-price ">
+            $ {props.price.toFixed(2)}
+          </span>
+        <span className="products-price_old">{props.oldprice}</span>
         </div>
       </div>
     </Link>
