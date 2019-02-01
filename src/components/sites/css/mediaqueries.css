@@ -162,6 +162,22 @@
     bottom: 15px;
     left: 25%;
   }
+
+  .faq-site {
+    padding: 100px 50px;
+  }
+
+  .faq-site h1 {
+    font-size: 22px;
+  }
+
+  .faq-site h2 {
+    font-size: 18px;
+  }
+  .faq-site img {
+    height: 60px;
+    width: 60px;
+  }
 }
 
 @media only screen and (max-width: 400px) {
@@ -218,6 +234,14 @@
   .add-to-bag_count {
     left: 10px;
     font-size: 18px
+  }
+
+  .faq-site {
+    padding: 100px 20px;
+  }
+
+  .faq-site h1 {
+    font-size: 20px;
   }
  
 }
