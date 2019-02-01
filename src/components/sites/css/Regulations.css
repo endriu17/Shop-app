@@ -1,16 +1,27 @@
 .regulations-site {
-  width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 80vh;
   background-color: #fafafa;
-  margin-top: 0;
   position: relative;
+  padding: 100px;
 }
 
 .regulations-site img {
   position: absolute;
-  top: 40px;
+  top: 20px;
   right: 40px;
+  height: 100px;
+  width: 100px;
+}
+
+.regulations-site p {
+  font-size: 18px;
+}
+
+.regulations-site ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }

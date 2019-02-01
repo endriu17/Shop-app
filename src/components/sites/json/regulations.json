@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "topic": "General rules for the use of the store",
+        "issue1": "Responsibilities of the seller",
+        "explanation1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elit risus, vestibulum non erat quis, rutrum eleifend tellus. Vestibulum tempor nisl eu vestibulum blandit. Ut nisi turpis, ultricies eu magna.",
+        "issue2": "Responsibilities of the client",
+        "explanation2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elit risus, vestibulum non erat quis, rutrum eleifend tellus. Vestibulum tempor nisl eu vestibulum blandit. Ut nisi turpis, ultricies eu magna."
+    },
+    {
+        "id": 2,
+        "topic": "Terms of sale:",
+        "issue1": "Lorem ipsum dolor sit amet",
+        "explanation1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elit risus, vestibulum non erat quis, rutrum eleifend tellus. Vestibulum tempor nisl eu vestibulum blandit. Ut nisi turpis, ultricies eu magna.",
+        "issue2": "Responsibilities of the client",
+        "explanation2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elit risus, vestibulum non erat quis, rutrum eleifend tellus. Vestibulum tempor nisl eu vestibulum blandit. Ut nisi turpis, ultricies eu magna."
+    },
+    {
+        "id": 3,
+        "topic": "Payment rules:",
+        "issue1": "Accepted payment methods",
+        "explanation1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elit risus, vestibulum non erat quis, rutrum eleifend tellus. Vestibulum tempor nisl eu vestibulum blandit. Ut nisi turpis, ultricies eu magna.",
+        "issue2": "Confirmations and invoices",
+        "explanation2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elit risus, vestibulum non erat quis, rutrum eleifend tellus. Vestibulum tempor nisl eu vestibulum blandit. Ut nisi turpis, ultricies eu magna."
+    },
+    {
+        "id": 4,
+        "topic": "Shipment:",
+        "issue1": "Shipping methods",
+        "explanation1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elit risus, vestibulum non erat quis, rutrum eleifend tellus. Vestibulum tempor nisl eu vestibulum blandit. Ut nisi turpis, ultricies eu magna.",
+        "issue2": "Shipping costs",
+        "explanation2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elit risus, vestibulum non erat quis, rutrum eleifend tellus. Vestibulum tempor nisl eu vestibulum blandit. Ut nisi turpis, ultricies eu magna."
+    },
+    {
+        "id": 5,
+        "topic": "Returns and complaints",
+        "issue1": "Lorem ipsum dolor sit amet",
+        "explanation1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elit risus, vestibulum non erat quis, rutrum eleifend tellus. Vestibulum tempor nisl eu vestibulum blandit. Ut nisi turpis, ultricies eu magna.",
+        "issue2": "Lorem ipsum dolor sit amet",
+        "explanation2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elit risus, vestibulum non erat quis, rutrum eleifend tellus. Vestibulum tempor nisl eu vestibulum blandit. Ut nisi turpis, ultricies eu magna."
+    }
+]
