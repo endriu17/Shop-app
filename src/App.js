@@ -3,13 +3,13 @@ import { Route, BrowserRouter, Link, Switch, Redirect } from "react-router-dom";
 import Navi from "./components/Navi/Navigation";
 import Footer from "./components/Footer/Footer";
 import Home from "./components/sites/Home";
-import Bag from "./components/sites/Bag";
+import Bag from "./components/sites/ShoppingBag";
 import NotFound from "./components/sites/NotFound";
 import ProductItem from "./components/Product/ProductItem/ProductItem";
 import Contact from "./components/sites/Contact";
 import Faq from "./components/sites/Faq";
 import Regulations from "./components/sites/Regulations";
-import ShoppingBag from "./components/ShoppingBag/ShoppingBag";
+import ShoppingBagLink from "./components/ShoppingBag/ShoppingBagLink";
 
 class App extends Component {
   constructor(props) {
@@ -126,7 +126,7 @@ class App extends Component {
               </Link>
               <div className="nav-home">
                 <Navi />
-                <ShoppingBag value={this.state.counter} />
+                <ShoppingBagLink value={this.state.counter} />
               </div>
             </div>
           </div>
@@ -153,7 +153,7 @@ class App extends Component {
                 )}
               />
               <Route
-                path="/bag"
+                path="/shoppingbag"
                 render={props => (
                   <Bag
                     bag={this.state.shoppingBag}

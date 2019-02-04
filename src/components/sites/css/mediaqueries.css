@@ -153,8 +153,8 @@
 
   .product-item {
     flex-direction: column;
-    padding: 0 50px 100px;
-    margin: 0 auto;
+    padding: 50px 0;
+    margin: 20px auto 70px;
   }
 
   .product-photo {
@@ -268,29 +268,29 @@
   }
 
   .product-container {
-    padding: 0 5px 100px;
+    padding: 50px 5px 100px;
   }
 
   .product-item {
-    padding: 0 5px 50px;
+    padding: 20px;
   }
 
   .product-wrapper_item {
-    padding: 10px 0;
+     width: auto;
   }
 
   .add-to-bag {
-    left: 10px;
+    left: auto;
   }
 
   .add-to-bag_text {
-    left: 10px;
+    left: auto;
     font-size: 14px;
   }
 
   .add-to-bag_count {
-    left: 10px;
-    font-size: 18px;
+    left: auto;
+    font-size: 16px;
   }
 
   .home-wrapper {

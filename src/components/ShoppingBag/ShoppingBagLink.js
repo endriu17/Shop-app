@@ -2,11 +2,11 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import MediaQuery from "react-responsive";
 
-const ShoppingBag = props => {
+const ShoppingBagLink = props => {
   return (
     <NavLink
       className="link-nav shoppingbag"
-      to="/bag"
+      to="/shoppingbag"
       activeStyle={{ fontWeight: "bold" }}
     >
       <MediaQuery query="(min-width: 861px)">
@@ -21,4 +21,4 @@ const ShoppingBag = props => {
   );
 };
 
-export default ShoppingBag;
+export default ShoppingBagLink;

@@ -21,13 +21,15 @@ class Navi extends Component {
       menu: false
     });
     document.querySelector(".navi-logo").style.display = "none";
+    document.querySelector(".shoppingbag").style.display = "none";
     setTimeout(() => {
       this.setState({
         show: false,
         menu: true
       });
       document.querySelector(".navi-logo").style.display = "flex";
-    }, 10000);
+      document.querySelector(".shoppingbag").style.display = "flex";
+    }, 3500);
   }
 
   closeMenu() {
