@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import data from "../data.json";
+import data from "../../sites/json/data.json";
 
 class ProductItem extends Component {
   constructor(props) {

@@ -80,13 +80,18 @@ span.sort-list_header {
 }
 
 .sort-list_back {
-  width: 60%;
-  margin: 15px auto;
-  display: inline-flex;
-  flex-wrap: wrap;
+  padding: 5px;
+  background-color: #494848;
+  position: absolute;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  right: 80px;
+  top: 80px;
   text-decoration: none;
-  cursor: pointer;
-  color: #494848;
+  font-size: 14px;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2),
+      0 3px 14px 0 rgba(0, 0, 0, 0.19);
 }
 
 .sort-line {
@@ -98,3 +103,4 @@ i.fas:hover {
   transform: scale(1.2);
   transition: all 0.5s ease-out;
 }
+

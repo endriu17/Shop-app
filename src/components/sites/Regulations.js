@@ -8,7 +8,7 @@ const Regulations = () => (
     <h1>Regulations and terms</h1>
     <ul>
       {regulations.map((item, i) => (
-        <li>
+        <li key={i}>
           <h2>{regulations[i].topic}</h2>
           <h3>{regulations[i].issue1}</h3>
           <p>{regulations[i].explanation1}</p>

@@ -1,15 +1,16 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import ProductsList from "../ProductsList/ProductsList";
-import data from "../Product/data.json";
-import main from "../Product/main.json";
+import data from "./json/data.json";
+import main from "./json/main.json";
 import "./index.css";
 
 class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: data
+      data: data,
+      active: false
     };
 
     this.addData = this.addData.bind(this);
@@ -17,7 +18,7 @@ class Home extends Component {
   }
 
   addData(type, dir) {
-    setTimeout(() => {
+    // setTimeout(() => {
       this.setState({
         data: data.sort((a, b) => {
           if (dir === "asc") {
@@ -27,16 +28,17 @@ class Home extends Component {
           } else {
             return 0;
           }
-        })
+        }),
+        active: true
       });
-    }, 10);
+    // }, 10);
   }
 
   clear(e) {
-    console.log("clicked");
     setTimeout(() => {
       this.setState({
-        data: main
+        data: main,
+        active: false
       });
     }, 10);
   }
@@ -77,8 +79,15 @@ class Home extends Component {
             Price <span className="price-hidden">descending</span>
             <i className="fas fa-long-arrow-alt-down" />
           </Link>
-          <Link to="/" onClick={this.clear} className="sort-list_back">
-            <i className="fas fa-undo-alt" />
+          <Link
+            to="/"
+            onClick={this.clear}
+            style={{
+              display: this.state.active ? "block" : "none"
+            }}
+            className="sort-list_back"
+          >
+            clear sorting
           </Link>
           <span className="sort-line">______________________</span>
         </div>

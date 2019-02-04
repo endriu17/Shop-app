@@ -8,7 +8,7 @@ const Faq = () => (
     <h1>Frequently Asked Questions...</h1>
     <ul>
       {faq.map((item, i) => (
-        <li>
+        <li key={i}>
           <h2>{faq[i].question}</h2>
           <p>{faq[i].answer}</p>
         </li>

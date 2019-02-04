@@ -1,0 +1,434 @@
+[
+  {
+    "id": 1,
+    "name": "Lamp - rope",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan. Etiam ornare, metus quis congue pretium, nulla magna condimentum libero, at interdum justo nibh at ipsum. Donec commodo lectus ac dui iaculis cursus. Curabitur sit amet libero nec nibh semper tempus nec ac nunc. In sit.",
+    "price": 300,
+    "oldprice": "",
+    "category": ["New", "", "Promo"],
+    "photo": "/photos/lamp1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Lamp - pured",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan. Etiam ornare, metus quis congue pretium, nulla magna condimentum libero, at interdum justo nibh at ipsum. Donec commodo lectus ac dui iaculis cursus. Curabitur sit amet libero nec nibh semper tempus nec ac nunc. In sit.",
+    "price": 350,
+    "oldprice": "",
+    "category": ["New", "", "Promo"],
+    "photo": "/photos/lamp2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Lamp - jar",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan. Etiam ornare, metus quis congue pretium, nulla magna condimentum libero, at interdum justo nibh at ipsum. Donec commodo lectus ac dui iaculis cursus. Curabitur sit amet libero nec nibh semper tempus nec ac nunc. In sit.",
+    "price": 250,
+    "oldprice": "295.00",
+    "category": ["", "Last one", ""],
+    "photo": "/photos/lamp3.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Light bulb classic",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan.",
+    "price": 80,
+    "oldprice": "",
+    "category": ["New", "Last one", ""],
+    "photo": "/photos/bulb1.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Light bulb candle",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan.",
+    "price": 140,
+    "oldprice": "",
+    "category": ["", "", "Promo"],
+    "photo": "/photos/bulb2.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Light bulb special",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan.",
+    "price": 180,
+    "oldrice": "",
+    "category": ["New", "Last one", "Promo"],
+    "photo": "/photos/bulb3.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Lamp dual",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan.",
+    "price": 180,
+    "oldprice": "",
+    "category": ["", "Last one", ""],
+    "photo": "/photos/lamp4.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Lamp white",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan. Etiam ornare, metus quis congue pretium, nulla magna condimentum libero, at interdum justo nibh at ipsum. Donec commodo lectus ac dui iaculis cursus. Curabitur sit amet libero nec nibh semper tempus nec ac nunc. In sit.",
+    "price": 300,
+    "oldprice": "",
+    "category": ["New", "", "Promo"],
+    "photo": "/photos/lamp5.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Lamp tripod",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan. Etiam ornare, metus quis congue pretium, nulla magna condimentum libero, at interdum justo nibh at ipsum. Donec commodo lectus ac dui iaculis cursus. Curabitur sit amet libero nec nibh semper tempus nec ac nunc. In sit.",
+    "price": 320,
+    "oldprice": "",
+    "category": ["", "Last one", ""],
+    "photo": "/photos/lamp6.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Light bulb fil.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan. Etiam ornare, metus quis congue pretium, nulla magna condimentum libero, at interdum justo nibh at ipsum. Donec commodo lectus ac dui iaculis cursus. Curabitur sit amet libero nec nibh semper tempus nec ac nunc. In sit.",
+    "price": 345,
+    "oldprice": "440.00",
+    "category": ["", "", ""],
+    "photo": "/photos/bulb4.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Light bulb gold",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan. Etiam ornare, metus quis congue pretium, nulla magna condimentum libero, at interdum justo nibh at ipsum. Donec commodo lectus ac dui iaculis cursus. Curabitur sit amet libero nec nibh semper tempus nec ac nunc. In sit.",
+    "price": 180,
+    "oldprice": "",
+    "category": ["New", "", "Promo"],
+    "photo": "/photos/bulb5.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Light bulb tinted",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan. Etiam ornare, metus quis congue pretium, nulla magna condimentum libero, at interdum justo nibh at ipsum. Donec commodo lectus ac dui iaculis cursus. Curabitur sit amet libero nec nibh semper tempus nec ac nunc. In sit.",
+    "price": 190,
+    "oldprice": "",
+    "category": ["", "", "Promo"],
+    "photo": "/photos/bulb6.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Lamp - rope",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan. Etiam ornare, metus quis congue pretium, nulla magna condimentum libero, at interdum justo nibh at ipsum. Donec commodo lectus ac dui iaculis cursus. Curabitur sit amet libero nec nibh semper tempus nec ac nunc. In sit.",
+    "price": 300,
+    "oldprice": "",
+    "category": ["New", "", "Promo"],
+    "photo": "/photos/lamp1.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Lamp - pured",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan. Etiam ornare, metus quis congue pretium, nulla magna condimentum libero, at interdum justo nibh at ipsum. Donec commodo lectus ac dui iaculis cursus. Curabitur sit amet libero nec nibh semper tempus nec ac nunc. In sit.",
+    "price": 350,
+    "oldprice": "",
+    "category": ["New", "", "Promo"],
+    "photo": "/photos/lamp2.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Lamp - jar",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan. Etiam ornare, metus quis congue pretium, nulla magna condimentum libero, at interdum justo nibh at ipsum. Donec commodo lectus ac dui iaculis cursus. Curabitur sit amet libero nec nibh semper tempus nec ac nunc. In sit.",
+    "price": 250,
+    "oldprice": "295.00",
+    "category": ["", "Last one", ""],
+    "photo": "/photos/lamp3.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Light bulb classic",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan.",
+    "price": 80,
+    "oldprice": "",
+    "category": ["New", "Last one", ""],
+    "photo": "/photos/bulb1.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Light bulb candle",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan.",
+    "price": 140,
+    "oldprice": "",
+    "category": ["", "", "Promo"],
+    "photo": "/photos/bulb2.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Light bulb special",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan.",
+    "price": 180,
+    "oldrice": "",
+    "category": ["New", "Last one", "Promo"],
+    "photo": "/photos/bulb3.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Lamp dual",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan.",
+    "price": 180,
+    "oldprice": "",
+    "category": ["", "Last one", ""],
+    "photo": "/photos/lamp4.jpg"
+  },
+  {
+    "id": 20,
+    "name": "Lamp white",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan. Etiam ornare, metus quis congue pretium, nulla magna condimentum libero, at interdum justo nibh at ipsum. Donec commodo lectus ac dui iaculis cursus. Curabitur sit amet libero nec nibh semper tempus nec ac nunc. In sit.",
+    "price": 300,
+    "oldprice": "",
+    "category": ["New", "", "Promo"],
+    "photo": "/photos/lamp5.jpg"
+  },
+  {
+    "id": 21,
+    "name": "Lamp tripod",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan. Etiam ornare, metus quis congue pretium, nulla magna condimentum libero, at interdum justo nibh at ipsum. Donec commodo lectus ac dui iaculis cursus. Curabitur sit amet libero nec nibh semper tempus nec ac nunc. In sit.",
+    "price": 320,
+    "oldprice": "",
+    "category": ["", "Last one", ""],
+    "photo": "/photos/lamp6.jpg"
+  },
+  {
+    "id": 22,
+    "name": "Light bulb fil.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan. Etiam ornare, metus quis congue pretium, nulla magna condimentum libero, at interdum justo nibh at ipsum. Donec commodo lectus ac dui iaculis cursus. Curabitur sit amet libero nec nibh semper tempus nec ac nunc. In sit.",
+    "price": 345,
+    "oldprice": "440.00",
+    "category": ["", "", ""],
+    "photo": "/photos/bulb4.jpg"
+  },
+  {
+    "id": 23,
+    "name": "Light bulb gold",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan. Etiam ornare, metus quis congue pretium, nulla magna condimentum libero, at interdum justo nibh at ipsum. Donec commodo lectus ac dui iaculis cursus. Curabitur sit amet libero nec nibh semper tempus nec ac nunc. In sit.",
+    "price": 180,
+    "oldprice": "",
+    "category": ["New", "", "Promo"],
+    "photo": "/photos/bulb5.jpg"
+  },
+  {
+    "id": 24,
+    "name": "Light bulb tinted",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan. Etiam ornare, metus quis congue pretium, nulla magna condimentum libero, at interdum justo nibh at ipsum. Donec commodo lectus ac dui iaculis cursus. Curabitur sit amet libero nec nibh semper tempus nec ac nunc. In sit.",
+    "price": 190,
+    "oldprice": "",
+    "category": ["", "", "Promo"],
+    "photo": "/photos/bulb6.jpg"
+  },
+  {
+    "id": 25,
+    "name": "Lamp - rope",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan. Etiam ornare, metus quis congue pretium, nulla magna condimentum libero, at interdum justo nibh at ipsum. Donec commodo lectus ac dui iaculis cursus. Curabitur sit amet libero nec nibh semper tempus nec ac nunc. In sit.",
+    "price": 300,
+    "oldprice": "",
+    "category": ["New", "", "Promo"],
+    "photo": "/photos/lamp1.jpg"
+  },
+  {
+    "id": 26,
+    "name": "Lamp - pured",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan. Etiam ornare, metus quis congue pretium, nulla magna condimentum libero, at interdum justo nibh at ipsum. Donec commodo lectus ac dui iaculis cursus. Curabitur sit amet libero nec nibh semper tempus nec ac nunc. In sit.",
+    "price": 350,
+    "oldprice": "",
+    "category": ["New", "", "Promo"],
+    "photo": "/photos/lamp2.jpg"
+  },
+  {
+    "id": 27,
+    "name": "Lamp - jar",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan. Etiam ornare, metus quis congue pretium, nulla magna condimentum libero, at interdum justo nibh at ipsum. Donec commodo lectus ac dui iaculis cursus. Curabitur sit amet libero nec nibh semper tempus nec ac nunc. In sit.",
+    "price": 250,
+    "oldprice": "295.00",
+    "category": ["", "Last one", ""],
+    "photo": "/photos/lamp3.jpg"
+  },
+  {
+    "id": 28,
+    "name": "Light bulb classic",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan.",
+    "price": 80,
+    "oldprice": "",
+    "category": ["New", "Last one", ""],
+    "photo": "/photos/bulb1.jpg"
+  },
+  {
+    "id": 29,
+    "name": "Light bulb candle",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan.",
+    "price": 140,
+    "oldprice": "",
+    "category": ["", "", "Promo"],
+    "photo": "/photos/bulb2.jpg"
+  },
+  {
+    "id": 30,
+    "name": "Light bulb special",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan.",
+    "price": 180,
+    "oldrice": "",
+    "category": ["New", "Last one", "Promo"],
+    "photo": "/photos/bulb3.jpg"
+  },
+  {
+    "id": 31,
+    "name": "Lamp dual",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan.",
+    "price": 180,
+    "oldprice": "",
+    "category": ["", "Last one", ""],
+    "photo": "/photos/lamp4.jpg"
+  },
+  {
+    "id": 32,
+    "name": "Lamp white",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan. Etiam ornare, metus quis congue pretium, nulla magna condimentum libero, at interdum justo nibh at ipsum. Donec commodo lectus ac dui iaculis cursus. Curabitur sit amet libero nec nibh semper tempus nec ac nunc. In sit.",
+    "price": 300,
+    "oldprice": "",
+    "category": ["New", "", "Promo"],
+    "photo": "/photos/lamp5.jpg"
+  },
+  {
+    "id": 33,
+    "name": "Lamp tripod",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan. Etiam ornare, metus quis congue pretium, nulla magna condimentum libero, at interdum justo nibh at ipsum. Donec commodo lectus ac dui iaculis cursus. Curabitur sit amet libero nec nibh semper tempus nec ac nunc. In sit.",
+    "price": 320,
+    "oldprice": "",
+    "category": ["", "Last one", ""],
+    "photo": "/photos/lamp6.jpg"
+  },
+  {
+    "id": 34,
+    "name": "Light bulb fil.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan. Etiam ornare, metus quis congue pretium, nulla magna condimentum libero, at interdum justo nibh at ipsum. Donec commodo lectus ac dui iaculis cursus. Curabitur sit amet libero nec nibh semper tempus nec ac nunc. In sit.",
+    "price": 345,
+    "oldprice": "440.00",
+    "category": ["", "", ""],
+    "photo": "/photos/bulb4.jpg"
+  },
+  {
+    "id": 35,
+    "name": "Light bulb gold",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan. Etiam ornare, metus quis congue pretium, nulla magna condimentum libero, at interdum justo nibh at ipsum. Donec commodo lectus ac dui iaculis cursus. Curabitur sit amet libero nec nibh semper tempus nec ac nunc. In sit.",
+    "price": 180,
+    "oldprice": "",
+    "category": ["New", "", "Promo"],
+    "photo": "/photos/bulb5.jpg"
+  },
+  {
+    "id": 36,
+    "name": "Light bulb tinted",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan. Etiam ornare, metus quis congue pretium, nulla magna condimentum libero, at interdum justo nibh at ipsum. Donec commodo lectus ac dui iaculis cursus. Curabitur sit amet libero nec nibh semper tempus nec ac nunc. In sit.",
+    "price": 190,
+    "oldprice": "",
+    "category": ["", "", "Promo"],
+    "photo": "/photos/bulb6.jpg"
+  },
+  {
+    "id": 37,
+    "name": "Lamp - rope",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan. Etiam ornare, metus quis congue pretium, nulla magna condimentum libero, at interdum justo nibh at ipsum. Donec commodo lectus ac dui iaculis cursus. Curabitur sit amet libero nec nibh semper tempus nec ac nunc. In sit.",
+    "price": 300,
+    "oldprice": "",
+    "category": ["New", "", "Promo"],
+    "photo": "/photos/lamp1.jpg"
+  },
+  {
+    "id": 38,
+    "name": "Lamp - pured",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan. Etiam ornare, metus quis congue pretium, nulla magna condimentum libero, at interdum justo nibh at ipsum. Donec commodo lectus ac dui iaculis cursus. Curabitur sit amet libero nec nibh semper tempus nec ac nunc. In sit.",
+    "price": 350,
+    "oldprice": "",
+    "category": ["New", "", "Promo"],
+    "photo": "/photos/lamp2.jpg"
+  },
+  {
+    "id": 39,
+    "name": "Lamp - jar",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan. Etiam ornare, metus quis congue pretium, nulla magna condimentum libero, at interdum justo nibh at ipsum. Donec commodo lectus ac dui iaculis cursus. Curabitur sit amet libero nec nibh semper tempus nec ac nunc. In sit.",
+    "price": 250,
+    "oldprice": "295.00",
+    "category": ["", "Last one", ""],
+    "photo": "/photos/lamp3.jpg"
+  },
+  {
+    "id": 40,
+    "name": "Light bulb classic",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan.",
+    "price": 80,
+    "oldprice": "",
+    "category": ["New", "Last one", ""],
+    "photo": "/photos/bulb1.jpg"
+  },
+  {
+    "id": 41,
+    "name": "Light bulb candle",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan.",
+    "price": 140,
+    "oldprice": "",
+    "category": ["", "", "Promo"],
+    "photo": "/photos/bulb2.jpg"
+  },
+  {
+    "id": 42,
+    "name": "Light bulb special",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan.",
+    "price": 180,
+    "oldrice": "",
+    "category": ["New", "Last one", "Promo"],
+    "photo": "/photos/bulb3.jpg"
+  },
+  {
+    "id": 43,
+    "name": "Lamp dual",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan.",
+    "price": 180,
+    "oldprice": "",
+    "category": ["", "Last one", ""],
+    "photo": "/photos/lamp4.jpg"
+  },
+  {
+    "id": 44,
+    "name": "Lamp white",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan. Etiam ornare, metus quis congue pretium, nulla magna condimentum libero, at interdum justo nibh at ipsum. Donec commodo lectus ac dui iaculis cursus. Curabitur sit amet libero nec nibh semper tempus nec ac nunc. In sit.",
+    "price": 300,
+    "oldprice": "",
+    "category": ["New", "", "Promo"],
+    "photo": "/photos/lamp5.jpg"
+  },
+  {
+    "id": 45,
+    "name": "Lamp tripod",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan. Etiam ornare, metus quis congue pretium, nulla magna condimentum libero, at interdum justo nibh at ipsum. Donec commodo lectus ac dui iaculis cursus. Curabitur sit amet libero nec nibh semper tempus nec ac nunc. In sit.",
+    "price": 320,
+    "oldprice": "",
+    "category": ["", "Last one", ""],
+    "photo": "/photos/lamp6.jpg"
+  },
+  {
+    "id": 46,
+    "name": "Light bulb fil.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan. Etiam ornare, metus quis congue pretium, nulla magna condimentum libero, at interdum justo nibh at ipsum. Donec commodo lectus ac dui iaculis cursus. Curabitur sit amet libero nec nibh semper tempus nec ac nunc. In sit.",
+    "price": 345,
+    "oldprice": "440.00",
+    "category": ["", "", ""],
+    "photo": "/photos/bulb4.jpg"
+  },
+  {
+    "id": 47,
+    "name": "Light bulb gold",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan. Etiam ornare, metus quis congue pretium, nulla magna condimentum libero, at interdum justo nibh at ipsum. Donec commodo lectus ac dui iaculis cursus. Curabitur sit amet libero nec nibh semper tempus nec ac nunc. In sit.",
+    "price": 180,
+    "oldprice": "",
+    "category": ["New", "", "Promo"],
+    "photo": "/photos/bulb5.jpg"
+  },
+  {
+    "id": 48,
+    "name": "Light bulb tinted",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus tellus vel consectetur accumsan. Etiam ornare, metus quis congue pretium, nulla magna condimentum libero, at interdum justo nibh at ipsum. Donec commodo lectus ac dui iaculis cursus. Curabitur sit amet libero nec nibh semper tempus nec ac nunc. In sit.",
+    "price": 190,
+    "oldprice": "",
+    "category": ["", "", "Promo"],
+    "photo": "/photos/bulb6.jpg"
+  }
+]

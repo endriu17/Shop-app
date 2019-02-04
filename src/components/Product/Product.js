@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import data from "./data.json"
+
 
 const Product = props => {
   return (
     <Link
       to={`/product/${props.id}`}
-      key={`product-${data[props.id].id-1}`}
-      id={`product-${data[props.id].id-1}`}
+      key={`product-${props.id}`}
+      id={`product-${props.id}`}
       style={{
         backgroundImage: `url(${props.photo})`,
         backgroundRepeat: `no-repeat`,

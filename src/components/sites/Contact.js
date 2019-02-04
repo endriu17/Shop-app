@@ -1,5 +1,4 @@
 import React from "react";
-import { Col, Button, Form, FormGroup, Label, Input } from "reactstrap";
 import "./index.css";
 
 const Contact = () => (
@@ -12,13 +11,13 @@ const Contact = () => (
         <span className="contact-label">Call us</span>
         <a href="tel:+11 2233 44556">+11 2233 44556</a>
         <div className="contact-social">
-          <a href="#" target="_blank">
+          <a href="twitter.com">
             <i className="fab fa-twitter" />
           </a>
-          <a href="#" target="_blank">
+          <a href="instagram.com">
             <i className="fab fa-instagram" />
           </a>
-          <a href="#" target="_blank">
+          <a href="linkedin.com">
             <i className="fab fa-linkedin" />
           </a>
         </div>
@@ -53,7 +52,7 @@ const Contact = () => (
             />
           </div>
         </form>
-        <div class="contact-last">
+        <div className="contact-last">
           <button id="contact-submit" type="submit" name="submit">
             Send
           </button>
