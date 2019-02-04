@@ -37,7 +37,7 @@
 
 .sortingbox {
   text-align: left;
-  padding: 50px 0 50px 100px;
+  padding: 50px 0 50px 80px;
   font-size: 20px;
   position: relative;
 }
@@ -81,17 +81,19 @@ span.sort-list_header {
 
 .sort-list_back {
   padding: 5px;
-  background-color: #494848;
-  position: absolute;
-  border: none;
+  margin: 0 20px;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #000;
   border-radius: 5px;
-  color: #fff;
-  right: 80px;
-  top: 80px;
+  margin-top: auto;
+  z-index: 1;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2), 0 3px 14px 0 rgba(0, 0, 0, 0.19);
+  position: absolute;
+  left: 70px;
+  top: 380px;
   text-decoration: none;
   font-size: 14px;
-  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2),
-      0 3px 14px 0 rgba(0, 0, 0, 0.19);
 }
 
 .sort-line {
@@ -103,4 +105,3 @@ i.fas:hover {
   transform: scale(1.2);
   transition: all 0.5s ease-out;
 }
-

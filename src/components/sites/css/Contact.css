@@ -43,8 +43,6 @@
   line-height: 44px;
 }
 
-#email span,
-#tel span,
 .contact-label {
   display: block;
   color: #aaa;
@@ -88,7 +86,8 @@
 .contact-label {
   margin-top: 20px;
   margin-bottom: 10px;
-  font-size: 20px;
+  font-size: 22px;
+  color: #4e4e4e;
 }
 
 .contact-site textarea {
@@ -101,7 +100,7 @@
   overflow: hidden;
 }
 
-#contact-submit {
+.contact-submit {
   padding: 20px;
   width: 150px;
   border: none;
@@ -114,9 +113,13 @@
   box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2), 0 3px 14px 0 rgba(0, 0, 0, 0.19);
 }
 
-#social i,
+.contact-submit:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .contact-social i {
   font-size: 1.35em;
+  color: #fa8212;
 }
 
 .contact-last {

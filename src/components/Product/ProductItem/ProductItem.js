@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 import data from "../../sites/json/data.json";
 
 class ProductItem extends Component {
@@ -23,6 +24,13 @@ class ProductItem extends Component {
 
     return (
       <div className="product-container">
+      <ReactCSSTransitionGroup
+          transitionName="fade"
+          transitionEnterTimeout={1000}
+          transitionLeaveTimeout={1000}
+          transitionAppear={true}
+          transitionAppearTimeout={1000}
+        >
         <div className="product-item">
           <div
             className="product-item_new"
@@ -81,6 +89,7 @@ class ProductItem extends Component {
             Items in shoppingbag: <b>{foundMatch ? foundMatch.count : 0}</b>
           </p>
         </div>
+        </ReactCSSTransitionGroup>
       </div>
     );
   }

@@ -18,7 +18,6 @@ class Home extends Component {
   }
 
   addData(type, dir) {
-    // setTimeout(() => {
       this.setState({
         data: data.sort((a, b) => {
           if (dir === "asc") {
@@ -31,7 +30,6 @@ class Home extends Component {
         }),
         active: true
       });
-    // }, 10);
   }
 
   clear(e) {

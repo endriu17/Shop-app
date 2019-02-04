@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Link, Route } from "react-router-dom";
+import ReactCSSTransitionGroup from "react-addons-css-transition-group";
+import { Link } from "react-router-dom";
 import "./index.css";
 import bag from "./json/main.json";
 
@@ -71,9 +72,18 @@ class Bag extends Component {
     const priceSum = [];
     if (this.props.bag.length === 0) {
       return (
-        <div className="bag-empty">
-          <img src="/photos/shoppingbag.png" alt={"shoppingbag"} />
-          <h1>It's nothing in the shoppingbag now...</h1>
+        <div>
+          <ReactCSSTransitionGroup
+            transitionName="fade"
+            transitionEnterTimeout={1000}
+            transitionLeaveTimeout={1000}
+            transitionAppear={true}
+            transitionAppearTimeout={1000}
+            className="bag-empty"
+          >
+            <img src="/photos/shoppingbag.png" alt={"shoppingbag"} />
+            <h1>It's nothing in the shoppingbag now...</h1>
+          </ReactCSSTransitionGroup>
         </div>
       );
     } else if (!this.state.order) {
@@ -135,7 +145,14 @@ class Bag extends Component {
         </li>
       ));
       return (
-        <div className="bag">
+        <ReactCSSTransitionGroup
+          transitionName="fade"
+          transitionEnterTimeout={1000}
+          transitionLeaveTimeout={1000}
+          transitionAppear={true}
+          transitionAppearTimeout={1000}
+          className="bag"
+        >
           <img
             className="shoppingbag-image"
             src="/photos/shoppingbag.png"
@@ -192,8 +209,7 @@ class Bag extends Component {
               Pay
             </Link>
           </div>
-          <Route path={`/bag/order`} component={bagItems} />
-        </div>
+        </ReactCSSTransitionGroup>
       );
     } else {
       const bagItems = bagMap.map((item, i) => (
@@ -209,7 +225,14 @@ class Bag extends Component {
         </tr>
       ));
       return (
-        <div className="bag">
+        <ReactCSSTransitionGroup
+          transitionName="fade"
+          transitionEnterTimeout={1000}
+          transitionLeaveTimeout={1000}
+          transitionAppear={true}
+          transitionAppearTimeout={1000}
+          className="bag"
+        >
           <h1>Your order</h1>
 
           <div style={{ overflowX: "auto" }}>
@@ -228,7 +251,7 @@ class Bag extends Component {
                   <td />
                   <td />
                   <td />
-                  <td >
+                  <td>
                     <p>Discount:</p>{" "}
                     {(
                       (priceSum.reduce((total, value) => total + value) *
@@ -261,7 +284,7 @@ class Bag extends Component {
             Ok
           </Link>
           <img className="order-image" src="/photos/order.png" alt={"order"} />
-        </div>
+        </ReactCSSTransitionGroup>
       );
     }
   }

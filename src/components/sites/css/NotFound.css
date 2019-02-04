@@ -1,12 +1,13 @@
-
 .error-site {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
   background-color: #fafafa;
   margin-top: 0;
-  position: relative;
 }
 
+img.not-found_photo {
+  width: 60%;
+  height: 60%;
+}

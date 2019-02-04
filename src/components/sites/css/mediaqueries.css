@@ -18,7 +18,8 @@
     width: 100%;
     display: flex;
     justify-content: space-around;
-    padding: 20px;
+    padding: 10px;
+    margin-top: 20px;
   }
 
   .sort-list {
@@ -34,7 +35,8 @@
   }
 
   .sort-list_back {
-    right: auto;
+    left: 10px;
+    top: 80px;
   }
 
   .sort-list:hover {
@@ -55,8 +57,8 @@
     display: none;
   }
 
-  .products-list_container {
-    margin-top: 20px;
+  .products-list {
+    margin-top: 50px;
   }
 }
 
@@ -133,7 +135,16 @@
   }
 
   .sort-list_back {
-    top: 245px;
+    top: 230px;
+    left: auto;
+  }
+
+  .sort-list:after {
+    border-bottom: none;
+  }
+
+  .sort-list:hover {
+    border: 3px solid #fa8212c9;
   }
 
   .order-image {

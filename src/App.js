@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route, BrowserRouter, Link, Switch } from "react-router-dom";
+import { Route, BrowserRouter, Link, Switch, Redirect } from "react-router-dom";
 import Navi from "./components/Navi/Navigation";
 import Footer from "./components/Footer/Footer";
 import Home from "./components/sites/Home";
@@ -164,7 +164,9 @@ class App extends Component {
                   />
                 )}
               />
-              <Route component={NotFound} />
+              <Route path="/bag/order" component={Bag} />
+              <Route path="/404" component={NotFound} />
+              <Redirect from="*" to="/404" />
             </Switch>
           </div>
           <Footer className="footer nav-home" />
