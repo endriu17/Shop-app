@@ -3,7 +3,7 @@ import { Route, BrowserRouter, Link, Switch, Redirect } from "react-router-dom";
 import Navi from "./components/Navi/Navigation";
 import Footer from "./components/Footer/Footer";
 import Home from "./components/sites/Home";
-import Bag from "./components/sites/ShoppingBag";
+import Shoppingbag from "./components/sites/ShoppingBag";
 import NotFound from "./components/sites/NotFound";
 import ProductItem from "./components/Product/ProductItem/ProductItem";
 import Contact from "./components/sites/Contact";
@@ -155,7 +155,7 @@ class App extends Component {
               <Route
                 path="/shoppingbag"
                 render={props => (
-                  <Bag
+                  <Shoppingbag
                     bag={this.state.shoppingBag}
                     addToBag={this.addToBag}
                     removeItem={this.removeItem}
@@ -164,7 +164,7 @@ class App extends Component {
                   />
                 )}
               />
-              <Route path="/bag/order" component={Bag} />
+              {/* <Route path="/shoppingbag/order" component={Shoppingbag} /> */}
               <Route path="/404" component={NotFound} />
               <Redirect from="*" to="/404" />
             </Switch>

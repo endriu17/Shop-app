@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 import { Link } from "react-router-dom";
 import "./index.css";
-import bag from "./json/main.json";
+import bag from "../sites/json/main.json";
 
 class Bag extends Component {
   constructor(props) {
@@ -201,13 +201,12 @@ class Bag extends Component {
                   100
               ).toFixed(2)}
             </span>
-            <Link
-              to={`/bag/order`}
+            <button
               className="bag-button_pay"
               onClick={() => this.showOrder()}
             >
               Pay
-            </Link>
+            </button>
           </div>
         </ReactCSSTransitionGroup>
       );
