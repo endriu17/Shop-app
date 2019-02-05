@@ -14,7 +14,7 @@ const ShoppingBagLink = props => {
         <span className="bag-items_number_1">{props.value}</span>
       </MediaQuery>
       <MediaQuery query="(max-width: 860px)">
-        <span className="bag-items_icon fas fa-shopping-bag fa-2x" style={{}} />
+        <span className="bag-items_icon fas fa-shopping-bag fa-2x" />
         <span className="bag-items_number_2">{props.value}</span>
       </MediaQuery>
     </NavLink>
