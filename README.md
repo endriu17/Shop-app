@@ -1,8 +1,6 @@
 ## Finish project
 
-## React, Javascript, HTML, CSS, RWD...
-
-**Status**: in development (99%...)
+## React, Javascript, HTML, CSS, RWD, Progressive Web App...
 
 ## Preview 
 

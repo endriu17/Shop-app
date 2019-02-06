@@ -288,4 +288,5 @@ class Bag extends Component {
     }
   }
 }
+
 export default Bag;
