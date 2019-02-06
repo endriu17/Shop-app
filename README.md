@@ -4,7 +4,7 @@
 
 ## Preview 
 
-Curent state: [here](https://shop-app-45819.firebaseapp.com/)
+Curent state (firebase): [here](https://shop-app-45819.firebaseapp.com/)
 
 ## For install:
 
