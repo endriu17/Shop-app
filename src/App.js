@@ -31,15 +31,21 @@ class App extends Component {
 
     if (found) {
       found.count = found.count + 1;
-      const changeValue = this.state.shoppingBag.map(item => {
-        return {
-          ...item,
-          [item.id]: found.id,
-          [item.count]: found.count
-        };
-      });
+      // const changeValue = this.state.shoppingBag.map(item => {
+      //   return {
+      //     ...item,
+      //     [item.id]: found.id,
+      //     [item.count]: found.count
+      //   };
+      // });
       this.setState({
-        shoppingBag: changeValue,
+        shoppingBag: this.state.shoppingBag.map(item => {
+          return {
+            ...item,
+            [item.id]: found.id,
+            [item.count]: found.count
+          };
+        }),
         counter: this.state.shoppingBag.reduce((acc, count) => {
           return acc + count.count;
         }, 0)
@@ -66,13 +72,17 @@ class App extends Component {
     const found = this.state.shoppingBag.find(x => x.id === parseFloat(id));
     found.count = found.count - 1;
     if (found.count > 0) {
-      const removeOne = this.state.shoppingBag.map(item => ({
-        ...item,
-        [item.id]: found.id,
-        [item.count]: found.count
-      }));
+      // const removeOne = this.state.shoppingBag.map(item => ({
+      //   ...item,
+      //   [item.id]: found.id,
+      //   [item.count]: found.count
+      // }));
       this.setState({
-        shoppingBag: removeOne,
+        shoppingBag: this.state.shoppingBag.map(item => ({
+          ...item,
+          [item.id]: found.id,
+          [item.count]: found.count
+        })),
         counter: this.state.shoppingBag.reduce(
           (acc, count) => acc + count.count,
           0
