@@ -2,6 +2,7 @@ import React from "react";
 import Product from "../Product/Product";
 import { Pagination, PaginationItem, PaginationLink } from "reactstrap";
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
+import "./css/ProductList.css"
 
 class ProductsList extends React.Component {
   constructor(props) {

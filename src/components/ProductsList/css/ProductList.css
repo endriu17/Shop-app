@@ -1,0 +1,86 @@
+.products-list {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.products-list_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: black;
+  width: 100%;
+}
+
+.product-list_item {
+  min-width: 230px;
+}
+
+.pagination-wrapper {
+  margin-right: 50px;
+}
+
+ul.pagination {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.page-item {
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+.page-item.active {
+  background-color: #494848;
+  color: white;
+  border: 1px solid #494848;
+}
+
+li {
+  margin: 0 2px;
+}
+
+.page-link {
+  text-decoration: none;
+  font-size: 22px;
+  color: #494848;
+  font-weight: bold;
+}
+
+.page-item:hover:not(.active) {
+  background-color: #ddd;
+}
+
+.active .page-link {
+  color: #fff;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 1000ms ease;
+}
+
+.fade-leave {
+  opacity: 1;
+}
+
+.fade-leave-active {
+  opacity: 0;
+  transition: opacity 1000ms ease;
+}
+.fade-appear {
+  opacity: 0;
+}
+
+.fade-appear-active {
+  opacity: 1;
+  transition: opacity 1000ms ease;
+}

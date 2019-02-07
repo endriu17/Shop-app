@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Navi from "../Navi/Navigation";
+import "./css/Footer.css"
 
 class Footer extends Component {
   constructor(props) {

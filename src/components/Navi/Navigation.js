@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import MediaQuery from "react-responsive";
+import "./css/Navigation.css"
 
 class Navi extends Component {
   constructor(props) {

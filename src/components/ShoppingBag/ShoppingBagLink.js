@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import MediaQuery from "react-responsive";
+import "./css/ShoppingbagLink.css";
 
 const ShoppingBagLink = props => {
   return (

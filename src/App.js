@@ -12,8 +12,8 @@ import Regulations from "./components/sites/Regulations";
 import ShoppingBagLink from "./components/ShoppingBag/ShoppingBagLink";
 
 class App extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = {
       shoppingBag: [],
       counter: 0
@@ -31,21 +31,25 @@ class App extends Component {
 
     if (found) {
       found.count = found.count + 1;
-      this.state.shoppingBag.map(item => {
+      const changeValue = this.state.shoppingBag.map(item => {
         return {
           ...item,
           [item.id]: found.id,
           [item.count]: found.count
         };
       });
+      this.setState({
+        shoppingBag: changeValue,
+        counter: this.state.shoppingBag.reduce((acc, count) => {
+          return acc + count.count;
+        }, 0)
+      });
     } else {
       this.state.shoppingBag.length === 0
-        ? setTimeout(() => {
-            this.setState({
-              shoppingBag: [{ id: parseFloat(id), count: 1 }],
-              counter: 1
-            });
-          }, 10)
+        ? this.setState({
+            shoppingBag: [{ id: parseFloat(id), count: 1 }],
+            counter: 1
+          })
         : this.setState(prevState => {
             return {
               shoppingBag: [
@@ -56,44 +60,34 @@ class App extends Component {
             };
           });
     }
-    setTimeout(() => {
-      this.setState({
-        counter: this.state.shoppingBag.reduce((acc, count) => {
-          return acc + count.count;
-        }, 0)
-      });
-    }, 10);
   }
 
   removeItem(id) {
     const found = this.state.shoppingBag.find(x => x.id === parseFloat(id));
     found.count = found.count - 1;
     if (found.count > 0) {
-      this.state.shoppingBag.map(item => ({
+      const removeOne = this.state.shoppingBag.map(item => ({
         ...item,
         [item.id]: found.id,
         [item.count]: found.count
       }));
-      setTimeout(() => {
-        this.setState({
-          counter: this.state.shoppingBag.reduce(
-            (acc, count) => acc + count.count,
-            0
-          )
-        });
-      }, 10);
+      this.setState({
+        shoppingBag: removeOne,
+        counter: this.state.shoppingBag.reduce(
+          (acc, count) => acc + count.count,
+          0
+        )
+      });
     } else {
-      setTimeout(() => {
-        this.setState({
-          shoppingBag: [
-            ...this.state.shoppingBag.filter(item => item.id !== found.id)
-          ],
-          counter: this.state.shoppingBag.reduce(
-            (acc, count) => acc + count.count,
-            0
-          )
-        });
-      }, 10);
+      this.setState({
+        shoppingBag: [
+          ...this.state.shoppingBag.filter(item => item.id !== found.id)
+        ],
+        counter: this.state.shoppingBag.reduce(
+          (acc, count) => acc + count.count,
+          0
+        )
+      });
     }
   }
 
