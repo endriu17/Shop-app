@@ -2,7 +2,7 @@ import React from "react";
 import Product from "../Product/Product";
 import { Pagination, PaginationItem, PaginationLink } from "reactstrap";
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
-import "./css/ProductList.css"
+import "./css/ProductList.css";
 
 class ProductsList extends React.Component {
   constructor(props) {
@@ -53,7 +53,10 @@ class ProductsList extends React.Component {
                 ))}
             </div>
             <div className="pagination-wrapper">
-              <Pagination aria-label="Page navigation example">
+              <Pagination
+                className="pagination-main"
+                aria-label="Page navigation example"
+              >
                 <PaginationItem disabled={currentPage <= 0}>
                   <PaginationLink
                     onClick={e => this.handleClick(e, currentPage - 1)}
@@ -64,7 +67,11 @@ class ProductsList extends React.Component {
                 </PaginationItem>
 
                 {[...Array(this.pagesCount)].map((page, i) => (
-                  <PaginationItem active={i === currentPage} key={i}>
+                  <PaginationItem
+                    onClick={e => this.handleClick(e, i)}
+                    active={i === currentPage}
+                    key={i}
+                  >
                     <PaginationLink
                       onClick={e => this.handleClick(e, i)}
                       href="#"

@@ -31,13 +31,6 @@ class App extends Component {
 
     if (found) {
       found.count = found.count + 1;
-      // const changeValue = this.state.shoppingBag.map(item => {
-      //   return {
-      //     ...item,
-      //     [item.id]: found.id,
-      //     [item.count]: found.count
-      //   };
-      // });
       this.setState({
         shoppingBag: this.state.shoppingBag.map(item => {
           return {
@@ -72,11 +65,6 @@ class App extends Component {
     const found = this.state.shoppingBag.find(x => x.id === parseFloat(id));
     found.count = found.count - 1;
     if (found.count > 0) {
-      // const removeOne = this.state.shoppingBag.map(item => ({
-      //   ...item,
-      //   [item.id]: found.id,
-      //   [item.count]: found.count
-      // }));
       this.setState({
         shoppingBag: this.state.shoppingBag.map(item => ({
           ...item,
